@@ -2561,8 +2561,10 @@ input:checked+.slider:before {
     align-items: center;
     justify-content: center;
     border-radius: 6px;
-    z-index: 2; /* Ensure icon stays above input */
-    pointer-events: none; /* Allow clicks to pass through to input */
+    z-index: 2;
+    /* Ensure icon stays above input */
+    pointer-events: none;
+    /* Allow clicks to pass through to input */
 }
 
 .gpt-up-down-arrow:hover span {
@@ -6828,6 +6830,7 @@ table th {
     height: 150px;
     position: relative;
     border-radius: 10px 10px 0 0;
+    background-size: cover;
 }
 
 .profile-pic {

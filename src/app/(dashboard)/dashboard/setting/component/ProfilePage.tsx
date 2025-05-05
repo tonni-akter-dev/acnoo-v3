@@ -16,10 +16,10 @@ const ProfilePage = () => {
       <div className="card-body mt-0 p-0">
         <div
           className="d-flex flex-lg-row flex-col"
-          style={{ columnGap: "20px" }}>
+          style={{ gap: "20px" }}>
           {/* Left Side: User Info */}
           <div
-            className="col-md-5 bg-white px-0 "
+            className="lg:col-span-5 md:col-span-12 bg-white px-0 "
             style={{
               borderRadius: "8px",
               height: "fit-content",
@@ -64,7 +64,7 @@ const ProfilePage = () => {
           </div>
 
           {/* Right Side: Form */}
-          <div className="col-md-7 bg-white right_section">
+          <div className="lg:col-span-7 md:col-span-12 bg-white right_section">
             <h4>User Profile</h4>
             <form>
               <div className="mb-3 d-flex align-items-center">
