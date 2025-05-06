@@ -38,10 +38,10 @@ const supportData: SupportCardProps[] = [
 ];
 
 const SupportCard: React.FC<SupportCardProps> = ({ Icon, title, description }) => (
-   <div className="bg-[#EBF5FE] hover:bg-[#2F1C6A] hover:text-white rounded-xl pt-16  pb-[54px] px-8 shadow-md hover:shadow-lg transition-shadow duration-300 border border-gray-100 group">
+   <div className="bg-[#EBF5FE] hover:bg-[#2F1C6A] hover:text-white rounded-xl pt-8 md:pt-16  pb-[54px] px-8 shadow-md hover:shadow-lg transition-shadow duration-300 border border-gray-100 group">
       <div className='rounded-full bg-white text-[#2F1C6A] group-hover:text-white group-hover:bg-[#ffffff1c] transition-colors duration-300 size-[93px] flex justify-center items-center'>
          <Icon
-            className="size-[50px]"
+            className=" size-10 md:size-[50px]"
          />
       </div>
       <h2

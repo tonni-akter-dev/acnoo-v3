@@ -12,15 +12,14 @@ const Search = ({
     totalResults,
     viewMode,
     setViewMode,
-  }: {
+}: {
     min: number
     totalResults: number
     viewMode: ViewMode
     setViewMode: (mode: ViewMode) => void
-  }) => {
+}) => {
     return (
-        <div
-            className="hidden lg:flex gap-6 items-center w-full p-2.5 border rounded-md border-[#EDEEF3] font-bold text-primary lg:mb-9 mb-2"
+        <div className="hidden lg:flex gap-6 items-center w-full p-2.5 border rounded-md border-[#EDEEF3] font-bold text-primary lg:mb-9 mb-2"
             style={{ background: 'rgba(191, 5, 176, 0.05)' }}
         >
             <h3 className="text-base font-bold text-[#1A0B49] whitespace-nowrap">

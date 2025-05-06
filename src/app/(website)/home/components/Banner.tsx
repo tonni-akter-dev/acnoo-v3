@@ -187,7 +187,7 @@ const MobileRotatingIcons = () => {
 
 const Banner = () => {
   return (
-    <div className="flex lg:flex-row flex-col items-center w-full  banner_bg min-h-screen lg:px-[150px] lg:gap-0 md:gap-10 gap-6 lg:pt-0 pt-6 px-5 overflow-hidden">
+    <div className="flex lg:flex-row flex-col xs:items-start  sm:items-center  md:items-center w-full  banner_bg min-h-screen lg:px-[150px] lg:gap-0 md:gap-10 gap-6 lg:pt-0 pt-6 px-5 overflow-hidden">
       <div className="lg:w-1/2  flex flex-col justify-center">
         <div className=" text-black  text-lg font-medium mb-4">
           <span className="bg-[#F52366] text-base font-bold text-white px-3 h-[25px] py-1 rounded-full w-fit me-[11px]">
@@ -205,7 +205,7 @@ const Banner = () => {
         </p>
         <div className="">
           <div
-            className="flex w-[343px] md:w-full lg:w-[486px]  h-12 lg:h-[64px] rounded-[8px] bg-white"
+            className="flex w-full lg:w-[486px]  h-12 lg:h-[64px] rounded-[8px] bg-white"
             style={{ boxShadow: " 0px 4px 8px 0px rgba(0, 0, 0, 0.10)" }}
           >
             <input
@@ -237,7 +237,7 @@ const Banner = () => {
         <div className="lg:block md:block hidden">
         <RotatingIcons />
         </div>
-        <div className="lg:hidden md:hidden sm:block">
+        <div className="lg:hidden md:hidden block">
         <MobileRotatingIcons></MobileRotatingIcons>
         </div>
       </div>

@@ -29,13 +29,13 @@ const AllService = () => {
     );
 
     return (
-        <div className='allService mt-24'>
+        <div className='allService mt-6 md:mt-12 lg:mt-24'>
             <div className="container mx-auto">
                 <div className='flex items-center justify-center mx-auto gap-2.5 mb-3.5'>
                     <h2 className='text-white bg-[#F52366] px-3.5 py-2 rounded-full text-base font-bold'>new</h2>
                     <p className='text-lg text-black font-medium'>{`We've raised `}<span className='text-[#2353F5]'>$6</span> million!</p>
                 </div>
-                <h1 className='text-primary text-5xl lg:text-[55px] font-bold text-center mb-5 '>Service we provide</h1>
+                <h1 className='text-primary text-2xl md:text-3xl lg:text-[55px] font-bold text-center mb-5 '>Service we provide</h1>
                 <ServicesTabs activeTab={activeTab} setActiveTab={(tab) => {
                     setActiveTab(tab);
                     setCurrentPage(1); 

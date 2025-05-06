@@ -28,7 +28,7 @@ const Header = () => {
             </button>
           </div>
           <div className=" block  text-xl  font-bold">
-            <Link href="#" className="hover:text-teal-900">
+            <Link href="/" className="hover:text-teal-900">
               <Image src={logo} alt="" />
             </Link>
           </div>
@@ -46,7 +46,7 @@ const Header = () => {
           <ul className=" gap-7 items-center lg:flex hidden ">
             <li className="py-6 lg:py-11  ">
               <Link
-                href="#"
+                href="/"
                 className="hover:border-b-[2.5px] border-[#673DE6] hover:text-[#673DE6] transition-all duration-75 ease-in-out relative block  text-sm lg:text-lg font-bold"
               >
                 Home
@@ -55,7 +55,7 @@ const Header = () => {
 
             <li className="hoverable py-6 lg:py-11 ">
               <Link
-                href="produtcs"
+                href="/products"
                 className=" hover:border-b-[2.5px] border-[#673DE6] hover:text-[#673DE6] transition-all duration-75 ease-in-out relative block text-sm lg:text-base font-bold"
               >
                 Products
@@ -74,18 +74,18 @@ const Header = () => {
             </li>
             <li className="py-6 lg:py-11  ">
               <Link
-                href="#"
+                href="/service"
                 className="hover:border-b-[2.5px] border-[#673DE6] hover:text-[#673DE6] transition-all duration-75 ease-in-out relative block  text-sm lg:text-lg font-bold"
               >
                 Services
               </Link>
             </li>
-             <li className="hoverable py-6 lg:py-11 relative group">
+            <li className="hoverable py-6 lg:py-11 relative group">
               <Link
-                href="#"
+                href="/about"
                 className="hover:border-b-[2.5px] border-[#673DE6] hover:text-[#673DE6] transition-all duration-75 ease-in-out relative block text-sm lg:text-base font-bold"
               >
-             Why Acnoo
+                Why Acnoo
               </Link>
               <WhyAcnoomenu />
             </li>

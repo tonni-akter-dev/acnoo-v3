@@ -11,9 +11,9 @@ const IncreaseRevenue = () => {
         Something new coming soon!
       </div>
       <div className="text-center flex flex-col justify-center items-center">
-        <h2 className="text-center mb-7 lg:mb-[60px] w-full lg:text-[65px]  text-[26px] lg:leading-[65px] leading-[32px] font-bold text-primary whitespace-nowrap">
-          We Makes <span className="gradient_text">Globally</span> Growth <br />
-          & Increase Revenue
+        <h2 className="text-center mb-7 lg:mb-[60px] w-full lg:text-[65px]  text-[26px] lg:leading-[65px] leading-[32px] font-bold text-primary md:whitespace-nowrap">
+          We Makes <span className="gradient_text1">Globally</span> Growth <br className="md:block hidden" />
+          & Increase Revenue  
         </h2>
         <Image
           className="lg:size-[454px]  md:size-[267px] size-[223px] mb-12"
@@ -83,7 +83,7 @@ const IncreaseRevenue = () => {
         </div>
 
         {/* mobile */}
-        <div className="lg:hidden grid grid-cols-2 justify-center gap-5 md:gap-[70px] items-center">
+        <div className="lg:hidden xs_screen grid grid-cols-2 justify-center gap-5 md:gap-[70px] items-center">
           <div className="flex md:gap-8 gap-4 items-center pe-[70px] lg:border-r border-[#64607C40]">
             <div
               className="md:size-[100px] size-[64px] rounded-full ps-[19px] md:ps-[25px]  pt-2 md:pt-[25px]"

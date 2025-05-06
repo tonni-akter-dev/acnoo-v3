@@ -35,7 +35,7 @@ const Work = () => {
               <br className="lg:block hidden" />
               Template | PWA Ready
             </p>
-            <ul className="flex gap-5">
+            <ul className="flex gap-5 wrap_button">
               <li className="py-1 px-5 border border-[#E7E7E7] rounded-full w-fit">
                 Banding
               </li>
@@ -52,7 +52,7 @@ const Work = () => {
             <p className=" text-lg lg:text-2xl font-bold text-black mt-7 mb-4">
               Business card design{" "}
             </p>
-            <ul className="flex gap-5">
+            <ul className="flex gap-5 wrap_button">
               <li className="py-1 px-5 border border-[#E7E7E7] rounded-full w-fit">
                 Banding
               </li>
@@ -69,7 +69,7 @@ const Work = () => {
             <p className=" text-lg lg:text-2xl font-bold text-black mt-7 mb-4">
               PosPro Saas Project
             </p>
-            <ul className="flex gap-5">
+            <ul className="flex gap-5 wrap_button">
               <li className="py-1 px-5 border border-[#E7E7E7] rounded-full w-fit">
                 Banding
               </li>
@@ -86,7 +86,7 @@ const Work = () => {
             <p className=" text-lg lg:text-2xl font-bold text-black mt-7 mb-4">
               Business card design
             </p>
-            <ul className="flex gap-5">
+            <ul className="flex gap-5 wrap_button">
               <li className="py-1 px-5 border border-[#E7E7E7] rounded-full w-fit">
                 Banding
               </li>

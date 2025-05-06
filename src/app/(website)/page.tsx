@@ -13,12 +13,12 @@ export default function Home() {
   return (
     <>
       <Banner />
-      <OurProducts />
-      <Specialize />
-      <IncreaseRevenue />
-      <FreeResource />
-      <GloballyGrowth />
-      <div
+    <OurProducts />
+        <Specialize />
+       <IncreaseRevenue />
+     <FreeResource />
+       <GloballyGrowth />
+   <div
         style={{
           background: 'linear-gradient(0deg, rgba(240, 240, 252, 0.00) 0%, #F3F0FC 100%)',                    backgroundBlendMode: "normal",
         }}
@@ -26,7 +26,7 @@ export default function Home() {
         <Hireus />
         <WhatPeopleThink />
         <Faq />
-        <BottomBanner />
+        <BottomBanner /> 
       </div>
     </>
   );

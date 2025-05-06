@@ -82,7 +82,7 @@ const Footer = () => {
                 <li>
                   <a
                     href="#"
-                    className="text-base font-bold leading-[19px] whitespace-nowrap  text-[#282F39]"
+                    className="text-base font-bold leading-[19px] whitespace-nowrap sm_wrap text-[#282F39]"
                   >
                     About Us
                   </a>
@@ -90,7 +90,7 @@ const Footer = () => {
                 <li>
                   <a
                     href="#"
-                    className="text-base font-bold leading-[19px] whitespace-nowrap  text-[#282F39]"
+                    className="text-base font-bold leading-[19px] whitespace-nowrap sm_wrap text-[#282F39]"
                   >
                     Testimonials
                   </a>
@@ -98,7 +98,7 @@ const Footer = () => {
                 <li>
                   <a
                     href="#"
-                    className="text-base font-bold leading-[19px] whitespace-nowrap  text-[#282F39]"
+                    className="text-base font-bold leading-[19px] whitespace-nowrap sm_wrap text-[#282F39]"
                   >
                     Terms & Condition
                   </a>
@@ -106,7 +106,7 @@ const Footer = () => {
                 <li>
                   <a
                     href="#"
-                    className="text-base font-bold leading-[19px] whitespace-nowrap  text-[#282F39]"
+                    className="text-base font-bold leading-[19px] whitespace-nowrap sm_wrap text-[#282F39]"
                   >
                     Privacy & Policy
                   </a>
@@ -114,7 +114,7 @@ const Footer = () => {
                 <li>
                   <a
                     href="#"
-                    className="text-base font-bold leading-[19px] whitespace-nowrap  text-[#282F39]"
+                    className="text-base font-bold leading-[19px] whitespace-nowrap sm_wrap text-[#282F39]"
                   >
                     Refund
                   </a>
@@ -122,7 +122,7 @@ const Footer = () => {
                 <li>
                   <a
                     href="#"
-                    className="text-base font-bold leading-[19px] whitespace-nowrap  text-[#282F39]"
+                    className="text-base font-bold leading-[19px] whitespace-nowrap sm_wrap text-[#282F39]"
                   >
                     Contact Us
                   </a>
@@ -138,7 +138,7 @@ const Footer = () => {
                 <li>
                   <a
                     href="#"
-                    className="text-base font-bold leading-[19px] whitespace-nowrap  text-[#282F39]"
+                    className="text-base font-bold leading-[19px] whitespace-nowrap sm_wrap text-[#282F39]"
                   >
                     Services
                   </a>
@@ -146,7 +146,7 @@ const Footer = () => {
                 <li>
                   <a
                     href="#"
-                    className="text-base font-bold leading-[19px] whitespace-nowrap  text-[#282F39]"
+                    className="text-base font-bold leading-[19px] whitespace-nowrap sm_wrap text-[#282F39]"
                   >
                     Why Acnoo
                   </a>
@@ -154,7 +154,7 @@ const Footer = () => {
                 <li>
                   <a
                     href="#"
-                    className="text-base font-bold leading-[19px] whitespace-nowrap  text-[#282F39]"
+                    className="text-base font-bold leading-[19px] whitespace-nowrap sm_wrap text-[#282F39]"
                   >
                     Hire Us
                   </a>
@@ -162,7 +162,7 @@ const Footer = () => {
                 <li>
                   <a
                     href="/case-study"
-                    className="text-base font-bold leading-[19px] whitespace-nowrap  text-[#282F39]"
+                    className="text-base font-bold leading-[19px] whitespace-nowrap sm_wrap text-[#282F39]"
                   >
                     Case Study
                   </a>
@@ -170,7 +170,7 @@ const Footer = () => {
                 <li>
                   <a
                     href="#"
-                    className="text-base font-bold leading-[19px] whitespace-nowrap  text-[#282F39]"
+                    className="text-base font-bold leading-[19px] whitespace-nowrap sm_wrap text-[#282F39]"
                   >
                     Contact Us
                   </a>
@@ -178,7 +178,7 @@ const Footer = () => {
                 <li>
                   <a
                     href="#"
-                    className="text-base font-bold leading-[19px] whitespace-nowrap  text-[#282F39]"
+                    className="text-base font-bold leading-[19px] whitespace-nowrap sm_wrap text-[#282F39]"
                   >
                     WeCare
                   </a>
@@ -194,7 +194,7 @@ const Footer = () => {
                 <li>
                   <a
                     href="#"
-                    className="text-base font-bold leading-[19px] whitespace-nowrap  text-[#282F39]"
+                    className="text-base font-bold leading-[19px] whitespace-nowrap sm_wrap text-[#282F39]"
                   >
                     POS Pro - Advanced POS Add-on
                   </a>
@@ -211,7 +211,7 @@ const Footer = () => {
                 <li>
                   <a
                     href="#"
-                    className="text-base font-bold leading-[19px] whitespace-nowrap  text-[#282F39]"
+                    className="text-base font-bold leading-[19px] whitespace-nowrap sm_wrap text-[#282F39]"
                   >
                     POS Pro - Advanced POS
                   </a>
@@ -219,7 +219,7 @@ const Footer = () => {
                 <li>
                   <a
                     href="#"
-                    className="text-base font-bold leading-[19px] whitespace-nowrap  text-[#282F39]"
+                    className="text-base font-bold leading-[19px] whitespace-nowrap sm_wrap text-[#282F39]"
                   >
                     POS SAAS - Flutter POS
                   </a>
@@ -227,7 +227,7 @@ const Footer = () => {
                 <li>
                   <a
                     href="#"
-                    className="text-base font-bold leading-[19px] whitespace-nowrap  text-[#282F39]"
+                    className="text-base font-bold leading-[19px] whitespace-nowrap sm_wrap text-[#282F39]"
                   >
                     SMSPro - Bulk SMS Gateway
                   </a>
@@ -235,7 +235,7 @@ const Footer = () => {
                 <li>
                   <a
                     href="#"
-                    className="text-base font-bold leading-[19px] whitespace-nowrap  text-[#282F39]"
+                    className="text-base font-bold leading-[19px] whitespace-nowrap sm_wrap text-[#282F39]"
                   >
                     Acnoo Flutter Dashboard
                   </a>
@@ -243,7 +243,7 @@ const Footer = () => {
                 <li>
                   <a
                     href="#"
-                    className="text-base font-bold leading-[19px] whitespace-nowrap  text-[#282F39]"
+                    className="text-base font-bold leading-[19px] whitespace-nowrap sm_wrap text-[#282F39]"
                   >
                     Grocery Selling App
                   </a>
@@ -251,7 +251,7 @@ const Footer = () => {
                 <li>
                   <a
                     href="#"
-                    className="text-base font-bold leading-[19px] whitespace-nowrap  text-[#282F39]"
+                    className="text-base font-bold leading-[19px] whitespace-nowrap sm_wrap text-[#282F39]"
                   >
                     SaaS Pharmacy App
                   </a>
@@ -259,7 +259,7 @@ const Footer = () => {
                 <li>
                   <a
                     href="#"
-                    className="text-base font-bold leading-[19px] whitespace-nowrap  text-[#282F39]"
+                    className="text-base font-bold leading-[19px] whitespace-nowrap sm_wrap text-[#282F39]"
                   >
                     Garments ERP
                   </a>
@@ -267,7 +267,7 @@ const Footer = () => {
                 <li>
                   <a
                     href="#"
-                    className="text-base font-bold leading-[19px] whitespace-nowrap  text-[#282F39]"
+                    className="text-base font-bold leading-[19px] whitespace-nowrap sm_wrap text-[#282F39]"
                   >
                     Rentpro SaaS
                   </a>
@@ -275,7 +275,7 @@ const Footer = () => {
                 <li>
                   <a
                     href="#"
-                    className="text-base font-bold leading-[19px] whitespace-nowrap  text-[#282F39]"
+                    className="text-base font-bold leading-[19px] whitespace-nowrap sm_wrap text-[#282F39]"
                   >
                     Blog & news PHP Scripts
                   </a>
@@ -295,7 +295,7 @@ const Footer = () => {
         {/* medium device */}
         <div className="lg:hidden md:flex md:flex-row flex-col-reverse gap-[30px] flex mb-[27px] lg:mb-[84px]">
           {/* Add-ons Section */}
-          <div className="me-[20px] w-[326px]">
+          <div className="me-[20px] w-full md:w-[326px]">
             <h3 className="font-bold text-[22px] mb-6 text-[#0D1224]">
               Add-ons
             </h3>
@@ -303,7 +303,7 @@ const Footer = () => {
               <li>
                 <a
                   href="#"
-                  className="text-base font-bold leading-[19px] whitespace-nowrap  text-[#282F39]"
+                  className="text-base font-bold leading-[19px] whitespace-nowrap sm_wrap text-[#282F39]"
                 >
                   POS Pro - Advanced POS Add-on
                 </a>
@@ -320,7 +320,7 @@ const Footer = () => {
               <li>
                 <a
                   href="#"
-                  className="text-base font-bold leading-[19px] whitespace-nowrap  text-[#282F39]"
+                  className="text-base font-bold leading-[19px] whitespace-nowrap sm_wrap text-[#282F39]"
                 >
                   POS Pro - Advanced POS
                 </a>
@@ -328,7 +328,7 @@ const Footer = () => {
               <li>
                 <a
                   href="#"
-                  className="text-base font-bold leading-[19px] whitespace-nowrap  text-[#282F39]"
+                  className="text-base font-bold leading-[19px] whitespace-nowrap sm_wrap text-[#282F39]"
                 >
                   POS SAAS - Flutter POS
                 </a>
@@ -336,7 +336,7 @@ const Footer = () => {
               <li>
                 <a
                   href="#"
-                  className="text-base font-bold leading-[19px] whitespace-nowrap  text-[#282F39]"
+                  className="text-base font-bold leading-[19px] whitespace-nowrap sm_wrap text-[#282F39]"
                 >
                   SMSPro - Bulk SMS Gateway
                 </a>
@@ -344,7 +344,7 @@ const Footer = () => {
               <li>
                 <a
                   href="#"
-                  className="text-base font-bold leading-[19px] whitespace-nowrap  text-[#282F39]"
+                  className="text-base font-bold leading-[19px] whitespace-nowrap sm_wrap text-[#282F39]"
                 >
                   Acnoo Flutter Dashboard
                 </a>
@@ -352,7 +352,7 @@ const Footer = () => {
               <li>
                 <a
                   href="#"
-                  className="text-base font-bold leading-[19px] whitespace-nowrap  text-[#282F39]"
+                  className="text-base font-bold leading-[19px] whitespace-nowrap sm_wrap text-[#282F39]"
                 >
                   Grocery Selling App
                 </a>
@@ -360,7 +360,7 @@ const Footer = () => {
               <li>
                 <a
                   href="#"
-                  className="text-base font-bold leading-[19px] whitespace-nowrap  text-[#282F39]"
+                  className="text-base font-bold leading-[19px] whitespace-nowrap sm_wrap text-[#282F39]"
                 >
                   SaaS Pharmacy App
                 </a>
@@ -368,7 +368,7 @@ const Footer = () => {
               <li>
                 <a
                   href="#"
-                  className="text-base font-bold leading-[19px] whitespace-nowrap  text-[#282F39]"
+                  className="text-base font-bold leading-[19px] whitespace-nowrap sm_wrap text-[#282F39]"
                 >
                   Garments ERP
                 </a>
@@ -376,7 +376,7 @@ const Footer = () => {
               <li>
                 <a
                   href="#"
-                  className="text-base font-bold leading-[19px] whitespace-nowrap  text-[#282F39]"
+                  className="text-base font-bold leading-[19px] whitespace-nowrap sm_wrap text-[#282F39]"
                 >
                   Rentpro SaaS
                 </a>
@@ -384,7 +384,7 @@ const Footer = () => {
               <li>
                 <a
                   href="#"
-                  className="text-base font-bold leading-[19px] whitespace-nowrap  text-[#282F39]"
+                  className="text-base font-bold leading-[19px] whitespace-nowrap sm_wrap text-[#282F39]"
                 >
                   Blog & news PHP Scripts
                 </a>

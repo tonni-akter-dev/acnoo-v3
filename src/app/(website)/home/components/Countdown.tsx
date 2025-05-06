@@ -3,7 +3,6 @@
 import React, { useState, useEffect } from "react";
 
 const BirthdayCountdown = () => {
-    // Set countdown for 10 days from now
     const today = new Date();
     const targetDate = new Date(today);
     targetDate.setDate(today.getDate() + 10);
@@ -32,7 +31,7 @@ const BirthdayCountdown = () => {
 
     return (
         <div className="flex flex-col items-center justify-center text-center text-white rounded-lg shadow-lg">
-            <div className="flex items-center text-lg space-x-2 lg:space-x-4">
+            <div className="flex items-center text-base md:text-lg space-x-2 lg:space-x-4">
                 <div className="flex flex-col items-center">
                     <span className="font-bold">{timeLeft.days}</span>
                 </div><span>:</span>

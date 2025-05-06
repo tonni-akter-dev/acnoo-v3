@@ -36,7 +36,7 @@ export default function RootLayout({
         {children}
         <div className="bg-[#F3F0FD]" style={{
           background:
-            "linear-gradient(0deg, #F3F0FD 0%, #F3F0FD 100%)", // Match the end color for a seamless look
+            "linear-gradient(0deg, #F3F0FD 0%, #F3F0FD 100%)",
         }}>
           <Footer />
         </div>

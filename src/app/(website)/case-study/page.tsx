@@ -9,17 +9,16 @@ import Portfolio from './components/Portfolio'
 import CaseStudyBottomSlider from './components/CaseStudyBottomSlider'
 
 
-const CaseStudy=()=> {
+const CaseStudy = () => {
   return (
     <div className='case_study'>
-      <Banner title='Case Study'/>
-    {/* main */}
-      <AdminSlider/>
-      <CaseStudylefttToRightSlider/>
-      <CaseStudyRightToLeftSlider/>
-     <Portfolio/>
-     <CaseStudyBottomSlider/>
-      <BottomBanner/>
+      <Banner title='Case Study' />
+      <AdminSlider />
+      <CaseStudylefttToRightSlider />
+      <CaseStudyRightToLeftSlider />
+      <Portfolio />
+      <CaseStudyBottomSlider />
+      <BottomBanner />
     </div>
   )
 }

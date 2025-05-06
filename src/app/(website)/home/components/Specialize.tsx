@@ -37,16 +37,16 @@ const Specialize = () => {
         <span className='bg-[#F52366] text-base font-bold text-white px-3 h-[25px] py-1 rounded-full w-fit me-[11px]'>New </span>Something new coming soon!
       </div>
       <div className='flex lg:flex-row flex-col mb-[70px] justify-between  lg:items-center'>
-        <h2 className='mb-5 lg:mb-0 max-w-[560px] w-full lg:text-[65px]  text-[24px] lg:leading-[65px] leading-[32px] font-bold text-white whitespace-nowrap'>
-        Specialize in many <br className='lg:block md:hidden block ' />
-        Different <span className='gradient_text1'>Sectors</span>
+        <h2 className='mb-5 lg:mb-0 max-w-[560px] w-full lg:text-[65px]  text-2xl lg:leading-[65px] leading-[32px] font-bold text-white whitespace-nowrap'>
+          Specialize in many <br className='lg:block md:hidden block ' />
+          Different <span className='gradient_text1'>Sectors</span>
         </h2>
         <p className='max-w-[543px] w-full text-white text-base font-medium'>
           We’re a team of passionate problem-solvers and out-of-the-box technical thinkers. Our objective? To take as much complexity off of our partner’s plates and make their WordPress websites perform for their.
         </p>
       </div>
 
-      <div className='relative h-[500px] lg:block md:block hidden'> 
+      <div className='relative h-[500px] lg:block md:block hidden'>
         <Image src={specializeCenter} alt="Specialize Center" layout='fill' objectFit='contain' />
         {/* Position the buttons based on your design */}
         <Button
@@ -82,7 +82,7 @@ const Specialize = () => {
       </div>
 
       <div className='lg:hidden md:hidden grid grid-cols-2 gap-6'>
-      <Button
+        <Button
           text="Flutter App Development"
           image={flutterAppDevelopment}
         />

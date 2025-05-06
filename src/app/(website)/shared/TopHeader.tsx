@@ -27,7 +27,7 @@ const TopHeader = () => {
           Grab the Offer
         </button>
         <div className="flex items-center gap-[22px]">
-          <p className=" whitespace-nowrap text-lg lg:text-[22px] text-white font-bold">
+          <p className=" whitespace-nowrap text-base md:text-lg lg:text-[22px] text-white font-bold">
             Extra Sale <span className="text-[#61C722]">50% </span>off
           </p>
           <div>
