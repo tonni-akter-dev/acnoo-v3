@@ -13,10 +13,12 @@ import ProductsMegamenu from "./ProductsMegamenu";
 import AddonsMegamenu from "./AddonsMegamenu";
 import MobileHeader from "./MobileHeader";
 import WhyAcnoomenu from "./WhyAcnoomenu";
+import LoginModal from "../home/components/LoginModal";
 
 const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
   const pathname = usePathname();
+  const [showModal, setShowModal] = useState(false);
 
   return (
     <div className="relative z-50 ">
@@ -116,10 +118,11 @@ const Header = () => {
             </div>
           ) : (
             <div className="lg:flex hidden gap-5 items-center">
-              <div className="flex gap-2.5 items-center">
-                <Image src={user} alt="" />
+              <div className="flex gap-2.5 items-center cursor-pointer" onClick={() => setShowModal(true)}>
+                <Image src={user} alt="user icon" />
                 <p className="opacity-[0.5] text-base font-bold">Login</p>
               </div>
+
               <div>
                 <button className="flex gap-2 items-center bg-[#E2DBFC] rounded-[10px]  px-[33px]  py-4 text-[#311E7A] text-base font-bold">
                   Free resource
@@ -133,6 +136,10 @@ const Header = () => {
         </div>
         {menuOpen && <MobileHeader />}
       </nav>
+      {showModal && (
+        <LoginModal  setShowModal={setShowModal} />
+      )}
+
     </div>
   );
 };

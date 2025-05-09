@@ -84,8 +84,7 @@ const Faq = ({ color, btncolor }: { color?: string, btncolor?: string }) => {
           </p>
         </div>
         <button
-          style={{ backgroundColor: color || '#C52127' }}
-          className={`lg:flex md:flex hidden  ${btncolor ? "bg-[#C52127]" : "bg-[#2353F5]"
+          className={`lg:flex md:flex hidden  ${btncolor ? "bg-[#C52127]" : color ? 'bg-[#7500FE]' : "bg-[#2353F5]"
             }  gap-1.5 items-center text-white text-base font-bold md:px-5 lg:px-[36px] md:py-3 lg:py-[21px] rounded-[10px] w-fit`}
         >
           Browse All Questions

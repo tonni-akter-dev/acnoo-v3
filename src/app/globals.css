@@ -5,7 +5,8 @@
 
 @theme {
   --color-primary: #1A0B49;
-  --color-red: #C52127 --screen-xs: 20rem;
+  --color-red: #C52127;
+  --screen-xs: 20rem;
 }
 
 @media (min-width: var(--screen-xs)) {
