@@ -11,7 +11,7 @@ import Image from "next/image";
 const Testimonials = () => {
     return (
         <section className=" testimonial-bg  my-6 lg:mt-[117px] lg:mb-[237px] lg:px-0 px-5">
-            <div className="max-w-[1290px] mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 flex-col gap-[30px]">
+            <div className="max-w-[1290px] testimonial mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 flex-col gap-[30px]">
                 <div className="flex flex-col gap-6">
                     <div className="bg-white shadow-md rounded-xl py-9 xs_padding px-10 md:w-[343px] lg:w-[410px] h-fit">
                         <p className="text-gray-700 text-xl mb-4 border-b border-[#EEEFF1] pb-6">We get absolutely raving reviews

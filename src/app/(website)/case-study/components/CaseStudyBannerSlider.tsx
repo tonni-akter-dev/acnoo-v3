@@ -36,7 +36,7 @@ const AdminSlider = () => {
               <div className="relative">
                 <Image
                   src={profiloe}
-                  className="w-[323px] md:w-[600px] mx-4 md:mx-auto lg:w-full h-auto object-cover rounded-xl"
+                  className="w-[323px] md:w-[600px] mx-4 md:mx-auto  lg:w-full h-auto object-cover rounded-xl"
                   alt={`Slide ${index + 1}`}
                 />
               </div>
@@ -44,7 +44,7 @@ const AdminSlider = () => {
           ))}
         </Swiper>
 
-        <div className="absolute top-1/2 right-2.5 md:right-8 lg:-right-20 transform -translate-y-1/2 z-10 flex flex-col gap-2">
+        <div className="absolute top-1/2  case_banner right-2.5 md:right-8 lg:-right-20  transform -translate-y-1/2 z-10 flex flex-col gap-2">
           {[1, 2, 3].map((num) => (
             <button
               key={num}

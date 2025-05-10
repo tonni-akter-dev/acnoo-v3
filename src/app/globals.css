@@ -842,9 +842,11 @@ input[type="range"]::-moz-range-thumb {
     display: grid;
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
-.roadmap_list{
-  width: 100%;
-}
+
+  .roadmap_list {
+    width: 100%;
+  }
+
   .testimonial .swiper {
     width: 477px !important;
     height: 254px !important;
@@ -1097,17 +1099,45 @@ input[type="range"]::-moz-range-thumb {
   .play_btn {
     left: 61%;
   }
-  .work_title
- {
-  font-size: 150px;
-  margin-right: 20px;
- } 
- .desc_text{
-  font-size: 28px;
- }
- .roadmap_list{
-  width: 100%;
- }
+
+  .work_title {
+    font-size: 150px;
+    margin-right: 20px;
+  }
+
+  .desc_text {
+    font-size: 28px;
+  }
+
+  .roadmap_list {
+    width: 100%;
+  }
+
+  .product_wrap {
+    padding: 0 20px;
+  }
+
+  .case_banner {
+    right: 0;
+  }
+
+  .contact {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+
+  .address {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  .contactForm {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  .testimonial{
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
 }
 
 /* @media (min-width:1361px) and (max-width:1360px) {

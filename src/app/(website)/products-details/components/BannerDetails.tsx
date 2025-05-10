@@ -97,7 +97,7 @@ const BannerDetails = () => {
         </div>
       </div>
       <div className='flex  lg:flex-row flex-col gap-4 lg:gap-8 container py-6 lg:py-[67px] px-5 md:px-0'>
-        <div className='w-full lg:w-[836px] lg:px-0 md:px-5'>
+        <div className='w-full lg:w-[836px] product_wrap lg:px-0 md:px-5'>
           {activeTab === "Product Details" && <Details />}
           {activeTab === "Reviews" && (
             <div>
