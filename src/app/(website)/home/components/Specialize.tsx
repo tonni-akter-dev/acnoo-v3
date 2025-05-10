@@ -32,11 +32,11 @@ const Button = ({ text, image, position }: { text: string, image: StaticImageDat
 
 const Specialize = () => {
   return (
-    <div className='specialize_bg py-[38px] lg:py-[100px] lg:px-[150px] px-5'>
+    <div className='specialize_bg lg_screen_px py-[38px] lg:py-[100px] lg:px-[150px] px-5'>
       <div className="text-white text-lg font-medium mb-4">
         <span className='bg-[#F52366] text-base font-bold text-white px-3 h-[25px] py-1 rounded-full w-fit me-[11px]'>New </span>Something new coming soon!
       </div>
-      <div className='flex lg:flex-row flex-col mb-[70px] justify-between  lg:items-center'>
+      <div className='flex specialize_text lg:flex-row flex-col mb-[70px] justify-between  lg:items-center'>
         <h2 className='mb-5 lg:mb-0 max-w-[560px] w-full lg:text-[65px]  text-2xl lg:leading-[65px] leading-[32px] font-bold text-white whitespace-nowrap'>
           Specialize in many <br className='lg:block md:hidden block ' />
           Different <span className='gradient_text1'>Sectors</span>

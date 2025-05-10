@@ -9,11 +9,11 @@ import Countdown from '../home/components/Countdown'
 
 const TopHeader = () => {
   return (
-    <div className="flex items-center justify-center lg:justify-between  py-1 top_bg lg:ps-[98px] lg:pe-[50px] lg:h-[97px] px-[17px] h-auto" >
+    <div className="flex items-center justify-center lg:justify-between  twenty_four_p py-1 top_bg lg:ps-[98px] lg:pe-[50px] lg:h-[97px] px-[17px] h-auto" >
       {/* Left Section */}
       <div className="items-center space-x-2.5 lg:flex hidden ">
         <Image src={gif1} alt="Rocket" className="" />
-        <Image src={gif2} alt="Rocket" className="" />
+        <Image src={gif2} alt="Rocket" className="twenty_four" />
         <div className='flex gap-1.5 items-center'>
           <p className="font-bold text-white lg:text-[22px] text-lg whitespace-nowrap">Our Best <br />Modern Items</p>
           <Image src={parcent} alt="" />
@@ -23,7 +23,7 @@ const TopHeader = () => {
 
       {/* Middle Section */}
       <div className="flex items-center gap-[40px]">
-        <button className="lg:block hidden bg-[#09AEBA] text-white txt-sm font-bold px-6 py-[14px] rounded-[5px]  whitespace-nowrap">
+        <button className="twenty_four lg:block hidden bg-[#09AEBA] text-white txt-sm font-bold px-6 py-[14px] rounded-[5px]  whitespace-nowrap">
           Grab the Offer
         </button>
         <div className="flex items-center gap-[22px]">

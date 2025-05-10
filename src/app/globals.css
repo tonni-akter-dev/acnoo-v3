@@ -53,6 +53,19 @@ button {
   -webkit-text-fill-color: transparent;
 }
 
+.gradient_text1 {
+  background: url('/home/grad1.jfif') no-repeat center;
+  background-size: cover;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 72px;
+  font-weight: 700;
+  line-height: 73px;
+  letter-spacing: -0.72px;
+  text-transform: capitalize;
+}
 
 body {
   font-family: "Space Grotesk", sans-serif;
@@ -397,6 +410,7 @@ body {
 }
 
 .gradient_text {
+  margin-left: 2px;
   background: url('/home/grad1.jfif') no-repeat center;
   background-size: cover;
   /* margin-left: 5px; */
@@ -622,6 +636,10 @@ input[type="range"]::-moz-range-thumb {
 }
 
 @media (min-width:320px) and (max-width:374px) {
+  .hire_us_bg {
+    margin: 0;
+  }
+
   .xs_screen {
     display: grid;
     grid-template-columns: repeat(1, minmax(0, 1fr));
@@ -734,6 +752,7 @@ input[type="range"]::-moz-range-thumb {
   }
 
   .gradient_text {
+
     font-size: 26px !important;
     line-height: 34px;
   }
@@ -889,19 +908,7 @@ input[type="range"]::-moz-range-thumb {
     background-image: none !important;
   }
 
-  .gradient_text1 {
-    background: url('/home/grad1.jfif') no-repeat center;
-    background-size: cover;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    display: inline-block;
-    font-family: "Space Grotesk", sans-serif;
-    font-size: 72px;
-    font-weight: 700;
-    line-height: 73px;
-    letter-spacing: -0.72px;
-    text-transform: capitalize;
-  }
+
 
   .bottom_banner {
     width: 100%;
@@ -930,6 +937,7 @@ input[type="range"]::-moz-range-thumb {
   }
 
   .gradient_text {
+
     font-size: 40px !important;
   }
 
@@ -973,7 +981,116 @@ input[type="range"]::-moz-range-thumb {
   }
 }
 
+@media (min-width:1024px) and (max-width:1360px) {
+  .twenty_four {
+    display: none !important;
+  }
+
+  .twenty_four_p {
+    padding-left: 0 !important;
+  }
+
+  .lg_screen_px {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .hoverable:hover .mega-menu {
+    left: 0 !important;
+  }
+
+  .mega-menu-addons {
+    left: 0 !important;
+  }
+
+  .header_gap {
+    gap: 20px;
+  }
+
+  .flex_fixed {
+    padding: 0 50px !important;
+  }
+
+  .banner_text {
+    font-size: 50px !important;
+    list-style: 50px !important;
+  }
+
+  .gradient_text {
+    font-size: 50px !important;
+    list-style: 50px !important;
+  }
+
+  .products_wrapper {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .specialize_text {
+    flex-direction: column;
+    align-items: start;
+  }
+
+  .specialize_text h2 {
+    margin-bottom: 12px;
+  }
+
+  .increase_wrapper {
+    gap: 30px;
+  }
+
+  .increase_card {
+    padding-right: 30px;
+  }
+
+  .increase_card .rounded_card {
+    width: 90px;
+    height: 90px;
+    padding-top: 20px;
+    padding-left: 20px;
+  }
+
+  .globally_growth {
+    padding-left: 50px;
+    padding-top: 80px;
+  }
+
+  .globally_growth h3 {
+    font-size: 45px;
+  }
+
+  .globally_items {
+    padding-left: 20px;
+  }
+
+  .faq_wrapper {
+    max-width: 580px;
+  }
+
+  .bottom_banner h3 {
+    font-size: 50px;
+  }
+
+  .bottom_banner {
+    padding-left: 50px;
+  }
+
+  .women {
+    right: 0;
+  }
+
+  .privacy {
+    width: 330px !important;
+  }
+}
+
+/* @media (min-width:1361px) and (max-width:1360px) {
+
+} */
+
 @media (min-width:1024px) and (max-width:1806px) {
+  .cartoon {
+    display: none !important;
+  }
 
   .responsive .swiper-slide {
     margin-right: 27px !important;

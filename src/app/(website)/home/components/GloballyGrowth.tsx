@@ -2,51 +2,9 @@ import Image from "next/image";
 import React from "react";
 import globe from "/public/home/globe1.png";
 import cartoon from "/public/home/fun-cartoon-kid-with-rain-gear.png";
+import { growthItems } from "@/app/utils/data";
 
 const GloballyGrowth = ({ text, color }: { text?: string; color?: string }) => {
-  const growthItems = [
-    {
-      title: "App & Software Development",
-      background: "bg-white",
-      textColor: "text-black",
-      shadow: "0px 10px 25px 0px rgba(0, 0, 0, 0.03)",
-      align: "justify-end",
-      margin:"lg:px-0 pl-[37px] pr-4"
-    },
-    {
-      title: "24/7 Top-Rated Customer Support",
-      background: "bg-[#2F1C6A]",
-      textColor: "text-white",
-      shadow: "-3px 0px 0px 0px #2353F5",
-      align: "justify-start",
-      margin:"lg:px-0 pr-[37px] pl-4"
-    },
-    {
-      title: "Regular Updates & Bug Fixes",
-      background: "bg-white",
-      textColor: "text-black",
-      shadow: "0px 10px 25px 0px rgba(0, 0, 0, 0.03)",
-      align: "justify-end",
-      margin:"lg:px-0 pl-[37px] pr-4"
-    },
-    {
-      title: "Dedicated Team members",
-      background: "bg-[#2F1C6A]",
-      textColor: "text-white",
-      shadow: "-3px 0px 0px 0px #2353F5",
-      align: "justify-start",
-      margin:"lg:px-0 pr-[37px] pl-4"
-    },
-    {
-      title: "One-time Purchase with Lifetime Free Updates",
-      background: "bg-white",
-      textColor: "text-black",
-      shadow: "0px 10px 25px 0px rgba(0, 0, 0, 0.03)",
-      align: "justify-end",
-      margin:"lg:px-0 pl-[37px] pr-4"
-    },
-  ];
-
   return (
     <div>
       <div className="flex justify-center items-center w-full">
@@ -90,10 +48,10 @@ const GloballyGrowth = ({ text, color }: { text?: string; color?: string }) => {
 
           {/* Right Section */}
           <div
-            className="relative md:ps-4 lg:ps-[137px] py-6 lg:py-[63px]"
+            className="relative md:ps-4 lg:ps-[137px] py-6 lg:py-[63px] globally_items"
             style={{ background: "linear-gradient(180deg, #F4F1FF 0%, #E7E0FF 100%)" }}
           >
-            <Image className="absolute bottom-0 right-0 object-contain lg:block hidden" src={cartoon} alt="" />
+            <Image className="absolute bottom-0 right-0 object-contain lg:block hidden cartoon" src={cartoon} alt="" />
             {growthItems.map((item, index) => (
               <div
                 key={index}

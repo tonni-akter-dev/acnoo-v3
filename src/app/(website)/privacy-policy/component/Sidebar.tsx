@@ -30,7 +30,7 @@ export default function Sidebar() {
   return (
     <div className='w-full  lg:max-w-[464px] max-h-[840px] h-full'>
 
-      <aside className="px-8  py-2.5 bg-white shadow-xl lg:px-[60px] lg:py-14">
+      <aside className="px-8  py-2.5 bg-white privacy shadow-xl lg_screen_px lg:px-[60px] lg:py-14">
         <ul>
           {menuItems.map((item, index) => (
             <li key={index} onClick={() => openModal()}>

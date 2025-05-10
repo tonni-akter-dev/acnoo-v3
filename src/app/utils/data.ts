@@ -828,3 +828,47 @@ export const automationData = [
   { id: 5, title: 'Saas', image: head1 },
   { id: 6, title: 'Coming Soon', image: head2 },
 ];
+
+
+export const growthItems = [
+  {
+    title: "App & Software Development",
+    background: "bg-white",
+    textColor: "text-black",
+    shadow: "0px 10px 25px 0px rgba(0, 0, 0, 0.03)",
+    align: "justify-end",
+    margin:"lg:px-0 pl-[37px] pr-4"
+  },
+  {
+    title: "24/7 Top-Rated Customer Support",
+    background: "bg-[#2F1C6A]",
+    textColor: "text-white",
+    shadow: "-3px 0px 0px 0px #2353F5",
+    align: "justify-start",
+    margin:"lg:px-0 pr-[37px] pl-4"
+  },
+  {
+    title: "Regular Updates & Bug Fixes",
+    background: "bg-white",
+    textColor: "text-black",
+    shadow: "0px 10px 25px 0px rgba(0, 0, 0, 0.03)",
+    align: "justify-end",
+    margin:"lg:px-0 pl-[37px] pr-4"
+  },
+  {
+    title: "Dedicated Team members",
+    background: "bg-[#2F1C6A]",
+    textColor: "text-white",
+    shadow: "-3px 0px 0px 0px #2353F5",
+    align: "justify-start",
+    margin:"lg:px-0 pr-[37px] pl-4"
+  },
+  {
+    title: "One-time Purchase with Lifetime Free Updates",
+    background: "bg-white",
+    textColor: "text-black",
+    shadow: "0px 10px 25px 0px rgba(0, 0, 0, 0.03)",
+    align: "justify-end",
+    margin:"lg:px-0 pl-[37px] pr-4"
+  },
+];

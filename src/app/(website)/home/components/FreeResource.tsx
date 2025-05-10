@@ -9,7 +9,7 @@ import ProductCard from "../../components/ProductCard";
 
 const FreeResource = () => {
   return (
-    <div className="free_wrapper lg:px-[85px] px-5  mt-8 lg:mt-[115px]">
+    <div className="free_wrapper lg_screen_px lg:px-[85px] px-5  mt-8 lg:mt-[115px]">
       <div className="text-black text-lg font-medium mb-4 text-center">
         <span className="bg-[#F52366] text-base font-bold text-center text-white px-3 h-[25px] py-1 rounded-full w-fit me-[11px]">
           New

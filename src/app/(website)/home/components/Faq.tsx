@@ -65,7 +65,7 @@ const FaqItem: React.FC<IProps> = ({ question, answer }) => {
 
 const Faq = ({ color, btncolor }: { color?: string, btncolor?: string }) => {
   return (
-    <div className="z-50 bg-transparent relative flex lg:flex-row flex-col justify-between lg:px-[120px] lg:mt-[81px] px-4 lg:mb-[160px] mb-6">
+    <div className="z-50 bg-transparent relative flex lg:flex-row flex-col justify-between lg_screen_px lg:px-[120px] lg:mt-[81px] px-4 lg:mb-[160px] mb-6">
       <div className="flex lg:flex-col flex-row lg:justify-start md:justify-between lg:items-start items-center">
         <div>
           <div className="text-primary text-lg font-medium mb-2 lg:mb-4 text-start">
@@ -103,7 +103,7 @@ const Faq = ({ color, btncolor }: { color?: string, btncolor?: string }) => {
         </button>
       </div>
       {/* faq */}
-      <div className="max-w-[730px] w-full border-[#E2E6ED] border-t">
+      <div className="max-w-[730px] w-full border-[#E2E6ED] border-t faq_wrapper">
         {homefaqData.map((item, index) => (
           <FaqItem key={index} question={item.question} answer={item.answer} />
         ))}

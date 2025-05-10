@@ -14,9 +14,9 @@ const WhyAcnoomenu = () => {
     <div className="w-full flex justify-center items-center">
       <div
         className="mb-12 rounded-2xl  flex justify-center  left-0 lg:!left-[38%] mega-menu-why lg:max-w-[608px] mx-auto w-full bg-white"
-        style={{
-          boxShadow: "0px 24px 56px 0px rgba(39, 40, 41, 0.16)",
-        }}
+        // style={{
+        //   boxShadow: "0px 24px 56px 0px rgba(39, 40, 41, 0.16)",
+        // }}
       >
         <div className="container mx-auto ">
           {/* Top Links */}

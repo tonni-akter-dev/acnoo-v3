@@ -8,7 +8,7 @@ const BottomBanner = () => {
     const pathname = usePathname();
 
     return (
-        <div className={`lg:px-[100px] bg-transparent bg-blend-color lg:mx-0 md:mx-5   `}>
+        <div className={`lg:px-[100px] lg_screen_px bg-transparent bg-blend-color lg:mx-0 md:mx-5   `}>
             <div className={`bottom_banner relative z-50 h-[368px] py-[34px] lg:py-[54px] ps-[13px] md:ps-5 lg:ps-[110px] pe-[32px] lg:pe-[90px] lg:rounded-[30px] rounded-0 ${pathname == "/" ? "" : "mb-[-70px] z-[99]"}`}>
                 <div>
                     <div className="text-primary text-base lg:text-lg font-medium mb-4 text-start">
@@ -27,7 +27,7 @@ const BottomBanner = () => {
                     <Image className='lg:hidden md:hidden block mt-6' src={women} alt="" />
                 </div>
 
-                <div className='lg:block md:block hidden absolute md:right-5 lg:right-[90px] md:top-4 lg:top-[-44px] md:w-[201px]  lg:w-[400px] md:h-[208px] lg:h-[412px]'>
+                <div className='lg:block women md:block hidden absolute md:right-5 lg:right-[90px] md:top-4 lg:top-[-44px] md:w-[201px]  lg:w-[400px] md:h-[208px] lg:h-[412px]'>
                     <Image src={women} alt="" />
                 </div>
             </div>

@@ -22,7 +22,7 @@ const Header = () => {
 
   return (
     <div className="relative z-50 ">
-      <nav className="lg:px-[150px] relative bg-white ">
+      <nav className="lg:px-[150px] lg_screen_px relative bg-white ">
         <div className="container mx-auto flex items-center justify-between lg:py-0 py-5 lg:px-0 px-6">
           <div className="lg:hidden mt-2">
             <button onClick={() => setMenuOpen(!menuOpen)} className="text-2xl">
@@ -45,7 +45,7 @@ const Header = () => {
           </div>
 
           {/*  */}
-          <ul className=" gap-7 items-center lg:flex hidden ">
+          <ul className="header_gap gap-7 items-center lg:flex hidden ">
             <li className="py-6 lg:py-11  ">
               <Link
                 href="/"
@@ -62,8 +62,7 @@ const Header = () => {
               >
                 Products
               </Link>
-              {/* /products mega menu */}
-              <ProductsMegamenu />
+              {/* <ProductsMegamenu /> */}
             </li>
             <li className="group hoverable py-6 lg:py-11 relative group">
               <Link
@@ -72,7 +71,7 @@ const Header = () => {
               >
                 Add-ons
               </Link>
-              <AddonsMegamenu />
+              {/* <AddonsMegamenu /> */}
             </li>
             <li className="py-6 lg:py-11  ">
               <Link
@@ -89,7 +88,7 @@ const Header = () => {
               >
                 Why Acnoo
               </Link>
-              <WhyAcnoomenu />
+              {/* <WhyAcnoomenu /> */}
             </li>
             <li className="py-6 lg:py-11  ">
               <Link

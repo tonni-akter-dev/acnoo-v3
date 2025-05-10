@@ -33,9 +33,9 @@ const AddonsMegamenu = () => {
     <div className="w-full flex justify-center items-center">
       <div
         className="mb-12 rounded-2xl pt-5 lg:Lpt-[61px] pb-10 px-5 lg:px-10 flex justify-center  mega-menu-addons lg:max-w-[1015px] mx-auto w-full bg-white !md:group-hover:top-[190px]"
-        style={{
-          boxShadow: "0px 24px 56px 0px rgba(167, 174, 186, 0.16)",
-        }}
+        // style={{
+        //   boxShadow: "0px 24px 56px 0px rgba(167, 174, 186, 0.16)",
+        // }}
       >
         <div className="container mx-auto ">
           <ul className="w-full  grid lg:grid-cols-3 grid-cols-1 pb-6 pt-6 lg:pt-3 gap-x-10">

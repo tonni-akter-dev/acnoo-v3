@@ -3,7 +3,7 @@ import globe from "/public/home/globe.png";
 import Image from "next/image";
 const IncreaseRevenue = () => {
   return (
-    <div className="increase_revenue pt-6 pb-[34px] lg:pt-[93px] lg:pb-[118px] text-center lg:px-[150px] px-5">
+    <div className="increase_revenue lg_screen_px pt-6 pb-[34px] lg:pt-[93px] lg:pb-[118px] text-center lg:px-[150px] px-5">
       <div className="text-black text-lg font-medium mb-4">
         <span className="bg-[#F52366] text-base font-bold text-white px-3 h-[25px] py-1 rounded-full w-fit me-[11px]">
           New
@@ -20,10 +20,10 @@ const IncreaseRevenue = () => {
           src={globe}
           alt=""
         />
-        <div className="hidden lg:flex justify-center gap-[70px] items-center">
-          <div className="flex gap-8 items-center pe-[70px] lg:border-r border-[#64607C40]">
+        <div className="increase_wrapper hidden lg:flex justify-center gap-[70px] items-center">
+          <div className="flex gap-8 items-center  increase_card  pe-[70px] lg:border-r border-[#64607C40]">
             <div
-              className="w-[100px] h-[100px] rounded-full ps-[25px] pt-[25px]"
+              className="w-[100px] h-[100px] rounded-full ps-[25px] pt-[25px] rounded_card"
               style={{
                 background:
                   "linear-gradient(145deg, rgba(221, 134, 212, 0.50) 15.55%, rgba(255, 255, 255, 0.09) 86.81%)",
@@ -36,9 +36,9 @@ const IncreaseRevenue = () => {
               Of Experience
             </p>
           </div>
-          <div className="flex gap-8 items-center pe-[70px] lg:border-r border-[#64607C40]">
+          <div className="flex gap-8 items-center  increase_card pe-[70px] lg:border-r border-[#64607C40]">
             <div
-              className="w-[100px] h-[100px] rounded-full ps-[25px] pt-[25px]"
+              className="w-[100px] h-[100px] rounded-full ps-[25px] pt-[25px] rounded_card"
               style={{
                 background:
                   "linear-gradient(145deg, rgba(221, 134, 212, 0.50) 15.55%, rgba(255, 255, 255, 0.09) 86.81%)",
@@ -51,9 +51,9 @@ const IncreaseRevenue = () => {
               Members
             </p>
           </div>
-          <div className="flex gap-8 items-center pe-[70px] lg:border-r border-[#64607C40]">
+          <div className="flex gap-8 items-center  increase_card pe-[70px] lg:border-r border-[#64607C40]">
             <div
-              className="w-[100px] h-[100px] rounded-full ps-[25px] pt-[25px]"
+              className="w-[100px] h-[100px] rounded-full ps-[25px] pt-[25px] rounded_card"
               style={{
                 background:
                   "linear-gradient(145deg, rgba(221, 134, 212, 0.50) 15.55%, rgba(255, 255, 255, 0.09) 86.81%)",
@@ -66,9 +66,9 @@ const IncreaseRevenue = () => {
               Clients
             </p>
           </div>
-          <div className="flex gap-8 items-center">
+          <div className="flex gap-8 items-center increase_card">
             <div
-              className="w-[100px] h-[100px] rounded-full ps-[25px] pt-[25px]"
+              className="w-[100px] h-[100px] rounded-full ps-[25px] pt-[25px] rounded_card"
               style={{
                 background:
                   "linear-gradient(145deg, rgba(221, 134, 212, 0.50) 15.55%, rgba(255, 255, 255, 0.09) 86.81%)",
@@ -77,7 +77,7 @@ const IncreaseRevenue = () => {
               <p className="text-primary text-[50px] font-medium"> 40+</p>
             </div>
             <p className="text-[#141125] text-base font-semibold text-start">
-              Country using <br /> our application
+              Country using our application
             </p>
           </div>
         </div>

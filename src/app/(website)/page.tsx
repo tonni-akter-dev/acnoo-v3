@@ -20,7 +20,7 @@ export default function Home() {
        <GloballyGrowth />
    <div
         style={{
-          background: 'linear-gradient(0deg, rgba(240, 240, 252, 0.00) 0%, #F3F0FC 100%)',                    backgroundBlendMode: "normal",
+          background: 'linear-gradient(0deg, rgba(240, 240, 252, 0.00) 0%, #F3F0FC 100%)',   backgroundBlendMode: "normal",
         }}
       >
         <Hireus />

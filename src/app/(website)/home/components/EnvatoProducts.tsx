@@ -3,8 +3,8 @@ import ProductCard from '../../components/ProductCard'
 
 const EnvatoProducts = () => {
     return (
-        <div className='mt-[30px] lg:px-[86px] px-4 lg:mb-[114px] mb-6 '>
-            <div className="grid  grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 lg:mb-[60px] mb-5">
+        <div className='mt-[30px] lg_screen_px lg:px-[86px] px-4 lg:mb-[114px] mb-6 '>
+            <div className="grid products_wrapper grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 lg:mb-[60px] mb-5">
                 <ProductCard />
                 <ProductCard />
                 <ProductCard />

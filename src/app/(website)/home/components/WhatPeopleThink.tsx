@@ -16,7 +16,7 @@ const WhatPeopleThink = () => {
             <Image className='absolute top-[-30%] md:top-[-87%] lg:top-[-48%]  z-[-10]' src={blur1} alt="" />
             <Image className='absolute top-[-30%] md:top-[-87%] lg:top-[-48%] z-[-10] right-0' src={blur2} alt="" />
             <div className=" mx-auto">  
-                <div className="flex justify-between items-center mb-8 lg:px-[150px] px-5">
+                <div className="flex justify-between items-center mb-8 lg_screen_px lg:px-[150px] px-5">
                     <div>
                         <div className="text-primary  text-[15px] lg:text-lg font-medium mb-4 text-start">
                             <span className='bg-[#F52366] rounded-[13px]  text-[15px] lg:text-base font-bold text-center text-white px-3 h-[25px] py-1 w-fit me-[11px]'>5 star</span>

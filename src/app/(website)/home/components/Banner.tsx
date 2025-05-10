@@ -187,7 +187,7 @@ const MobileRotatingIcons = () => {
 
 const Banner = () => {
   return (
-    <div className="flex lg:flex-row flex-col xs:items-start  sm:items-center  md:items-center w-full  banner_bg min-h-screen lg:px-[150px] lg:gap-0 md:gap-10 gap-6 lg:pt-0 pt-6 px-5 overflow-hidden">
+    <div className="flex flex_fixed lg:flex-row flex-col xs:items-start  sm:items-center  md:items-center w-full  banner_bg min-h-screen lg:px-[150px] lg:gap-0 md:gap-10 gap-6 lg:pt-0 pt-6 px-5 overflow-hidden">
       <div className="lg:w-1/2  flex flex-col justify-center">
         <div className=" text-black  text-lg font-medium mb-4">
           <span className="bg-[#F52366] text-base font-bold text-white px-3 h-[25px] py-1 rounded-full w-fit me-[11px]">
@@ -195,7 +195,7 @@ const Banner = () => {
           </span>
           {`We've`} Raised <span className="text-[#2353F5]">$6</span>million!
         </div>
-        <h1 className="text-[26px] md:text-[40px] lg:text-[72px] text-primary leading-[34px] !md:leading-[50px]  lg:leading-[73px]  font-bold mb-6">
+        <h1 className="banner_text text-[26px] md:text-[40px] lg:text-[72px] text-primary leading-[34px] !md:leading-[50px]  lg:leading-[73px]  font-bold mb-6">
           Elevating Brand Strategy With Acno 
           <span className="gradient_text"> Products</span>
         </h1>
