@@ -29,7 +29,7 @@ const timelineData = [
 
 const Roadmap = () => {
   return (
-    <div className="lg:py-[120px] md:py-[30px] py-6 lg:px-[150px] md:px-5 px-0">
+    <div className="lg:py-[120px]  lg_screen_px md:py-[30px] py-6 lg:px-[150px] md:px-5 px-0">
       <div className="grid grid-cols-12 justify-center">
         <div className="col-span-12 lg:col-span-4">
           <div className="flex lg:flex-col flex-row justify-between items-center lg:mb-0 md:mb-5  mb-6 ">
@@ -62,7 +62,7 @@ const Roadmap = () => {
             {timelineData.map((item, index) => (
               <div
                 key={index}
-                className="flex justify-between items-start  gap-6 border-b border-[#212324] py-[10px] lg:py-9 relative lg:w-full  md:w-[720px] w-[586px]"
+                className="flex justify-between items-start  gap-6 border-b border-[#212324] py-[10px] lg:py-9 relative roadmap_list lg:w-full  md:w-[720px] w-[586px]"
               >
                 <div className=" text-right relative">
                   <span

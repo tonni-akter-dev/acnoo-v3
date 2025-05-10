@@ -43,7 +43,7 @@ export const teamMembers = [
 
 const OurMembers = () => {
   return (
-    <div className="bg-primary lg:py-[120px] lg:px-[250px] md:py-[30px] md:px-5 py-6 px-4">
+    <div className="bg-primary  lg_screen_px lg:py-[120px] lg:px-[250px] md:py-[30px] md:px-5 py-6 px-4">
       <section className=" text-white text-start">
         <div className="flex justify-between ">
           <div>

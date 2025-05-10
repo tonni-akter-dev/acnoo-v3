@@ -10,7 +10,7 @@ const CompanyInside = () => {
         </span>
       </h1>
       {/* mobile section */}
-      <div className="lg:px-[277px] px-8 lg:hidden md:hidden flex mt-[58px]  justify-between">
+      <div className="lg:px-[277px] lg_screen_px px-8 lg:hidden md:hidden flex mt-[58px]  justify-between">
         <div className="text-center mt-[60px]">
           <p className="text-black text-sm leading-6 font-bold  ">
             Team Members
@@ -31,7 +31,7 @@ const CompanyInside = () => {
         </div>
       </div>
       {/* lg screen */}
-      <div className="lg:px-[277px] px-8 lg:flex md:flex hidden lg:mt-0 mt-[190px] justify-between">
+      <div className="lg:px-[277px] lg_screen_px px-8 lg:flex md:flex hidden lg:mt-0 mt-[190px] justify-between">
         <div className="text-center">
           <p className="text-black text-lg lg:text-[26px] font-bold  ">
             Team Members

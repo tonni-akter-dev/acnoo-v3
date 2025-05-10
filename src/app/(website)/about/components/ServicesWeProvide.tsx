@@ -40,7 +40,7 @@ const services = [
 const ServicesWeProvide = () => {
     return (
         <div className="bg-primary">
-            <div className="lg:px-[303px] px-4 mx-auto pt-6 lg:pt-[111px] pb-6 lg:pb-[138px] text-center">
+            <div className="lg:px-[303px] lg_screen_px px-4 mx-auto pt-6 lg:pt-[111px] pb-6 lg:pb-[138px] text-center">
                 {/* Title Section */}
                 <p className="flex justify-center text-base  gap-2 items-center link_style text-[#F52366]">
                     <Image src={vector1} alt="vector" />

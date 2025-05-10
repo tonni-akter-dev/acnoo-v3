@@ -16,7 +16,7 @@ const AboutBanner = () => {
       {/* Main Content */}
       <div className="flex flex-col items-start justify-center pt-[89px] pb-[80px]  about_wrapper">
         {/* Header */}
-        <div className="flex items-center gap-[87px] border-b pb-3 lg:pb-5 border-[#423C3C30] w-fit">
+        <div className="flex items-center about_banner gap-[87px] border-b pb-3 lg:pb-5 border-[#423C3C30] w-fit">
           <div>
             <p className="text-base lg:text-xl font-medium text-[#010101] ">
               Creative

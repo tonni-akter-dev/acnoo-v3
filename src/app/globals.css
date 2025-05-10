@@ -95,6 +95,7 @@ body {
   background-repeat: no-repeat;
   width: 100%;
   height: 571px;
+  background-size: cover;
 }
 
 .ebanner_bg {
@@ -492,7 +493,6 @@ input[type="range"]::-webkit-slider-thumb {
   border-radius: 4px;
   cursor: pointer;
   margin-top: -9px;
-  /* Adjust for alignment */
 }
 
 input[type="range"]::-moz-range-thumb {
@@ -504,7 +504,7 @@ input[type="range"]::-moz-range-thumb {
   cursor: pointer;
 }
 
-/* .service-bg{} */
+/* .service-bg*/
 .service-bg {
   background-image: url("/service/serviceBg.png");
   background-repeat: no-repeat;
@@ -842,7 +842,9 @@ input[type="range"]::-moz-range-thumb {
     display: grid;
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
-
+.roadmap_list{
+  width: 100%;
+}
   .testimonial .swiper {
     width: 477px !important;
     height: 254px !important;
@@ -1081,6 +1083,31 @@ input[type="range"]::-moz-range-thumb {
   .privacy {
     width: 330px !important;
   }
+
+  .about_banner {
+    gap: 0;
+  }
+
+  .innovative {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+    gap: 50px;
+    align-items: center;
+  }
+
+  .play_btn {
+    left: 61%;
+  }
+  .work_title
+ {
+  font-size: 150px;
+  margin-right: 20px;
+ } 
+ .desc_text{
+  font-size: 28px;
+ }
+ .roadmap_list{
+  width: 100%;
+ }
 }
 
 /* @media (min-width:1361px) and (max-width:1360px) {
@@ -1110,7 +1137,7 @@ input[type="range"]::-moz-range-thumb {
   .arrow_cls {
     width: 95px;
     height: 95px;
-    right: 30%;
+    right: 15%;
   }
 }
 

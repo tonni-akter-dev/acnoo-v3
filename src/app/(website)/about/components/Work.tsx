@@ -10,15 +10,16 @@ import Image from "next/image";
 const Work = () => {
   return (
     <div className="lg:mb-[250px]">
-      <div className="lg:px-[100px] px-5 mt-6 lg:mt-[100px] ">
+      <div className="lg:px-[100px] lg_screen_px px-5 mt-6 lg:mt-[100px] ">
         <div className="flex lg:flex-row flex-col items-start lg:items-center">
           <div className="flex items-center lg:mr-[95px]">
-            <h1 className="me-[100px] uppercase text-[35px] md:text-[60px] lg:text-[191px] font-medium text-primary">
+            <h1 className="me-[100px] uppercase text-[35px] md:text-[60px] lg:text-[191px] font-medium text-primary
+             work_title">
               Work
             </h1>
             <Image className="me-[95px]" src={arrow} alt="" />
           </div>
-          <p className="text-primary  text-lg lg:text-[40px] font-medium ld:mb-0 mb-4">
+          <p className="text-primary desc_text  text-lg lg:text-[40px] font-medium ld:mb-0 mb-4">
             We <span className="font-bold">provide</span> brilliant idea to grow
             the{" "}
             <span className="font-bold">
