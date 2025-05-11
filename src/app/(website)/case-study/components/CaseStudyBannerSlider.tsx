@@ -7,7 +7,7 @@ import 'swiper/css/pagination';
 import { Pagination } from 'swiper/modules';
 import Marquee from 'react-fast-marquee';
 import Image from 'next/image';
-import profiloe from '/public/png/StudyBanner.png'; 
+import profiloe from '/public/png/StudyBanner.png';
 import type { Swiper as SwiperType } from 'swiper';
 
 const images = ['/img1.jpg', '/img2.jpg', '/img3.jpg'];
@@ -23,12 +23,13 @@ const AdminSlider = () => {
   }, [activeIndex]);
 
   return (
-    <div className="relative w-full mt-10 overflow-visible">
+    <div className="relative w-full mt-4 md:mt-8 lg:mt-30 overflow-visible">
       <div className=" max-w-6xl mx-auto flex items-center justify-start relative">
         <Swiper
           modules={[Pagination]}
           onSlideChange={(swiper) => setActiveIndex(swiper.realIndex + 1)}
           className="rounded-xl w-full"
+          spaceBetween={20}
           onSwiper={(swiper: any) => (swiperRef.current = swiper)}
         >
           {images.map((img, index) => (
@@ -36,7 +37,8 @@ const AdminSlider = () => {
               <div className="relative">
                 <Image
                   src={profiloe}
-                  className="w-[323px] md:w-[600px] mx-4 md:mx-auto  lg:w-full h-auto object-cover rounded-xl"
+                  // className="mx-4 md:mx-auto md_lg_screen w-full h-auto object-cover rounded-xl"
+                  className="md:w-[600px] md_lg_screen ps-4 pe-10 mx-auto md:px-0 lg:w-full object-contain h-auto rounded-xl"
                   alt={`Slide ${index + 1}`}
                 />
               </div>
@@ -60,7 +62,7 @@ const AdminSlider = () => {
         </div>
       </div>
 
-      <div className="absolute bottom-[100px] right-0 flex items-center justify-center z-10">
+      <div className="absolute sm_screen_position bottom-[100px] right-0 flex items-center justify-center z-10">
         <Marquee speed={40} gradient={false}>
           <h1
             className="text-4xl md:text-[80px] lg:text-[110px]  grad2_text uppercase font-bold"

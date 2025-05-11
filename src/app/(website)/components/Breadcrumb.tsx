@@ -10,12 +10,12 @@ export default function Breadcrumb() {
     <nav className="text-gray-600 text-sm lg:my-4">
       <ul className="flex space-x-2">
         <li>
-          <Link href="/" className="text-[#4B5563]hover:underline">
+          <Link href="/" className="text-[#4B5563] text-[13px] lg:text-lg hover:underline">
             Home
           </Link>
         </li>
 
-        {pathSegments.length > 0 && <span className="text-[#4B5563]">›</span>}
+        {pathSegments.length > 0 && <span className="text-[#4B5563]text-[13px] lg:text-lg ">›</span>}
 
         {pathSegments.map((segment, index) => {
           const href = "/" + pathSegments.slice(0, index + 1).join("/");
@@ -28,7 +28,7 @@ export default function Breadcrumb() {
                   {decodeURIComponent(segment)}
                 </Link>
               ) : (
-                <span className="text-gray-900 font-medium capitalize">
+                <span className="text-[#4B5563]text-[13px] lg:text-lg font-medium capitalize">
                   {decodeURIComponent(segment)}
                 </span>
               )}

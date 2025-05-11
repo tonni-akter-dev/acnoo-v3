@@ -5,7 +5,7 @@ import { portfolioItems, portfolioItems1 } from '@/app/utils/data';
 
 const Portfolio = () => {
   return (
-    <div className="container lg:px-0 px-5">
+    <div className="container lg:px-0 px-5 portfolio_px">
       <div className="lg:grid grid-cols-2 hidden gap-4 mt-10">
         {portfolioItems.map((item, index) => (
           <div key={index} className={index % 2 === 1 ? 'lg:mt-[100px]' : ''}>

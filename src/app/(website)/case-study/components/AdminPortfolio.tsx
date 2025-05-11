@@ -23,7 +23,7 @@ const AdminPortfolio: React.FC<IProps> = ({
 }) => {
   return (
     <div className={`space-y-4 ${layoutClassName}`}>
-      <Image src={img } alt="portfolio" className="h-[402px] lg:h-[694px]  mb-3 lg:mb-7  object-cover object-top" />
+      <Image src={img } alt="portfolio" className="h-[402px] lg:h-[694px] portfolio_image_h mb-3 lg:mb-7  object-cover object-top" />
       <h2 className='text-base lg:text-2xl font-bold mb-4 uppercase' dangerouslySetInnerHTML={{ __html: title }} />
       <p className='text-sm mb-4'>{subtitle}</p>
       <div className="flex wrap_button space-x-4">
