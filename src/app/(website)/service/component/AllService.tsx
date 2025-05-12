@@ -40,7 +40,8 @@ const AllService = () => {
                     setActiveTab(tab);
                     setCurrentPage(1); 
                 }} />
-                <div className="lg:mx-0 mx-5 mt-4 lg:mt-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 lg:p-2.5 gap-2 lg:gap-6">
+                <div className="lg:mx-0 mx-5 mt-4 lg:mt-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 lg:p-2.5 
+                gap-6">
                     {paginatedItems.map((item) => (
                         <ServiceCard
                             key={item.id}

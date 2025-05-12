@@ -114,10 +114,6 @@ const ProductsMegamenu = () => {
               </div>
             ))}
           </ul>
-          {/* <button className="lg:flex hidden justify-center py-6  gap-3 items-center text-white text-base font-bold bg-[#2F1C6A] rounded-xl  w-full">
-            Browse All Products
-            <Image src={next1} alt="" />
-          </button> */}
           <button
             className="lg:flex hidden mt-6 justify-center py-6 gap-3 items-center text-white text-base font-bold bg-[#2F1C6A] rounded-xl w-full transition-all duration-300 hover:bg-[#3F2A8D] hover:shadow-xl hover:-translate-y-1  focus:outline-offset-2 focus:outline-[#5B3BD6]"
           >

@@ -1,4 +1,3 @@
-import product1 from '/public/home/product1.png'
 import icon1 from '/public/admindashboard/icon1.png'
 import icon2 from '/public/admindashboard/icon2.png'
 import icon3 from '/public/admindashboard/icon3.png'
@@ -27,6 +26,21 @@ import head1 from '/public/ecommerce/h1.png';
 import head2 from '/public/ecommerce/h2.png';
 import head3 from '/public/ecommerce/h3.png';
 import head4 from '/public/ecommerce/h4.png';
+
+import service1 from '/public/service1.png';
+import service2 from '/public/service2.png';
+import service3 from '/public/service3.png';
+import service4 from '/public/service4.png';
+import service5 from '/public/service5.png';
+import service6 from '/public/service6.png';
+import service7 from '/public/service7.png';
+import service8 from '/public/service8.png';
+import service9 from '/public/service9.png';
+import service10 from '/public/service10.png';
+import service11 from '/public/service11.png';
+import service12 from '/public/service12.png';
+
+
 
 interface FaqItem {
   title: string;
@@ -74,7 +88,7 @@ export const RatingData = [
 export const servicesData = [
   {
     id: 1,
-    img: product1,
+    img: service1,
     title: "FashionWave",
     des: "Multi-purpose Joomla eCommerce Template for Fashion Stores",
     price: 49,
@@ -83,7 +97,7 @@ export const servicesData = [
   },
   {
     id: 2,
-    img: product1,
+    img: service2,
     title: "StyleCart",
     des: "Multi-purpose Joomla eCommerce Template for Fashion Stores",
     price: 59,
@@ -92,7 +106,7 @@ export const servicesData = [
   },
   {
     id: 3,
-    img: product1,
+    img: service3,
     title: "GlamShop",
     des: "Multi-purpose Joomla eCommerce Template for Fashion Stores",
     price: 39,
@@ -101,7 +115,7 @@ export const servicesData = [
   },
   {
     id: 4,
-    img: product1,
+    img: service4,
     title: "ElegantLook",
     des: "Multi-purpose Joomla eCommerce Template for Fashion Stores",
     price: 45,
@@ -110,7 +124,7 @@ export const servicesData = [
   },
   {
     id: 5,
-    img: product1,
+    img: service5,
     title: "TrendyMart",
     des: "Multi-purpose Joomla eCommerce Template for Fashion Stores",
     price: 52,
@@ -119,7 +133,7 @@ export const servicesData = [
   },
   {
     id: 6,
-    img: product1,
+    img: service6,
     title: "UrbanWear",
     des: "Multi-purpose Joomla eCommerce Template for Fashion Stores",
     price: 41,
@@ -128,7 +142,7 @@ export const servicesData = [
   },
   {
     id: 7,
-    img: product1,
+    img: service7,
     title: "ChicZone",
     des: "Multi-purpose Joomla eCommerce Template for Fashion Stores",
     price: 48,
@@ -137,7 +151,7 @@ export const servicesData = [
   },
   {
     id: 8,
-    img: product1,
+    img: service8,
     title: "ModaExpress",
     des: "Multi-purpose Joomla eCommerce Template for Fashion Stores",
     price: 46,
@@ -146,7 +160,7 @@ export const servicesData = [
   },
   {
     id: 9,
-    img: product1,
+    img: service9,
     title: "StyleFusion",
     des: "Multi-purpose Joomla eCommerce Template for Fashion Stores",
     price: 60,
@@ -155,7 +169,7 @@ export const servicesData = [
   },
   {
     id: 10,
-    img: product1,
+    img: service10,
     title: "VogueMarket",
     des: "Multi-purpose Joomla eCommerce Template for Fashion Stores",
     price: 50,
@@ -164,7 +178,7 @@ export const servicesData = [
   },
   {
     id: 11,
-    img: product1,
+    img: service11,
     title: "MetroStyle",
     des: "Multi-purpose Joomla eCommerce Template for Fashion Stores",
     price: 43,
@@ -173,7 +187,7 @@ export const servicesData = [
   },
   {
     id: 12,
-    img: product1,
+    img: service12,
     title: "LookBook",
     des: "Multi-purpose Joomla eCommerce Template for Fashion Stores",
     price: 47,
@@ -669,80 +683,80 @@ export const productDescription = [
 ];
 
 
-  export const portfolioItems = [
-    {
-      title: "<span>Acnoo Admin - Flutter Admin Panel & Dashboard <br> Template | PWA Ready</span>",
-      img: portfolio,
-      buttons: [{ content: 'Banding' }, { content: 'UI/UX' }, { content: 'UI/UX' }],
-    },
-    {
-      title: "Business Card Design",
-      img: portfolio2,
-      buttons: [{ content: 'Banding' }, { content: 'UI/UX' }, { content: 'UI/UX' }],
-    },
-    {
-      title: "PosPro Saas Project",
-      img: portfolio3,
-      buttons: [{ content: 'Banding' }, { content: 'UI/UX' }, { content: 'UI/UX' }],
-    },
-    {
-      title: "Business Card Design",
-      img: portfolio4,
-      buttons: [{ content: 'Banding' }, { content: 'UI/UX' }, { content: 'UI/UX' }],
-    },
-  ];
- export  const portfolioItems1 = [
-    {
-      title: "Acnoo Admin - Flutter Admin Panel & Dashboard Template | PWA Ready",
-      img: portfolio,
-      buttons: [{ content: 'Banding' }, { content: 'UI/UX' }, { content: 'UI/UX' }],
-    },
-    {
-      title: "Business Card Design",
-      img: portfolio2,
-      buttons: [{ content: 'Banding' }, { content: 'UI/UX' }, { content: 'UI/UX' }],
-    },
-    {
-      title: "PosPro Saas Project",
-      img: portfolio3,
-      buttons: [{ content: 'Banding' }, { content: 'UI/UX' }, { content: 'UI/UX' }],
-    },
-    {
-      title: "Business Card Design",
-      img: portfolio4,
-      buttons: [{ content: 'Banding' }, { content: 'UI/UX' }, { content: 'UI/UX' }],
-    },
-  ];
+export const portfolioItems = [
+  {
+    title: "<span>Acnoo Admin - Flutter Admin Panel & Dashboard <br> Template | PWA Ready</span>",
+    img: portfolio,
+    buttons: [{ content: 'Banding' }, { content: 'UI/UX' }, { content: 'UI/UX' }],
+  },
+  {
+    title: "Business Card Design",
+    img: portfolio2,
+    buttons: [{ content: 'Banding' }, { content: 'UI/UX' }, { content: 'UI/UX' }],
+  },
+  {
+    title: "PosPro Saas Project",
+    img: portfolio3,
+    buttons: [{ content: 'Banding' }, { content: 'UI/UX' }, { content: 'UI/UX' }],
+  },
+  {
+    title: "Business Card Design",
+    img: portfolio4,
+    buttons: [{ content: 'Banding' }, { content: 'UI/UX' }, { content: 'UI/UX' }],
+  },
+];
+export const portfolioItems1 = [
+  {
+    title: "Acnoo Admin - Flutter Admin Panel & Dashboard Template | PWA Ready",
+    img: portfolio,
+    buttons: [{ content: 'Banding' }, { content: 'UI/UX' }, { content: 'UI/UX' }],
+  },
+  {
+    title: "Business Card Design",
+    img: portfolio2,
+    buttons: [{ content: 'Banding' }, { content: 'UI/UX' }, { content: 'UI/UX' }],
+  },
+  {
+    title: "PosPro Saas Project",
+    img: portfolio3,
+    buttons: [{ content: 'Banding' }, { content: 'UI/UX' }, { content: 'UI/UX' }],
+  },
+  {
+    title: "Business Card Design",
+    img: portfolio4,
+    buttons: [{ content: 'Banding' }, { content: 'UI/UX' }, { content: 'UI/UX' }],
+  },
+];
 
-  export const notifications = [
-    {
-      id: 1,
-      message: "Do you need more services",
-      time: "30 Mins ago",
-    },
-    {
-      id: 2,
-      message: "Do you need more services",
-      time: "30 Mins ago",
-    },
-    {
-      id: 3,
-      message: "Do you need more services",
-      time: "30 Mins ago",
-    },
-    {
-      id: 2,
-      message: "Do you need more services",
-      time: "30 Mins ago",
-    },
-    {
-      id: 3,
-      message: "Do you need more services",
-      time: "30 Mins ago",
-    },
-  ];
+export const notifications = [
+  {
+    id: 1,
+    message: "Do you need more services",
+    time: "30 Mins ago",
+  },
+  {
+    id: 2,
+    message: "Do you need more services",
+    time: "30 Mins ago",
+  },
+  {
+    id: 3,
+    message: "Do you need more services",
+    time: "30 Mins ago",
+  },
+  {
+    id: 2,
+    message: "Do you need more services",
+    time: "30 Mins ago",
+  },
+  {
+    id: 3,
+    message: "Do you need more services",
+    time: "30 Mins ago",
+  },
+];
 
-  
+
 export const plans = [
   {
     title: "Basic plan",
@@ -837,7 +851,7 @@ export const growthItems = [
     textColor: "text-black",
     shadow: "0px 10px 25px 0px rgba(0, 0, 0, 0.03)",
     align: "justify-end",
-    margin:"lg:px-0 pl-[37px] pr-4"
+    margin: "lg:px-0 pl-[37px] pr-4"
   },
   {
     title: "24/7 Top-Rated Customer Support",
@@ -845,7 +859,7 @@ export const growthItems = [
     textColor: "text-white",
     shadow: "-3px 0px 0px 0px #2353F5",
     align: "justify-start",
-    margin:"lg:px-0 pr-[37px] pl-4"
+    margin: "lg:px-0 pr-[37px] pl-4"
   },
   {
     title: "Regular Updates & Bug Fixes",
@@ -853,7 +867,7 @@ export const growthItems = [
     textColor: "text-black",
     shadow: "0px 10px 25px 0px rgba(0, 0, 0, 0.03)",
     align: "justify-end",
-    margin:"lg:px-0 pl-[37px] pr-4"
+    margin: "lg:px-0 pl-[37px] pr-4"
   },
   {
     title: "Dedicated Team members",
@@ -861,7 +875,7 @@ export const growthItems = [
     textColor: "text-white",
     shadow: "-3px 0px 0px 0px #2353F5",
     align: "justify-start",
-    margin:"lg:px-0 pr-[37px] pl-4"
+    margin: "lg:px-0 pr-[37px] pl-4"
   },
   {
     title: "One-time Purchase with Lifetime Free Updates",
@@ -869,6 +883,6 @@ export const growthItems = [
     textColor: "text-black",
     shadow: "0px 10px 25px 0px rgba(0, 0, 0, 0.03)",
     align: "justify-end",
-    margin:"lg:px-0 pl-[37px] pr-4"
+    margin: "lg:px-0 pl-[37px] pr-4"
   },
 ];

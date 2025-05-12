@@ -19,12 +19,12 @@ interface ServicesTabsProps {
 export default function ServicesTabs({ activeTab, setActiveTab }: ServicesTabsProps) {
   return (
     <div className="lg:ms-0 ms-5 overflow-x-auto scrollbar-hide">
-      <div className="flex gap-3.5 border-b-[2px] border-b-white">
+      <div className="flex gap-2.5 md:gap-3.5 border-b-[2px] border-b-white">
         {tabs.map((tab) => (
           <div key={tab} className="w-full">
             <button
               onClick={() => setActiveTab(tab)}
-              className={`px-5 py-4 transition relative whitespace-nowrap w-full
+              className={`px-4 md:px-5 py-2.5 md:py-4 transition relative whitespace-nowrap w-full
                 ${
                   activeTab === tab
                     ? "text-[#2F1C6A] font-medium bg-[linear-gradient(180deg,#F5EFFF80_0%,#E6D8FF_100%)]  border-b-[2px] border-[#2F1C6A]"
