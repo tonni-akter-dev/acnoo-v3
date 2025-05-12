@@ -28,12 +28,12 @@ const OurProducts = () => {
                 <h3 className='text-primary lg:text-[65px]  text-[24px] lg:leading-[72px] leading-[30px] font-bold text-center mb-2 '>Our products</h3>
                 {/* tabs */}
                 <div>
-                    <div className='flex items-center mx-auto w-fit justify-center mt-2 rounded-[50px] px-2.5 lg:py-2 py-[6px]' style={{ boxShadow: '0px 7px 17px 0px rgba(0, 0, 0, 0.04)' }}>
+                    <div className='flex h-[60px] items-center mx-auto w-fit justify-center mt-2 rounded-[50px] px-2.5 lg:py-2 py-[6px]' style={{ boxShadow: '0px 7px 17px 0px rgba(0, 0, 0, 0.04)' }}>
                         {tabData.map((tab, index) => (
                             <button
                                 key={index}
                                 onClick={() => handleTabClick(index)}
-                                className={`${activeTab === index ? "bg-[#2F1C6A] text-white" : "bg-white"} cursor-pointer  text-base font-bold  rounded-4xl py-[13px] xs:px-2.5 px-2.5 md:px-[23px] lg:p-5`}>
+                                className={`${activeTab === index ? "bg-[#2F1C6A] text-white" : "bg-white"} cursor-pointer  text-base font-bold  rounded-4xl py-[13px] xs:px-2.5 px-2.5 md:px-[23px] lg:py-3 lg:px-5`}>
                                 {tab.title}
                             </button>
                         ))}

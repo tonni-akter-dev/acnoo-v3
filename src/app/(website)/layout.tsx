@@ -38,7 +38,7 @@ export default function RootLayout({
           background:
             "linear-gradient(0deg, #F3F0FD 0%, #F3F0FD 100%)",
         }}>
-          {/* <Footer /> */}
+          <Footer />
         </div>
       </body>
     </html>

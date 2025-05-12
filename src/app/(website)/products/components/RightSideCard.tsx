@@ -30,7 +30,7 @@ const RightSideCard = () => {
   return (
     <div className="">
       {/* Sort & View Controls */}
-      <div className="relative lg:hidden md:hidden block flex-1">
+      <div className="relative lg:hidden md:hidden block flex-1 w-full">
         <input
           type="text"
           className="bg-white rounded-full border mb-3 border-[#EDEEF3] w-full h-12 px-6 pr-10"
@@ -49,7 +49,6 @@ const RightSideCard = () => {
             <Image className="absolute  right-3 top-3" src={search} alt="" />
           </div>
           <div className="flex gap-3">
-            {/* dropdown */}
             <SortDropDown />
 
             <div className="flex gap-4">

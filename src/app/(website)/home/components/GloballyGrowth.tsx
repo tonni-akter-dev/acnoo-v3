@@ -10,7 +10,7 @@ const GloballyGrowth = ({ text, color }: { text?: string; color?: string }) => {
       <div className="flex justify-center items-center w-full">
         <div className="grid grid-cols-1 md:grid-cols-2">
           {/* Left Section */}
-          <div className="lg:py-0 py-6 globally_growth text-white md:pt-7 lg:pt-[152px] lg:ps-[150px] ps-5 lg:pe-[50px]">
+          <div className="lg:py-0 py-6 globally_growth text-white md:pt-7 lg:pt-[152px] lg:ps-[150px] lg:pb-10 ps-5 lg:pe-[50px]">
             <div className="flex gap-1 items-center text-white text-lg font-medium mb-4 text-start">
               <span
                 className="bg-[#F52366] rounded-[14px] text-base font-bold text-center text-white

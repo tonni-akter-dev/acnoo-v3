@@ -8,33 +8,32 @@ import why6 from '/public/home/why6.png'
 import officebuilding from '/public/home/officebuilding.png'
 import next from '/public/home/next.svg'
 import Image from 'next/image'
+import Link from 'next/link'
 
 const WhyAcnoomenu = () => {
   return (
     <div className="w-full flex justify-center items-center">
       <div
         className="mb-12 rounded-2xl  flex justify-center  left-0 lg:!left-[38%] mega-menu-why lg:max-w-[608px] mx-auto w-full bg-white"
-        // style={{
-        //   boxShadow: "0px 24px 56px 0px rgba(39, 40, 41, 0.16)",
-        // }}
+        style={{
+          boxShadow: "0px 24px 56px 0px rgba(39, 40, 41, 0.16)",
+        }}
       >
         <div className="container mx-auto ">
           {/* Top Links */}
-          <div className="pt-[38px] pb-6 lg:pb-8 px-8  grid grid-cols-1 lg:grid-cols-2 md:grid-cols-2 gap-[30px]">
+          <div className="pt-[38px] pb-6 lg:pb-8 px-8  grid grid-cols-1 lg:grid-cols-2 md:grid-cols-2">
             {/* Testimonial */}
-            <div>
-              <div className="flex items-start space-x-4">
-                <Image src={why1} alt="" />
-                <div>
-                  <h4 className="text-[#282F39] text-base font-bold mb-[5px]">Testimonial</h4>
-                  <p className="text-sm text-[#6B7280] font-medium">See what our customer says</p>
-                </div>
+            <div className="flex items-start space-x-4 cursor-pointer hover:bg-[#E4C2FF66] p-[15px] rounded-lg transition-all ease-in-out duration-100">
+              <Image src={why1} alt="" />
+              <div>
+                <h4 className="text-[#282F39] text-base font-bold mb-[5px]">Testimonial</h4>
+                <p className="text-sm text-[#6B7280] font-medium">See what our customer says</p>
               </div>
             </div>
 
             {/* Case Studies */}
             <div>
-              <div className="flex items-start space-x-4">
+              <div className="flex items-start space-x-4 cursor-pointer hover:bg-[#E4C2FF66] p-[15px] rounded-lg transition-all ease-in-out duration-100">
                 <Image src={why2} alt="" />
                 <div>
                   <h4 className="text-[#282F39] text-base font-bold mb-[5px]">Case studies</h4>
@@ -45,7 +44,7 @@ const WhyAcnoomenu = () => {
 
             {/* Privacy Policy */}
             <div>
-              <div className="flex items-start space-x-4">
+              <div className="flex items-start space-x-4 cursor-pointer hover:bg-[#E4C2FF66] p-[15px] rounded-lg transition-all ease-in-out duration-100">
                 <Image src={why3} alt="" />
                 <div>
                   <h4 className="text-[#282F39] text-base font-bold mb-[5px]">Privacy & Policy</h4>
@@ -56,7 +55,7 @@ const WhyAcnoomenu = () => {
 
             {/* Terms & Condition */}
             <div>
-              <div className="flex items-start space-x-4">
+              <div className="flex items-start space-x-4 cursor-pointer hover:bg-[#E4C2FF66] p-[15px] rounded-lg transition-all ease-in-out duration-100">
                 <Image src={why4} alt="" />
                 <div>
                   <h4 className="text-[#282F39] text-base font-bold mb-[5px]">terms & Condition</h4>
@@ -67,7 +66,7 @@ const WhyAcnoomenu = () => {
 
             {/* Contact Us */}
             <div>
-              <div className="flex items-start space-x-4">
+              <div className="flex items-start space-x-4 cursor-pointer hover:bg-[#E4C2FF66] p-[15px] rounded-lg transition-all ease-in-out duration-100">
                 <Image src={why5} alt="" />
                 <div>
                   <h4 className="text-[#282F39] text-base font-bold mb-[5px]">Contact Us</h4>
@@ -77,9 +76,9 @@ const WhyAcnoomenu = () => {
             </div>
 
             {/* Become a Partner Button */}
-            <button className="bg-[#2353F5] w-fit h-12 lg:h-[63px] text-white px-6 py-2 text-base font-bold rounded-lg shadow hover:bg-blue-700 transition">
+            <Link href={'/become-partner'}> <button className="mt-[15px] ms-[15px] bg-[#2353F5] w-fit h-12 lg:h-[63px] text-white px-6 py-2 text-base font-bold rounded-lg shadow hover:bg-blue-700 transition">
               Become A Partner →
-            </button>
+            </button></Link>
           </div>
 
           {/* Our Offices Section */}
@@ -104,7 +103,7 @@ const WhyAcnoomenu = () => {
                   </p>
                 </div>
 
-                <button className="mt-3 text-[#1A0B49] text-base font-bold hover:underline flex  gap-2 items-center">About Us <Image src={next} alt="" /></button>
+                <Link href={'/about'}> <button className="mt-3 text-[#1A0B49] text-base font-bold hover:underline flex  gap-2 items-center">About Us <Image src={next} alt="" /></button></Link>
               </div>
             </div>
           </div>

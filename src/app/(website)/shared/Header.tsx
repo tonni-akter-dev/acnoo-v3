@@ -46,7 +46,7 @@ const Header = () => {
 
           {/*  */}
           <ul className="header_gap gap-7 items-center lg:flex hidden ">
-            <li className="py-6 lg:py-11  ">
+            <li className="py-6 lg:py-9  ">
               <Link
                 href="/"
                 className="hover:border-b-[2.5px] border-[#673DE6] hover:text-[#673DE6] transition-all duration-75 ease-in-out relative block  text-sm lg:text-lg font-bold"
@@ -55,25 +55,25 @@ const Header = () => {
               </Link>
             </li>
 
-            <li className="hoverable py-6 lg:py-11 ">
+            <li className="hoverable py-6 lg:py-9 ">
               <Link
                 href="/products"
                 className=" hover:border-b-[2.5px] border-[#673DE6] hover:text-[#673DE6] transition-all duration-75 ease-in-out relative block text-sm lg:text-base font-bold"
               >
                 Products
               </Link>
-              {/* <ProductsMegamenu /> */}
+              <ProductsMegamenu />
             </li>
-            <li className="group hoverable py-6 lg:py-11 relative group">
+            <li className="group hoverable py-6 lg:py-9 relative group">
               <Link
                 href="#"
                 className="hover:border-b-[2.5px] border-[#673DE6] hover:text-[#673DE6] transition-all duration-75 ease-in-out relative block text-sm lg:text-base font-bold"
               >
                 Add-ons
               </Link>
-              {/* <AddonsMegamenu /> */}
+              <AddonsMegamenu />
             </li>
-            <li className="py-6 lg:py-11  ">
+            <li className="py-6 lg:py-9  ">
               <Link
                 href="/service"
                 className="hover:border-b-[2.5px] border-[#673DE6] hover:text-[#673DE6] transition-all duration-75 ease-in-out relative block  text-sm lg:text-lg font-bold"
@@ -81,16 +81,16 @@ const Header = () => {
                 Services
               </Link>
             </li>
-            <li className="hoverable py-6 lg:py-11 relative group">
+            <li className="hoverable py-6 lg:py-9 relative group">
               <Link
                 href="/about"
                 className="hover:border-b-[2.5px] border-[#673DE6] hover:text-[#673DE6] transition-all duration-75 ease-in-out relative block text-sm lg:text-base font-bold"
               >
                 Why Acnoo
               </Link>
-              {/* <WhyAcnoomenu /> */}
+              <WhyAcnoomenu />
             </li>
-            <li className="py-6 lg:py-11  ">
+            <li className="py-6 lg:py-9  ">
               <Link
                 href="#"
                 className="hover:border-b-[2.5px] border-[#673DE6] hover:text-[#673DE6] transition-all duration-75 ease-in-out relative block  text-sm lg:text-lg font-bold"

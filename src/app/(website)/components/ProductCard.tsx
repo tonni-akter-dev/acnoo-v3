@@ -23,7 +23,7 @@ const ProductCard = () => {
             <div className='lg:ps-[30px] lg:pb-[30px] lg:pe-10 px-4 pb-5'>
                 <h4 className='text-primary text-lg font-bold mb-[14px] lg:mb-4 '>POS pro - POS Inventory Flutter App...</h4>
                 <p className='text-[#3B4758] text-lg font-bold flex gap-2 items-center pb-3 lg:pb-[27px] border-b border-[#E7ECF8]'>$120 <span className='text-[#6B7280] text-sm font-medium '>$149</span></p>
-                <div className='flex justify-between items-center mt-[14px] lg:mt-[26px]'>
+                <div className='flex justify-between items-center mt-[14px] lg:mt-5'>
                     <p>800 Sales</p>
                     <div className='flex font-inter  text-base gap-2 items-center'>
                         <Image src={star} alt="" />
