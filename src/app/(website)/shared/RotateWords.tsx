@@ -20,7 +20,6 @@ export const RotateWords: React.FC<StaggeredWordFadeProps> = ({
         }, 2000);
         return () => clearInterval(interval);
     }, [words.length]);
-
     const variants = {
         hidden: { opacity: 0 },
         show: (i: number) => ({
@@ -36,7 +35,7 @@ export const RotateWords: React.FC<StaggeredWordFadeProps> = ({
     return (
         <div
             ref={ref}
-            className={`inline-flex items-center capitalize gradient_text ${className}`}
+            className={`inline-flex items-center  gradient_text ${className}`}
         >
             <AnimatePresence mode="wait">
                 <motion.span
@@ -46,7 +45,7 @@ export const RotateWords: React.FC<StaggeredWordFadeProps> = ({
                     exit="hidden"
                     className="flex"
                 >
-                    {words[index]?.split('').map((letter, i) => (
+                    {words[index].split('').map((letter, i) => (
                         <motion.span key={i} variants={variants} custom={i}>
                             {letter}
                         </motion.span>

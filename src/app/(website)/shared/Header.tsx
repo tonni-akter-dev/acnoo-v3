@@ -22,7 +22,7 @@ const Header = () => {
 
   return (
     <div className="relative z-50 ">
-      <nav className="lg:px-[150px] lg_screen_px relative bg-white ">
+      <nav className="containers lg_screen_px relative bg-white ">
         <div className="flex items-center justify-between lg:py-0 py-5 lg:px-0 px-6">
           <div className="lg:hidden mt-2">
             <button onClick={() => setMenuOpen(!menuOpen)} className="text-2xl">

@@ -42,69 +42,70 @@ const RotatingIcons = () => {
   const handleMouseLeave = () => setIsPaused(false);
 
   return (
-    <div className="relative w-full h-full flex items-center justify-center">
-      <div className="rounded-full bg-white flex items-center justify-center">
-        <div className="acno_4 flex justify-center items-center">
-          <div className="acno_3 flex justify-center items-center">
-            <div className="acno_2 size-[286px] border flex justify-center items-center rounded-full border-[#E6E6E8]">
-              <div className="size-[185px] acno_1">
-                <Image src={acnoo} alt="Acnoo Logo" className="acnoo_logo" />              </div>
+    <div>
+      <div className="relative w-full h-full flex items-center justify-center">
+        <div className="rounded-full bg-white flex items-center justify-center">
+          <div className="acno_4 flex justify-center items-center">
+            <div className="acno_3 flex justify-center items-center">
+              <div className="acno_2 size-[286px] border flex justify-center items-center rounded-full border-[#E6E6E8]">
+                <div className="size-[185px] acno_1">
+                  <Image src={acnoo} alt="Acnoo Logo" className="acnoo_logo" />              </div>
+              </div>
             </div>
           </div>
         </div>
+
+        {/* Primary rotating icons */}
+        {icons.map((icon, index) => {
+          const angle = (360 / icons.length) * index + rotation;
+          const x = iconRadius * Math.cos((angle * Math.PI) / 180);
+          const y = iconRadius * Math.sin((angle * Math.PI) / 180);
+          return (
+            <Image
+              key={`primary-${index}`}
+              src={icon.src}
+              width={134}
+              height={129}
+              alt={icon.alt}
+              onMouseEnter={handleMouseEnter}
+              onMouseLeave={handleMouseLeave}
+              className="absolute transition-transform duration-300 ease-in-out hover:scale-150 cursor-pointer"
+              style={{
+                left: `calc(48% + ${x}px - 67px)`,
+                top: `calc(48% + ${y}px - 65px)`,
+                transform: `rotate(${angle}deg)`,
+              }}
+            />
+          );
+        })}
+
+        {/* Secondary rotating icons */}
+        {secondaryLogos.map((logo, index) => {
+          const angle = (360 / secondaryLogos.length) * index - rotation;
+          const x = secondaryLogoRadius * Math.cos((angle * Math.PI) / 180);
+          const y = secondaryLogoRadius * Math.sin((angle * Math.PI) / 180);
+          return (
+            <Image
+              key={`secondary-${index}`}
+              src={logo.src}
+              width={100}
+              height={100}
+              alt={logo.alt}
+              onMouseEnter={handleMouseEnter}
+              onMouseLeave={handleMouseLeave}
+              className="absolute transition-transform duration-300 ease-in-out hover:scale-150 cursor-pointer"
+              style={{
+                left: `calc(50% + ${x}px - 50px)`,
+                top: `calc(50% + ${y}px - 50px)`,
+                transform: `rotate(${angle}deg)`,
+              }}
+            />
+          );
+        })}
       </div>
-
-      {/* Primary rotating icons */}
-      {icons.map((icon, index) => {
-        const angle = (360 / icons.length) * index + rotation;
-        const x = iconRadius * Math.cos((angle * Math.PI) / 180);
-        const y = iconRadius * Math.sin((angle * Math.PI) / 180);
-        return (
-          <Image
-            key={`primary-${index}`}
-            src={icon.src}
-            width={134}
-            height={129}
-            alt={icon.alt}
-            onMouseEnter={handleMouseEnter}
-            onMouseLeave={handleMouseLeave}
-            className="absolute transition-transform duration-300 ease-in-out hover:scale-150 cursor-pointer"
-            style={{
-              left: `calc(48% + ${x}px - 67px)`,
-              top: `calc(48% + ${y}px - 65px)`,
-              transform: `rotate(${angle}deg)`,
-            }}
-          />
-        );
-      })}
-
-      {/* Secondary rotating icons */}
-      {secondaryLogos.map((logo, index) => {
-        const angle = (360 / secondaryLogos.length) * index - rotation;
-        const x = secondaryLogoRadius * Math.cos((angle * Math.PI) / 180);
-        const y = secondaryLogoRadius * Math.sin((angle * Math.PI) / 180);
-        return (
-          <Image
-            key={`secondary-${index}`}
-            src={logo.src}
-            width={100}
-            height={100}
-            alt={logo.alt}
-            onMouseEnter={handleMouseEnter}
-            onMouseLeave={handleMouseLeave}
-            className="absolute transition-transform duration-300 ease-in-out hover:scale-150 cursor-pointer"
-            style={{
-              left: `calc(50% + ${x}px - 50px)`,
-              top: `calc(50% + ${y}px - 50px)`,
-              transform: `rotate(${angle}deg)`,
-            }}
-          />
-        );
-      })}
     </div>
   );
 };
-
 
 const MobileRotatingIcons = () => {
   const [rotation, setRotation] = useState(0);
@@ -134,9 +135,8 @@ const MobileRotatingIcons = () => {
     { src: "/home/php.png", alt: "Logo 4" },
   ];
 
-  // Adjusted for mobile screens
-  const iconRadius = 80; // Reduced radius for mobile
-  const secondaryLogoRadius = 120; // Reduced radius for mobile
+  const iconRadius = 80;
+  const secondaryLogoRadius = 120;
 
   return (
     <div className="relative w-full h-full flex items-center justify-center z-10">
@@ -203,7 +203,7 @@ const Banner = () => {
   const ref = React.useRef(null);
   const isInView = useInView(ref, { once: true });
   return (
-    <div className="flex flex_fixed lg:flex-row flex-col xs:items-start  sm:items-center  md:items-center w-full  banner_bg min-h-screen lg:px-[150px] lg:gap-0 md:gap-10 gap-6 lg:pt-0 pt-6 px-5 overflow-hidden">
+    <div className="flex flex_fixed lg:flex-row flex-col xs:items-start  sm:items-center  md:items-center w-full  banner_bg min-h-screen  lg:gap-0 md:gap-10 gap-6 lg:pt-0 pt-6 containers  px-5 overflow-hidden">
       <div className="lg:w-1/2  flex flex-col justify-center">
         <motion.div
           initial={{ y: 20, opacity: 0 }}
@@ -221,10 +221,10 @@ const Banner = () => {
           transition={{ duration: 0.8, ease: 'easeOut' }}
           className="banner_text text-[26px] md:text-[40px] lg:text-[72px] text-primary leading-[34px] !md:leading-[50px] lg:leading-[73px] font-bold mb-6"
         >
-          Elevating Brand Strategy With Acno
+          Elevating Brand Strategy  With <br className="md:block hidden" /> Acno
           <RotateWords
             words={['Products', 'Solutions', 'Services']}
-            className="capitalize ml-2 text-[26px] md:text-[40px] lg:text-[72px] leading-[34px] md:leading-[50px] lg:leading-[73px] font-bold"
+            className="ml-2 text-[26px] md:text-[40px] lg:text-[72px] leading-[34px] md:leading-[50px] lg:leading-[73px] font-bold"
           />
         </motion.h1>
 

@@ -81,14 +81,13 @@ const Specialize = () => {
   });
 
   return (
-    <div className="specialize_bg py-[38px] lg:py-[100px] lg:px-[150px] px-5">
+    <div className="specialize_bg py-[38px] lg:py-[100px] containers px-5">
       <div className="text-white text-lg font-medium mb-4">
         <span className="bg-[#F52366] text-base font-bold text-white px-3 h-[25px] py-1 rounded-full w-fit me-[11px]">
           New
         </span>
         Something new coming soon!
       </div>
-
       <div
         ref={ref}
         className="flex specialize_text lg:flex-row flex-col pb-[34px] lg:pb-[70px] justify-between lg:items-center"

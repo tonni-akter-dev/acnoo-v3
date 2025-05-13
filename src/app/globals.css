@@ -97,12 +97,12 @@ button {
   -webkit-text-fill-color: transparent;
   display: inline-block;
   font-family: "Space Grotesk", sans-serif;
-  font-size: 72px;
+  font-size: 65px;
   font-weight: 700;
   line-height: 73px;
   letter-spacing: -0.72px;
   text-transform: capitalize;
-  margin-left: 3%;
+  margin-left: 2px;
 }
 
 body {
@@ -461,7 +461,6 @@ body {
   font-weight: 700;
   line-height: 73px;
   letter-spacing: -0.72px;
-  text-transform: capitalize;
 }
 
 
@@ -910,10 +909,38 @@ input[type="range"]::-moz-range-thumb {
 } */
 
 @media (min-width:700px) and (max-width:1023px) {
+  .revenue_tab {
+    gap: 32px;
+  }
+
+  .revenue_tab_card {
+    width: 100px;
+    height: 100px;
+    padding-left: 25px;
+    padding-top: 25px;
+  }
+
+  .increase_revenue {
+    padding-left: 67px;
+    padding-right: 67px;
+  }
+
+  .xs_screen {
+    gap: 34px;
+  }
+
+  .revenue_tab h3 {
+    font-size: 50px;
+  }
+
+  .revenue_tab p {
+    font-size: 16px;
+  }
 
   /* banner */
   .banner_text {
     font-size: 40px;
+    margin-bottom: 0;
   }
 
   .flex_fixed {
@@ -1095,6 +1122,15 @@ input[type="range"]::-moz-range-thumb {
 }
 
 @media (min-width:1024px) and (max-width:1279px) {
+  .cartoon {
+    display: none;
+  }
+
+  .containers {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+
   .twenty_four {
     display: none !important;
   }
@@ -1274,6 +1310,11 @@ input[type="range"]::-moz-range-thumb {
 }
 
 @media (min-width:1280px) and (max-width:1440px) {
+  .containers {
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+
   .specialize_heading {
     font-size: 45px;
     line-height: 55px;
@@ -1289,6 +1330,11 @@ input[type="range"]::-moz-range-thumb {
   }
 
   .gradient_text1 {
+    font-size: 45px;
+    line-height: 55px;
+  }
+
+  .heading_text {
     font-size: 45px;
     line-height: 55px;
   }
@@ -1341,7 +1387,21 @@ input[type="range"]::-moz-range-thumb {
   }
 }
 
-@media (min-width:1024px) and (max-width:1806px) {
+@media (min-width:1441px) and (max-width:1806px) {
+  .globally_items {
+    padding-left: 54px !important;
+  }
+
+  .cartoon {
+    width: 233px;
+    height: 306px;
+  }
+
+  .containers {
+    padding-left: 150px;
+    padding-right: 150px;
+  }
+
   .responsive .swiper-slide {
     margin-right: 27px !important;
     margin-left: 0 !important;
@@ -1365,6 +1425,10 @@ input[type="range"]::-moz-range-thumb {
 }
 
 @media (min-width:1806px) and (max-width:1920px) {
+  .containers {
+    padding-left: 250px;
+    padding-right: 250px;
+  }
 
   .ui_ux {
     top: -7% !important;
