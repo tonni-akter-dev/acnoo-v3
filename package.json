@@ -24,6 +24,7 @@
     "dropzone": "^6.0.0-beta.2",
     "jquery": "^3.7.1",
     "lodash": "^4.17.21",
+    "motion": "^12.11.0",
     "next": "15.2.4",
     "nouislider": "^15.8.1",
     "preline": "^3.0.1",

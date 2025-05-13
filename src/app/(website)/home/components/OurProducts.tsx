@@ -1,6 +1,8 @@
 'use client'
 import React, { useState } from 'react'
 import EnvatoProducts from './EnvatoProducts'
+import { motion } from 'framer-motion'
+
 const tabData = [
     {
         title: 'Envato products',
@@ -22,10 +24,27 @@ const OurProducts = () => {
     return (
         <div className='lg:pt-[128px]  pt-[30px] product_bg bg-[#fffdff] '>
             <div>
-                <div className=" text-black  text-lg font-medium mb-2 lg:mb-4 text-center">
+                {/* <div className=" text-black  text-lg font-medium mb-2 lg:mb-4 text-center">
                     <span className='bg-[#F52366] text-base font-bold text-center text-white px-3 h-[25px] py-1 rounded-full w-fit me-[11px]'>New </span>{`We've`} Raised <span className='text-[#2353F5]'>30+</span>million!
                 </div>
-                <h3 className='text-primary lg:text-[65px]  text-[24px] lg:leading-[72px] leading-[30px] font-bold text-center mb-2 '>Our products</h3>
+                <h3 className='text-primary lg:text-[65px]  text-[24px] lg:leading-[72px] leading-[30px] font-bold text-center mb-2 '>Our products</h3> */}
+                 <motion.div
+                    initial={{ opacity: 0, y: 40 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.6, ease: 'easeOut' }}
+                    viewport={{ once: true }}
+                >
+                    <div className="text-black text-lg font-medium mb-2 lg:mb-4 text-center">
+                        <span className='bg-[#F52366] text-base font-bold text-center text-white px-3 h-[25px] py-1 rounded-full w-fit me-[11px]'>
+                            New
+                        </span>
+                        {`We've`} Raised <span className='text-[#2353F5]'>30+</span> million!
+                    </div>
+                    <h3 className='text-primary lg:text-[65px] text-[24px] lg:leading-[72px] leading-[30px] font-bold text-center mb-2'>
+                        Our products
+                    </h3>
+                </motion.div>
+                
                 {/* tabs */}
                 <div>
                     <div className='flex h-[60px] items-center mx-auto w-fit justify-center mt-2 rounded-[50px] px-2.5 lg:py-2 py-[6px]' style={{ boxShadow: '0px 7px 17px 0px rgba(0, 0, 0, 0.04)' }}>

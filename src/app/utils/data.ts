@@ -40,8 +40,6 @@ import service10 from '/public/service10.png';
 import service11 from '/public/service11.png';
 import service12 from '/public/service12.png';
 
-
-
 interface FaqItem {
   title: string;
   answer: string;
@@ -63,6 +61,7 @@ export const categoriesData = [
   { name: "Courses  ", count: "125" },
   { name: "Forums  ", count: " 20" },
 ]
+
 export const softwareVersionsData = [
   { name: "Adobe", count: "1,701" },
   { name: "Sketch", count: "2,003" },
@@ -77,13 +76,13 @@ export const SaleData = [
   { name: "High", count: "30,920" },
   { name: "Top Sellers ", count: "1,469" }
 ];
+
 export const RatingData = [
   { name: "5 Star and Higher ", count: "  17" },
   { name: "4 Star and Higher", count: "34" },
   { name: "2 Star and Higher ", count: "34" },
   { name: "1 Star and Higher  ", count: "18" }
 ];
-
 
 export const servicesData = [
   {
@@ -271,7 +270,6 @@ export const pricingData = [
   }
 ];
 
-
 export const productFeatures = [
   {
     title: "Lifetime updates",
@@ -394,6 +392,7 @@ export const productFeatures = [
     borderColor: "#E5E5E5"
   }
 ]
+
 export const mobileProductFeatures = [
   {
     title: "Lifetime updates",
@@ -573,6 +572,7 @@ export const productsDetailsData = [
     name: "Derallav",
   }
 ]
+
 export const faqData: FaqItem[] = [
   {
     title: '1. How Do I Change The App Name?',
@@ -620,6 +620,7 @@ export const faqData: FaqItem[] = [
     answer: 'Run `flutter build apk --release`. Ensure your keystore is set up in `android/key.properties`...',
   },
 ];
+
 export const homefaqData = [
   {
     question: "How can I get a venture capitalist to pay?",
@@ -644,8 +645,6 @@ export const homefaqData = [
     answer: "Discussion on option pool for employees.",
   },
 ];
-
-
 
 export const licenseOptions = [
   {
@@ -682,7 +681,6 @@ export const productDescription = [
   },
 ];
 
-
 export const portfolioItems = [
   {
     title: "<span>Acnoo Admin - Flutter Admin Panel & Dashboard <br> Template | PWA Ready</span>",
@@ -705,6 +703,7 @@ export const portfolioItems = [
     buttons: [{ content: 'Banding' }, { content: 'UI/UX' }, { content: 'UI/UX' }],
   },
 ];
+
 export const portfolioItems1 = [
   {
     title: "Acnoo Admin - Flutter Admin Panel & Dashboard Template | PWA Ready",
@@ -755,7 +754,6 @@ export const notifications = [
     time: "30 Mins ago",
   },
 ];
-
 
 export const plans = [
   {
@@ -812,10 +810,10 @@ export const plans = [
   },
 ];
 
-
 export interface RequirementsListProps {
   requirements: string[];
 }
+
 export const requirements: string[] = [
   "PHP >= 8.2",
   "Ctype PHP Extension",
@@ -833,7 +831,6 @@ export const requirements: string[] = [
   "XML PHP Extension",
 ];
 
-
 export const automationData = [
   { id: 1, title: 'Data Analytics', image: head1 },
   { id: 2, title: 'Dashboard Light', image: head2 },
@@ -842,7 +839,6 @@ export const automationData = [
   { id: 5, title: 'Saas', image: head1 },
   { id: 6, title: 'Coming Soon', image: head2 },
 ];
-
 
 export const growthItems = [
   {

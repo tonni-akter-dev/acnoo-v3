@@ -1,18 +1,26 @@
 import React from 'react'
+import { motion } from 'framer-motion';
+
 import ProductCard from '../../components/ProductCard'
 
 const EnvatoProducts = () => {
     return (
         <div className='mt-[30px] lg_screen_px lg:px-[86px] px-4 lg:mb-[114px] mb-6 '>
             <div className="grid products_wrapper grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 lg:mb-[60px] mb-5">
-                <ProductCard />
-                <ProductCard />
-                <ProductCard />
-                <ProductCard />
-                <ProductCard />
-                <ProductCard />
-                <ProductCard />
-                <ProductCard />
+                {
+                    [1, 2, 3, 4, 5, 6, 7, 8].map(data => (
+                        <motion.div
+                            key={data}
+                            initial={{ opacity: 0, y: 30 }}
+                            whileInView={{ opacity: 1, y: 0 }}
+                            transition={{ duration: 0.5, delay: data * 0.1 }}
+                            viewport={{ once: true }}
+                        >
+                            <ProductCard />
+                        </motion.div>
+
+                    ))
+                }
             </div>
             <button className="mx-auto bg-[#2353F5] flex gap-1.5 items-center text-white text-base font-bold lg:px-[36px] px-5 py-[13px] lg:py-[21px] rounded-[10px] w-fit">
                 Browse All Resources <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">

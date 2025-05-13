@@ -10,13 +10,13 @@ const Pricing = () => {
   const currentPlan = pricingData.find((item) => item.type === activeTab);
 
   return (
-    <div className=" lg:max-w-[660px] md:p-0 w-full h-[478px] lg:h-[522px] bg-[#F3F3F4] lg:mx-auto border border-[#E5E7EB] rounded-xl shadow-xl overflow-hidden">
+    <div className=" lg:max-w-[660px] md:p-0 w-full h-fit md:h-[478px] lg:h-[522px] bg-[#F3F3F4]border border-[#E5E7EB] rounded-xl shadow-xl overflow-hidden">
       <div className="flex border-b border-[#E5E7EB]">
         {pricingData.map((plan) => (
           <button
             key={plan.type}
             onClick={() => setActiveTab(plan.type)}
-            className={`w-1/3 py-3 text-[20px] font-medium transition-all duration-200 border-b-2 text-center border-r border-[#D1D5DB] ${plan.type === activeTab
+            className={`w-1/3 py-3 text-base md:text-[20px] font-medium transition-all duration-200 border-b-2 text-center border-r border-[#D1D5DB] ${plan.type === activeTab
               ? "border-[#2F1C6A] text-[#2F1C6A] bg-[linear-gradient(180deg,#F5EFFF80_0%,#E6D8FF_100%)]"
               : "border-transparent text-gray-500 hover:bg-gray-50"
               }`}
@@ -25,20 +25,20 @@ const Pricing = () => {
           </button>
         ))}
       </div>
-      <div className='flex justify-between items-center mt-3.5'>
+      <div className='flex justify-between items-center mt-3.5 mb-3'>
         <div>
-          <h1 className='text-primary text-2xl font-bold ml-5 lg:ml-9'>Basic Service</h1>
+          <h1 className='text-primary text-lg md:text-2xl font-bold ml-5 lg:ml-9'>Basic Service</h1>
         </div>
         <div className="text-center  flex justify-center items-center ">
-          <p className="text-2xl font-bold text-white mb-1 flex justify-center items-center price-bg">{currentPlan?.price}</p>
+          <p className="text-xl md:text-2xl font-bold text-white mb-1 flex justify-center h-10 items-center price-bg">$150</p>
         </div>
       </div>
-      <div className='flex w-[394px] bg-white rounded-[22px] ml:5 lg:ml-6 items-center gap-[22px] justify-center px-6 py-3'>
-        <h1 className='flex items-center gap-3 whitespace-nowrap border-r border-[#DDDCDC] pr-3.5'><CiTimer />15-day delivery</h1>
-        <h1 className='flex items-center gap-3 whitespace-nowrap'><BiRevision />Unlimited Revision</h1>
+      <div className='offer_xs flex w-fit bg-white rounded-[22px] mx-3 lg:ml-6 items-center gap-3 md:gap-[22px] px-4 md:px-6 py-3'>
+        <h1 className='fifteen_days flex items-center gap-1 md:gap-3 whitespace-nowrap text-sm md:text-base  text-[#1A0B49] border-r border-[#DDDCDC] pr-3.5'><CiTimer />15-day delivery</h1>
+        <h1 className='flex items-center gap-1 md:gap-3 whitespace-nowrap text-sm md:text-base  text-[#1A0B49]'><BiRevision />Unlimited Revision</h1>
       </div>
       <div className="p-6">
-        <h1 className='text-primary text-2xl font-bold mb-3.5'>{`What’s Included`}</h1>
+        <h1 className='text-primary text-base md:text-2xl font-bold mb-2 md:mb-3.5'>{`What’s Included`}</h1>
         <ul className="space-y-3 mb-6 lg:mb-9">
           {currentPlan?.includes.map((feature, idx) => (
             <li

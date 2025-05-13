@@ -31,7 +31,7 @@ const ServiceCard: React.FC<IServiceCard> = ({ price, rating, title, des, img, l
             </div>
             <div className='lg:ps-[30px] lg:pb-[30px] lg:pe-10 px-4 pb-4 '>
                 <Link href={`/service/${link}`}><h4 className='text-primary text-[20px] font-bold mb-4 '>{title}</h4></Link>
-                <p className='text-[#6B7280] text-base font-medium flex gap-2 items-center pb-3 lg:pb-[27px] border-b border-[#E7ECF8]'>{des}</p>
+                <p className='text-[#6B7280] text-base font-medium flex gap-2 items-center pb-3 lg:pb-6 border-b border-[#E7ECF8]'>{des}</p>
                 <div className='flex justify-between items-center mt-3 lg:mt-[26px]'>
                     <p className='text-[#2F1C6A] text-base lg:text-lg font-bold'>Starting At: {price}</p>
                     <div className='flex font-inter  text-base gap-2 items-center'>

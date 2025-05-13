@@ -637,11 +637,17 @@ input[type="range"]::-moz-range-thumb {
 
 @media (min-width:320px) and (max-width:374px) {
 
+  .offer_xs {
+    flex-wrap: wrap;
+    border-radius: 8px;
+  }
+
+  .offer_xs .fifteen_days {
+    border-right: none;
+  }
 
   .md_lg_screen {
     width: 323px !important;
-    /* height: 184px !important; */
-
   }
 
   .hire_us_bg {
@@ -669,6 +675,14 @@ input[type="range"]::-moz-range-thumb {
 }
 
 @media (min-width:320px) and (max-width:767px) {
+
+  .price-bg {
+    background-image: url('/mobile-price-bg.png');
+    background-repeat: no-repeat;
+    width: 87px;
+    height: 40px;
+  }
+
   .sm_screen_position {
     bottom: 74px !important;
   }
