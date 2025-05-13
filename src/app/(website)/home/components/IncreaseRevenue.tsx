@@ -13,13 +13,29 @@ const IncreaseRevenue = () => {
       <div className="text-center flex flex-col justify-center items-center">
         <h2 className="text-center mb-7 lg:mb-[60px] w-full lg:text-[65px]  text-[26px] lg:leading-[65px] leading-[32px] font-bold text-primary md:whitespace-nowrap">
           We Makes <span className="gradient_text1">Globally</span> Growth <br className="md:block hidden" />
-          & Increase Revenue  
+          & Increase Revenue
         </h2>
-        <Image
+        {/* <Image
           className="lg:size-[454px]  md:size-[267px] size-[223px] mb-12"
           src={globe}
           alt=""
-        />
+        /> */}
+        <div
+          style={{
+            perspective: '1000px',
+            display: 'inline-block',
+          }}
+        >
+          <Image
+            src={globe}
+            alt="Rotating Globe"
+            className="lg:size-[454px] md:size-[267px] size-[223px] mb-12"
+            style={{
+              animation: 'rotateY 10s linear infinite',
+              transformStyle: 'preserve-3d',
+            }}
+          />
+        </div>
         <div className="increase_wrapper hidden lg:flex justify-center gap-[70px] items-center">
           <div className="flex gap-8 items-center  increase_card  pe-[70px] lg:border-r border-[#64607C40]">
             <div

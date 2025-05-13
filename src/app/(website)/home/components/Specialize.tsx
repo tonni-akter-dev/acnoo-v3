@@ -15,43 +15,44 @@ type PositionStyle = {
   right?: string;
 };
 
-const Button = ({ text, image, position }: { text: string, image: StaticImageData, position?: PositionStyle }) => {
+const Button = ({ text, image, position, className }: { text: string, image: StaticImageData, position?: PositionStyle, className ?: string }) => {
   const buttonStyles: CSSProperties = {
-    ...(position && { position: 'absolute' }), // Only set position if position prop exists
-    ...position, // Spread other positioning properties
+    ...(position && { position: 'absolute' }),
+    ...position,
     display: 'flex',
     flexDirection: 'column',
     alignItems: 'center',
   };
   return (
-    <button style={buttonStyles}>
-      <Image src={image} className='lg:size-[177px] md:size-[120px] size-[132px]' alt={text} />
+    <button className={className } 
+    style={buttonStyles}>
+      <Image src={image} className='lg:size-[177px] md:size-[120px] size-[132px] specialize_btn_img' alt={text} />
     </button>
   );
 };
 
 const Specialize = () => {
   return (
-    <div className='specialize_bg lg_screen_px py-[38px] lg:py-[100px] lg:px-[150px] px-5'>
+    <div className='specialize_bg py-[38px] lg:py-[100px] lg:px-[150px] px-5'>
       <div className="text-white text-lg font-medium mb-4">
         <span className='bg-[#F52366] text-base font-bold text-white px-3 h-[25px] py-1 rounded-full w-fit me-[11px]'>New </span>Something new coming soon!
       </div>
       <div className='flex specialize_text lg:flex-row flex-col mb-[70px] justify-between  lg:items-center'>
-        <h2 className='mb-5 lg:mb-0 max-w-[560px] w-full lg:text-[65px]  text-2xl lg:leading-[65px] leading-[32px] font-bold text-white whitespace-nowrap'>
+        <h2 className='mb-5 lg:mb-0 max-w-[560px] w-full lg:text-[65px]  text-2xl lg:leading-[65px] leading-[32px] font-bold text-white whitespace-nowrap specialize_heading'>
           Specialize in many <br className='lg:block md:hidden block ' />
           Different <span className='gradient_text1'>Sectors</span>
         </h2>
-        <p className='max-w-[543px] w-full text-white text-base font-medium'>
+        <p className='max-w-[543px] w-full text-white text-base font-medium leading-7'>
           We’re a team of passionate problem-solvers and out-of-the-box technical thinkers. Our objective? To take as much complexity off of our partner’s plates and make their WordPress websites perform for their.
         </p>
       </div>
 
       <div className='relative h-[500px] lg:block md:block hidden'>
         <Image src={specializeCenter} alt="Specialize Center" layout='fill' objectFit='contain' />
-        {/* Position the buttons based on your design */}
         <Button
           text="Flutter App Development"
           image={flutterAppDevelopment}
+          className ="btn_position"
           position={{ top: '6%', left: '0' }}
         />
         <Button
@@ -67,6 +68,7 @@ const Specialize = () => {
         <Button
           text="UI/UX Design"
           image={uiUxDesign}
+          className ="btn_position"
           position={{ top: '6%', right: '0' }}
         />
         <Button

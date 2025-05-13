@@ -199,7 +199,7 @@ const Banner = () => {
           Elevating Brand Strategy With Acno 
           <span className="gradient_text"> Products</span>
         </h1>
-        <p className="mb-8 text-[#6B7280] text-lg ">
+        <p className="mb-8 text-[#6B7280] text-base md:text-lg banner_desc">
           Download free & premium PHP Scripts, WordPress Theme, flutter app, UI,
           UX design HTML bootstrap template, & graphic assets for your project.
         </p>

@@ -842,7 +842,7 @@ export const automationData = [
 
 export const growthItems = [
   {
-    title: "App & Software Development",
+    title: "App & Software  <br /> Development",
     background: "bg-white",
     textColor: "text-black",
     shadow: "0px 10px 25px 0px rgba(0, 0, 0, 0.03)",
@@ -850,7 +850,7 @@ export const growthItems = [
     margin: "lg:px-0 pl-[37px] pr-4"
   },
   {
-    title: "24/7 Top-Rated Customer Support",
+    title: "24/7 Top-Rated <br /> Customer Support",
     background: "bg-[#2F1C6A]",
     textColor: "text-white",
     shadow: "-3px 0px 0px 0px #2353F5",
@@ -858,7 +858,7 @@ export const growthItems = [
     margin: "lg:px-0 pr-[37px] pl-4"
   },
   {
-    title: "Regular Updates & Bug Fixes",
+    title: "Regular Updates <br /> & Bug Fixes",
     background: "bg-white",
     textColor: "text-black",
     shadow: "0px 10px 25px 0px rgba(0, 0, 0, 0.03)",
@@ -866,7 +866,7 @@ export const growthItems = [
     margin: "lg:px-0 pl-[37px] pr-4"
   },
   {
-    title: "Dedicated Team members",
+    title: "Dedicated <br /> Team members",
     background: "bg-[#2F1C6A]",
     textColor: "text-white",
     shadow: "-3px 0px 0px 0px #2353F5",

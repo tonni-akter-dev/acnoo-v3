@@ -55,10 +55,10 @@ const GloballyGrowth = ({ text, color }: { text?: string; color?: string }) => {
             {growthItems.map((item, index) => (
               <div
                 key={index}
-                className={` md:max-w-[327px] lg:max-w-[521px] w-full flex ${item.margin} ${item.align} mt-4 lg:mt-7 justify-center`}
+                className={` md:max-w-[327px] lg:max-w-[521px] globally_items_width w-full flex ${item.margin} ${item.align} mt-4 lg:mt-7 justify-center`}
               >
                 <div
-                  className={`flex items-center py-4 gap-2 px-5 ${item.background} rounded-[100px] md:max-w-[306px] lg:max-w-[394px] w-full`}
+                  className={`flex items-center py-4 gap-2 px-5 ${item.background} rounded-[100px] lists md:max-w-[306px] lg:max-w-[394px] w-full`}
                   style={{ boxShadow: item.shadow }}
                 >
                   <div className="flex items-center justify-center">

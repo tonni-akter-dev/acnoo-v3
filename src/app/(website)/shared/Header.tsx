@@ -62,7 +62,7 @@ const Header = () => {
               >
                 Products
               </Link>
-              <ProductsMegamenu />
+              {/* <ProductsMegamenu /> */}
             </li>
             <li className="group hoverable py-6 lg:py-9 relative group">
               <Link
@@ -71,7 +71,7 @@ const Header = () => {
               >
                 Add-ons
               </Link>
-              <AddonsMegamenu />
+              {/* <AddonsMegamenu /> */}
             </li>
             <li className="py-6 lg:py-9  ">
               <Link
@@ -88,7 +88,7 @@ const Header = () => {
               >
                 Why Acnoo
               </Link>
-              <WhyAcnoomenu />
+              {/* <WhyAcnoomenu /> */}
             </li>
             <li className="py-6 lg:py-9  ">
               <Link
