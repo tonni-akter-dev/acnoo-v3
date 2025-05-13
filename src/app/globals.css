@@ -9,6 +9,43 @@
   --screen-xs: 20rem;
 }
 
+@keyframes wcf_animation_wiggle {
+
+  0%,
+  7% {
+    transform: rotateZ(0);
+  }
+
+  15% {
+    transform: rotateZ(-15deg);
+  }
+
+  20% {
+    transform: rotateZ(10deg);
+  }
+
+  25% {
+    transform: rotateZ(-10deg);
+  }
+
+  30% {
+    transform: rotateZ(6deg);
+  }
+
+  35% {
+    transform: rotateZ(-4deg);
+  }
+
+  40%,
+  100% {
+    transform: rotateZ(0);
+  }
+}
+
+.acnoo_logo {
+  animation: wcf_animation_wiggle 2s linear infinite;
+}
+
 @media (min-width: var(--screen-xs)) {
   .xs_screen {
     grid-template-columns: repeat(1, minmax(0, 1fr));
@@ -65,6 +102,7 @@ button {
   line-height: 73px;
   letter-spacing: -0.72px;
   text-transform: capitalize;
+  margin-left: 3%;
 }
 
 body {
@@ -225,7 +263,7 @@ body {
   background-repeat: no-repeat;
   min-height: 705px;
   width: 100% !important;
-  object-fit: cover !important;
+  background-size: cover !important;
 }
 
 .hero_bg {
@@ -674,7 +712,11 @@ input[type="range"]::-moz-range-thumb {
   }
 }
 
-@media (min-width:320px) and (max-width:767px) {
+
+@media (min-width:320px) and (max-width:699px) {
+  .tab {
+    display: hidden;
+  }
 
   .price-bg {
     background-image: url('/mobile-price-bg.png');
@@ -862,7 +904,51 @@ input[type="range"]::-moz-range-thumb {
   /* about */
 }
 
-@media (min-width:768px) and (max-width:1023px) {
+/* 
+@media (min-width:700px) and (max-width:1024px) {
+
+} */
+
+@media (min-width:700px) and (max-width:1023px) {
+
+  /* banner */
+  .banner_text {
+    font-size: 40px;
+  }
+
+  .flex_fixed {
+    gap: 60px;
+
+  }
+
+  .tab {
+    display: block;
+  }
+
+  .mobile {
+    display: none !important;
+  }
+
+
+  /* ourproducts */
+  .product_bg h3 {
+    font-size: 30px;
+  }
+
+  .md_device {
+    bottom: 12% !important;
+  }
+
+  .product_bg .tab_button {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+
+  .products_wrapper {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  /* ourproducts */
   .xs_screen {
     display: grid;
     grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -937,8 +1023,6 @@ input[type="range"]::-moz-range-thumb {
     background-image: none !important;
   }
 
-
-
   .bottom_banner {
     width: 100%;
     height: 225px;
@@ -957,7 +1041,7 @@ input[type="range"]::-moz-range-thumb {
   }
 
   .banner_bg {
-    min-height: 705px;
+    min-height: 900px;
     background-position: bottom;
   }
 
@@ -1189,17 +1273,6 @@ input[type="range"]::-moz-range-thumb {
   }
 }
 
-@keyframes rotateY {
-  0% {
-    transform: rotateY(0deg);
-  }
-
-  100% {
-    transform: rotateY(360deg);
-  }
-}
-
-
 @media (min-width:1280px) and (max-width:1440px) {
   .specialize_heading {
     font-size: 45px;
@@ -1258,17 +1331,17 @@ input[type="range"]::-moz-range-thumb {
   .globally_items_width .lists {
     max-width: 373px !important;
   }
-  .hire_us_bg{
-    background-image: url('/10k1440-bg.png')!important;
+
+  .hire_us_bg {
+    background-image: url('/10k1440-bg.png') !important;
+  }
+
+  .company {
+    margin-right: 39px;
   }
 }
 
-
 @media (min-width:1024px) and (max-width:1806px) {
-  /* .cartoon {
-    display: none !important;
-  } */
-
   .responsive .swiper-slide {
     margin-right: 27px !important;
     margin-left: 0 !important;
@@ -1292,6 +1365,36 @@ input[type="range"]::-moz-range-thumb {
 }
 
 @media (min-width:1806px) and (max-width:1920px) {
+
+  .ui_ux {
+    top: -7% !important;
+    right: 6% !important;
+  }
+
+  .saas {
+    bottom: -7% !important;
+    right: 6% !important;
+  }
+
+  .flutter {
+    top: -7% !important;
+    left: 6% !important;
+  }
+
+  .website {
+    bottom: -7% !important;
+    left: 6% !important;
+  }
+
+  .software {
+    top: 33% !important;
+    left: 27% !important;
+  }
+
+  .digital {
+    top: 33% !important;
+    right: 26% !important;
+  }
 
   .responsive .swiper-slide {
     margin-right: 27px !important;

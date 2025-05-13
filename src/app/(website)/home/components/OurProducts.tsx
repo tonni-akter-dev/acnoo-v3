@@ -37,7 +37,7 @@ const OurProducts = () => {
                         {`We've`} Raised <span className='text-[#2353F5]'>30+</span> million!
                     </div>
                     <h3 className='text-primary lg:text-[65px] text-[24px] lg:leading-[72px] leading-[30px] font-bold text-center mb-2'>
-                        Our products
+                        Our Products
                     </h3>
                 </motion.div>
 
@@ -48,7 +48,7 @@ const OurProducts = () => {
                             <button
                                 key={index}
                                 onClick={() => handleTabClick(index)}
-                                className={`${activeTab === index ? "bg-[#2F1C6A] text-white" : "bg-white"} cursor-pointer  text-base font-bold  rounded-4xl py-[13px] xs:px-2.5 px-2.5 md:px-[23px] lg:py-3 lg:px-5`}>
+                                className={`${activeTab === index ? "bg-[#2F1C6A] text-white" : "bg-white"} cursor-pointer  text-base font-bold  rounded-4xl py-[13px]  px-2.5 md:px-6 tab_button lg:py-3 lg:px-5`}>
                                 {tab.title}
                             </button>
                         ))}

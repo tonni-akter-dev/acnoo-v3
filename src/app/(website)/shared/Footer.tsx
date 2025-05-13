@@ -31,7 +31,7 @@ const Footer = () => {
       <div className="">
         <div className="lg:pt-[90px] mb-[77px] flex flex-col md:flex-row ">
           {/* Left Section */}
-          <div className="mb-7 md:mb-0 w-full md:me-12 lg:me-[108px] md:w-[328px] lg::w-1/4">
+          <div className="mb-7 md:mb-0 company w-full md:me-12 lg:me-[108px] md:w-[328px] lg::w-1/4">
             <Image src={logo} alt="" />
             <p className="text-base pt-4 text-[#0D1224] mb-4">
               A new way to make the payments easy, reliable and 100% secure.
@@ -74,7 +74,7 @@ const Footer = () => {
           {/* Middle Sections */}
           <div className="flex justify-between w-full md:w-1/2">
             {/* Company Section */}
-            <div className="md:me-[50px] lg:me-[107px] w-[138px]">
+            <div className="company md:me-[50px] lg:me-[107px] w-[138px]">
               <h3 className="font-bold text-[22px] mb-6 text-[#0D1224]">
                 Company
               </h3>
@@ -130,7 +130,7 @@ const Footer = () => {
               </ul>
             </div>
             {/* Quick Link Section */}
-            <div className="me-[49px] w-[130px]">
+            <div className="company me-[49px] w-[130px]">
               <h3 className="font-bold text-[22px] mb-6 text-[#0D1224]  whitespace-nowrap">
                 Quick Link
               </h3>
@@ -186,7 +186,7 @@ const Footer = () => {
               </ul>
             </div>
             {/* Add-ons Section */}
-            <div className="lg:block hidden me-[58px]">
+            <div className="company lg:block hidden me-[58px]">
               <h3 className="font-bold text-[22px] mb-6 text-[#0D1224]">
                 Add-ons
               </h3>
@@ -203,7 +203,7 @@ const Footer = () => {
               </ul>
             </div>
             {/* Products Section */}
-            <div className="lg:block hidden">
+            <div className="company lg:block hidden">
               <h3 className="font-bold text-[22px] mb-6 text-[#0D1224]">
                 Products
               </h3>
