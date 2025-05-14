@@ -25,9 +25,9 @@ export default function Home() {
         }}
       >
         <HireUsForProjects />
-        {/* <WhatPeopleThink />
+        <WhatPeopleThink />
         <Faq />
-        <BottomBanner /> */}
+        <BottomBanner />
       </div>
     </>
   );

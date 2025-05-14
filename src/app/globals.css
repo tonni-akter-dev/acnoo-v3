@@ -710,10 +710,14 @@ input[type="range"]::-moz-range-thumb {
     white-space: wrap !important;
   }
 }
+
 @keyframes jump {
-  0%, 100% {
+
+  0%,
+  100% {
     transform: translateY(0);
   }
+
   50% {
     transform: translateY(-10px);
   }
@@ -734,9 +738,10 @@ input[type="range"]::-moz-range-thumb {
     margin-top: 144px;
   }
 
-  .hire_text_wrap{
+  .hire_text_wrap {
     margin-top: 134px;
   }
+
   /* hireus  */
   .tab {
     display: hidden;
@@ -939,6 +944,20 @@ input[type="range"]::-moz-range-thumb {
 }
 
 @media (min-width:700px) and (max-width:1023px) {
+
+  .question_btn{
+    display: flex;
+    padding: 12px 20px;
+  }
+  .md_questionp{
+    padding: 16px 0;
+  }
+  .question_wrapper{
+    justify-content: space-between;
+  }
+  .md_hidden{
+    display: none;
+  }
   .hire_us_image_md {
     display: block;
   }
@@ -969,6 +988,18 @@ input[type="range"]::-moz-range-thumb {
   .increase_revenue {
     padding-left: 67px;
     padding-right: 67px;
+  }
+
+  .hire_line {
+    max-width: 730px;
+  }
+
+  .what_people_tab {
+    flex-direction: row !important;
+    margin-left: 0;
+    margin-right: 0;
+    justify-content: space-between;
+    padding: 17px 24px;
   }
 
   .xs_screen {
