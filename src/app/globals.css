@@ -944,20 +944,37 @@ input[type="range"]::-moz-range-thumb {
 }
 
 @media (min-width:700px) and (max-width:1023px) {
+  .women_image {
+    display: none;
+  }
+  .women{
+    display: block;
+    right: 0;
+    height: 208px !important;
+    width: 201px !important;
+    top: 0;
+  }
+  .bottom_wrapper{
+    margin: 0 20px;
+  }
 
-  .question_btn{
+  .question_btn {
     display: flex;
     padding: 12px 20px;
   }
-  .md_questionp{
+
+  .md_questionp {
     padding: 16px 0;
   }
-  .question_wrapper{
+
+  .question_wrapper {
     justify-content: space-between;
   }
-  .md_hidden{
+
+  .md_hidden {
     display: none;
   }
+
   .hire_us_image_md {
     display: block;
   }
