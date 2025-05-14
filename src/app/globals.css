@@ -710,8 +710,34 @@ input[type="range"]::-moz-range-thumb {
     white-space: wrap !important;
   }
 }
+@keyframes jump {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+.jump {
+  animation: jump 2s ease-in-out infinite;
+}
 
 @media (min-width:320px) and (max-width:699px) {
+
+  /* hireus  */
+  .hire_us_image_sm {
+    display: block;
+  }
+
+  .shape_bg {
+    margin-top: 144px;
+  }
+
+  .hire_text_wrap{
+    margin-top: 134px;
+  }
+  /* hireus  */
   .tab {
     display: hidden;
   }
@@ -899,10 +925,36 @@ input[type="range"]::-moz-range-thumb {
     top: 45%;
   }
 
+  .tenk_text {
+    font-size: 154px !important;
+  }
+
   /* about */
 }
 
+.shape_bg {
+  background-image: url('/shape.png');
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
 @media (min-width:700px) and (max-width:1023px) {
+  .hire_us_image_md {
+    display: block;
+  }
+
+  .tenk_text {
+    margin-bottom: -156px !important;
+  }
+
+  .shape_bg {
+    padding-top: 60px !important;
+  }
+
+  .tenk_text {
+    font-size: 200px !important;
+  }
+
   .revenue_tab {
     gap: 32px;
   }
@@ -939,7 +991,6 @@ input[type="range"]::-moz-range-thumb {
 
   .flex_fixed {
     gap: 60px;
-
   }
 
   .tab {
@@ -949,7 +1000,6 @@ input[type="range"]::-moz-range-thumb {
   .mobile {
     display: none !important;
   }
-
 
   /* ourproducts */
   .product_bg h3 {
@@ -1075,12 +1125,11 @@ input[type="range"]::-moz-range-thumb {
   }
 
   .gradient_text {
-
     font-size: 40px !important;
   }
 
   .gradient_text1 {
-    font-size: 24px !important;
+    font-size: 30px !important;
     line-height: 32px;
     background: url('/home/grad1.jfif') no-repeat center;
     background-size: cover;
@@ -1091,7 +1140,6 @@ input[type="range"]::-moz-range-thumb {
   .hire_us_bg {
     background-image: url('/home/tab-hireus-bg.png') !important;
     background-repeat: no-repeat !important;
-
   }
 
   .arrow_cls {
@@ -1109,13 +1157,14 @@ input[type="range"]::-moz-range-thumb {
     font-size: 55px !important;
     line-height: 65px !important;
   }
-  .globally_btn{
+
+  .globally_btn {
     margin-top: 24px;
     padding: 13px 24px;
     display: flex;
     gap: 8px;
-
   }
+
   /* about */
   .arrow_cls {
     width: 64px;
@@ -1123,9 +1172,10 @@ input[type="range"]::-moz-range-thumb {
     right: 38%;
     top: 48%;
   }
-  .heading_text{
+
+  .heading_text {
     font-size: 30px;
-    line-height: 38px; /* 126.667% */
+    line-height: 38px;
 
   }
 }
@@ -1319,6 +1369,9 @@ input[type="range"]::-moz-range-thumb {
 }
 
 @media (min-width:1280px) and (max-width:1440px) {
+  .tenk_text {
+    font-size: 300px;
+  }
 
   .containers {
     padding-left: 100px;
@@ -1398,6 +1451,10 @@ input[type="range"]::-moz-range-thumb {
 }
 
 @media (min-width:1441px) and (max-width:1806px) {
+
+
+
+
   .globally_items {
     padding-left: 54px !important;
   }
@@ -1434,7 +1491,66 @@ input[type="range"]::-moz-range-thumb {
   }
 }
 
+.tenk_text {
+  text-align: center;
+  font-size: 350px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1;
+  letter-spacing: -3.5px;
+  text-transform: capitalize;
+  background: linear-gradient(176deg, #E8DBFF -11.88%, #F7F8FF 193.37%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: -190px;
+}
+
+
 @media (min-width:1806px) and (max-width:1920px) {
+  .hire_us_image .bootstrap {
+    left: 10% !important;
+  }
+
+  .hire_us_image .node {
+    left: 16% !important;
+  }
+
+  .hire_us_image .react {
+    bottom: -7% !important;
+    left: 23% !important;
+  }
+
+  .hire_us_image .laravel {
+    left: 7% !important;
+  }
+
+  .hire_us_image .php {
+    left: 22% !important;
+  }
+
+  .hire_us_image .android {
+    right: 18% !important;
+  }
+
+  .hire_us_image .apple {
+    top: 32% !important;
+    right: 15% !important;
+  }
+
+  .hire_us_image .figma {
+    right: 7% !important;
+  }
+
+  .hire_us_image .flutters {
+    right: 21% !important;
+  }
+
+  .hire_us_image .firebase {
+    right: 10% !important;
+  }
+
+
   .containers {
     padding-left: 250px;
     padding-right: 250px;

@@ -25,7 +25,7 @@ const FreeResource = () => {
       <motion.h3 initial={{ opacity: 0, y: 40 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6, ease: 'easeOut' }}
-        viewport={{ once: true }} className="lg:text-[65px]  text-[24px] lg:leading-[72px] leading-[30px] font-bold text-center mb-8 text-primary">
+        viewport={{ once: true }} className="heading_text lg:text-[65px]  text-[24px] lg:leading-[72px] leading-[30px] font-bold text-center mb-8 text-primary">
         Free Resource
       </motion.h3>
 
