@@ -69,10 +69,20 @@ const FreeResource = () => {
       </div>
       <div className="lg:hidden  flex flex-col justify-center items-center">
         <div className="grid grid-cols-1 products_wrapper gap-[18px] md:grid-cols-2 justify-center  items-center">
-          <ProductCard />
-          <ProductCard />
-          <ProductCard />
-          <ProductCard />
+          {
+            [1, 2, 3, 4].map(data => (
+              <motion.div
+                key={data}
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.5, delay: data * 0.1 }}
+                viewport={{ once: true }}
+              >
+                <ProductCard />
+              </motion.div>
+
+            ))
+          }
         </div>
         <button className="mt-6 bg-[#2353F5] flex gap-1.5 items-center text-white text-base font-bold px-[20px] py-[13px] rounded-[10px] w-fit mb-6 ">
           View Free Resource  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="19" viewBox="0 0 20 19" fill="none">

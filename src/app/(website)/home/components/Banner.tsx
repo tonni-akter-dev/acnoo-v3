@@ -107,16 +107,110 @@ const RotatingIcons = () => {
   );
 };
 
+// const MobileRotatingIcons = () => {
+//   const [rotation, setRotation] = useState(0);
+
+//   useEffect(() => {
+//     const interval = setInterval(() => {
+//       setRotation((prevRotation) => prevRotation + 1);
+//     }, 50);
+
+//     return () => clearInterval(interval);
+//   }, []);
+
+//   const icons = [
+//     { src: "/home/react.png", alt: "React Icon" },
+//     { src: "/home/java.png", alt: "Java Icon" },
+//     { src: "/home/bootstrap.png", alt: "Bootstrap Icon" },
+//   ];
+
+//   const secondaryLogos = [
+//     { src: "/home/js.png", alt: "Logo 1" },
+//     { src: "/home/js2.png", alt: "Logo 2" },
+//     { src: "/home/html.png", alt: "Logo 4" },
+//     { src: "/home/figma.png", alt: "Logo 4" },
+//     { src: "/home/flutter.png", alt: "Logo 4" },
+//     { src: "/home/html.png", alt: "Logo 4" },
+//     { src: "/home/sass.png", alt: "Logo 4" },
+//     { src: "/home/php.png", alt: "Logo 4" },
+//   ];
+
+//   const iconRadius = 80;
+//   const secondaryLogoRadius = 120;
+
+//   return (
+//     <div className="relative w-full h-full flex items-center justify-center z-10">
+//       <div className="rounded-full bg-white flex items-center justify-center">
+//         <div className="acno_4 flex justify-center items-center">
+//           <div className="acno_3 flex justify-center items-center">
+//             <div className="acno_2 size-[200px] border flex justify-center items-center rounded-full border-[#E6E6E8]">
+//               <div className="size-[120px] acno_1">
+//                 <Image src={acnoo} alt="Acnoo Logo" />
+//               </div>
+//             </div>
+//           </div>
+//         </div>
+//       </div>
+//       {icons.map((icon, index) => {
+//         const angle = (360 / icons.length) * index + rotation;
+//         const x = iconRadius * Math.cos((angle * Math.PI) / 180);
+//         const y = iconRadius * Math.sin((angle * Math.PI) / 180);
+//         return (
+//           <Image
+//             key={index}
+//             src={icon.src}
+//             width={80}
+//             height={80}
+//             alt={icon.alt}
+//             className="absolute rotating-icon"
+//             style={{
+//               width: "80px",
+//               height: "80px",
+//               left: `calc(48% + ${x}px - 40px)`, // Adjusted for smaller icon size
+//               top: `calc(48% + ${y}px - 40px)`,
+//               transform: `rotate(${angle}deg)`,
+//             }}
+//           />
+//         );
+//       })}
+//       {secondaryLogos.map((logo, index) => {
+//         const angle = (360 / secondaryLogos.length) * index - rotation;
+//         const x = secondaryLogoRadius * Math.cos((angle * Math.PI) / 180);
+//         const y = secondaryLogoRadius * Math.sin((angle * Math.PI) / 180);
+//         return (
+//           <Image
+//             key={index}
+//             src={logo.src}
+//             width={60}
+//             height={60}
+//             alt={logo.alt}
+//             className="absolute rotating-icon"
+//             style={{
+//               width: "60px",
+//               height: "60px",
+//               left: `calc(50% + ${x}px - 30px)`, // Adjusted for smaller icon size
+//               top: `calc(50% + ${y}px - 30px)`,
+//               transform: `rotate(${angle}deg)`,
+//             }}
+//           />
+//         );
+//       })}
+//     </div>
+//   );
+// };
 const MobileRotatingIcons = () => {
   const [rotation, setRotation] = useState(0);
+  const [isPaused, setIsPaused] = useState(false);
 
   useEffect(() => {
+    if (isPaused) return;
+
     const interval = setInterval(() => {
       setRotation((prevRotation) => prevRotation + 1);
     }, 50);
 
     return () => clearInterval(interval);
-  }, []);
+  }, [isPaused]);
 
   const icons = [
     { src: "/home/react.png", alt: "React Icon" },
@@ -127,16 +221,19 @@ const MobileRotatingIcons = () => {
   const secondaryLogos = [
     { src: "/home/js.png", alt: "Logo 1" },
     { src: "/home/js2.png", alt: "Logo 2" },
-    { src: "/home/html.png", alt: "Logo 4" },
+    { src: "/home/html.png", alt: "Logo 3" },
     { src: "/home/figma.png", alt: "Logo 4" },
-    { src: "/home/flutter.png", alt: "Logo 4" },
-    { src: "/home/html.png", alt: "Logo 4" },
-    { src: "/home/sass.png", alt: "Logo 4" },
-    { src: "/home/php.png", alt: "Logo 4" },
+    { src: "/home/flutter.png", alt: "Logo 5" },
+    { src: "/home/html.png", alt: "Logo 6" },
+    { src: "/home/sass.png", alt: "Logo 7" },
+    { src: "/home/php.png", alt: "Logo 8" },
   ];
 
   const iconRadius = 80;
   const secondaryLogoRadius = 120;
+
+  const handleMouseEnter = () => setIsPaused(true);
+  const handleMouseLeave = () => setIsPaused(false);
 
   return (
     <div className="relative w-full h-full flex items-center justify-center z-10">
@@ -151,44 +248,48 @@ const MobileRotatingIcons = () => {
           </div>
         </div>
       </div>
+
+      {/* Primary rotating icons */}
       {icons.map((icon, index) => {
         const angle = (360 / icons.length) * index + rotation;
         const x = iconRadius * Math.cos((angle * Math.PI) / 180);
         const y = iconRadius * Math.sin((angle * Math.PI) / 180);
         return (
           <Image
-            key={index}
+            key={`mobile-primary-${index}`}
             src={icon.src}
             width={80}
             height={80}
             alt={icon.alt}
-            className="absolute rotating-icon"
+            onMouseEnter={handleMouseEnter}
+            onMouseLeave={handleMouseLeave}
+            className="absolute transition-transform duration-300 ease-in-out hover:scale-150 cursor-pointer"
             style={{
-              width: "80px",
-              height: "80px",
-              left: `calc(48% + ${x}px - 40px)`, // Adjusted for smaller icon size
+              left: `calc(48% + ${x}px - 40px)`,
               top: `calc(48% + ${y}px - 40px)`,
               transform: `rotate(${angle}deg)`,
             }}
           />
         );
       })}
+
+      {/* Secondary rotating icons */}
       {secondaryLogos.map((logo, index) => {
         const angle = (360 / secondaryLogos.length) * index - rotation;
         const x = secondaryLogoRadius * Math.cos((angle * Math.PI) / 180);
         const y = secondaryLogoRadius * Math.sin((angle * Math.PI) / 180);
         return (
           <Image
-            key={index}
+            key={`mobile-secondary-${index}`}
             src={logo.src}
             width={60}
             height={60}
             alt={logo.alt}
-            className="absolute rotating-icon"
+            onMouseEnter={handleMouseEnter}
+            onMouseLeave={handleMouseLeave}
+            className="absolute transition-transform duration-300 ease-in-out hover:scale-150 cursor-pointer"
             style={{
-              width: "60px",
-              height: "60px",
-              left: `calc(50% + ${x}px - 30px)`, // Adjusted for smaller icon size
+              left: `calc(50% + ${x}px - 30px)`,
               top: `calc(50% + ${y}px - 30px)`,
               transform: `rotate(${angle}deg)`,
             }}

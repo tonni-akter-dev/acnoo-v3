@@ -1109,13 +1109,24 @@ input[type="range"]::-moz-range-thumb {
     font-size: 55px !important;
     line-height: 65px !important;
   }
+  .globally_btn{
+    margin-top: 24px;
+    padding: 13px 24px;
+    display: flex;
+    gap: 8px;
 
+  }
   /* about */
   .arrow_cls {
     width: 64px;
     height: 64px;
     right: 38%;
     top: 48%;
+  }
+  .heading_text{
+    font-size: 30px;
+    line-height: 38px; /* 126.667% */
+
   }
 }
 
@@ -1308,6 +1319,7 @@ input[type="range"]::-moz-range-thumb {
 }
 
 @media (min-width:1280px) and (max-width:1440px) {
+
   .containers {
     padding-left: 100px;
     padding-right: 100px;
