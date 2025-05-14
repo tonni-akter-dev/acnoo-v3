@@ -3,6 +3,7 @@ import { motion } from 'framer-motion';
 import React from "react";
 import globe from "/public/home/globe.png";
 import Image from "next/image";
+import CountUp from 'react-countup';
 
 const cardVariant = {
   hidden: { opacity: 0, x: -50 },
@@ -53,7 +54,7 @@ const IncreaseRevenue = () => {
             }}
           />
         </div>
-        <div className="increase_wrapper hidden lg:flex justify-center gap-[70px] items-center">
+        {/* <div className="increase_wrapper hidden lg:flex justify-center gap-[70px] items-center">
           {[{ value: "07+", label: "Years<br/>Of Experience" },
           { value: "20+", label: "Team<br/>Members" },
           { value: "2k+", label: "Happy<br/>Clients" },
@@ -83,7 +84,38 @@ const IncreaseRevenue = () => {
               />
             </motion.div>
           ))}
+        </div> */}
+        <div className="increase_wrapper hidden lg:flex justify-center gap-[70px] items-center">
+          {[
+            { value: 7, suffix: "+", label: "Years<br/>Of Experience" },
+            { value: 20, suffix: "+", label: "Team<br/>Members" },
+            { value: 8, suffix: "k+", label: "Happy<br/>Clients" },
+            { value: 40, suffix: "+", label: "Country using our application" }
+          ].map((item, i) => (
+            <div
+              key={i}
+              className={`flex gap-8 items-center increase_card pe-[70px] ${i !== 3 ? "lg:border-r border-[#64607C40]" : ""}`}
+            >
+              <div
+                className="w-[100px] h-[100px] rounded-full ps-[25px] pt-[25px] rounded_card"
+                style={{
+                  background:
+                    "linear-gradient(145deg, rgba(221, 134, 212, 0.50) 15.55%, rgba(255, 255, 255, 0.09) 86.81%)",
+                }}
+              >
+                <p className="text-primary text-[50px] font-medium">
+                  <CountUp end={item.value} duration={2} />
+                  {item.suffix}
+                </p>
+              </div>
+              <p
+                className="text-[#141125] text-base font-semibold text-start"
+                dangerouslySetInnerHTML={{ __html: item.label }}
+              />
+            </div>
+          ))}
         </div>
+
         {/* mobile */}
         <div className="lg:hidden xs_screen grid grid-cols-2 justify-center gap-5 md:gap-[70px] items-center">
           {[{ value: "07+", label: "Years<br/>Of Experience" },
