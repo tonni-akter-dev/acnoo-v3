@@ -53,7 +53,7 @@ const OurProducts = () => {
                             <button
                                 key={index}
                                 onClick={() => handleTabClick(index)}
-                                className={`${activeTab === index ? "bg-[#2F1C6A] text-white" : "bg-white"} cursor-pointer  text-base font-bold  rounded-4xl py-[13px]  px-2.5 md:px-6 tab_button lg:py-3 lg:px-5`}
+                                className={`${activeTab === index ? "bg-[#2F1C6A] text-white" : "bg-white"} cursor-pointer  text-base font-bold  rounded-4xl py-[13px] px-6 tab_button lg:py-3`}
                             >
                                 {tab.title}
                             </button>

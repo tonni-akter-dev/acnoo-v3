@@ -62,7 +62,7 @@ const Header = () => {
               >
                 Products
               </Link>
-              {/* <ProductsMegamenu /> */}
+              <ProductsMegamenu />
             </li>
             <li className="group hoverable py-6 lg:py-9 relative group">
               <Link
@@ -71,7 +71,7 @@ const Header = () => {
               >
                 Add-ons
               </Link>
-              {/* <AddonsMegamenu /> */}
+              <AddonsMegamenu />
             </li>
             <li className="py-6 lg:py-9  ">
               <Link
@@ -88,7 +88,7 @@ const Header = () => {
               >
                 Why Acnoo
               </Link>
-              {/* <WhyAcnoomenu /> */}
+              <WhyAcnoomenu />
             </li>
             <li className="py-6 lg:py-9  ">
               <Link
@@ -123,10 +123,11 @@ const Header = () => {
               </div>
 
               <div>
-                <button className="flex gap-2 items-center bg-[#E2DBFC] rounded-[10px]  px-[33px]  py-4 text-[#311E7A] text-base font-bold">
-                  Free resource
-                  <Image src={next} alt="" />
-                </button>
+             <button className="flex gap-2 items-center bg-[#E2DBFC] hover:bg-[#D5CCF9] transition-all duration-300 ease-in-out transform hover:scale-[1.03] rounded-[10px] px-[33px] py-4 text-[#311E7A] hover:text-[#1e0e5a] text-base font-bold shadow-md hover:shadow-lg">
+  Free resource
+  <Image src={next} alt="" className="transition-transform duration-300 group-hover:translate-x-1" />
+</button>
+
               </div>
             </div>
           )}

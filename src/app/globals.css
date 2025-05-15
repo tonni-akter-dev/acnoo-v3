@@ -96,16 +96,12 @@ button {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   display: inline-block;
-  font-family: "Space Grotesk", sans-serif;
-  font-size: 65px;
-  font-weight: 700;
-  line-height: 73px;
-  letter-spacing: -0.72px;
-  text-transform: capitalize;
   margin-left: 2px;
 }
 
+html,
 body {
+  overflow-x: hidden;
   font-family: "Space Grotesk", sans-serif;
 }
 
@@ -347,17 +343,31 @@ body {
   white-space: nowrap;
 }
 
-.mega-menu,
+/* .mega-menu,
 .mega-menu-why {
   opacity: 0;
   visibility: hidden;
   z-index: -900;
   left: 20%;
   top: 0;
-  /* Start at top: 0 */
   position: absolute;
   text-align: left;
   width: 100%;
+  transition: opacity 0.20s linear, top 0.20s linear, visibility 0.20s linear;
+} */
+.mega-menu,
+.mega-menu-why,
+.mega-menu-addons {
+  opacity: 0;
+  visibility: hidden;
+  z-index: -900;
+  left: 50%;
+  top: 0;
+  position: absolute;
+  text-align: left;
+  width: max-content;
+  max-width: 95vw;
+  transform: translateX(-50%);
   transition: opacity 0.20s linear, top 0.20s linear, visibility 0.20s linear;
 }
 
@@ -373,18 +383,17 @@ body {
   /* End at top: 90px */
 }
 
-.mega-menu-addons {
+/* .mega-menu-addons {
   opacity: 0;
   visibility: hidden;
   z-index: -900;
   left: 20%;
   top: 0;
-  /* Start at top: 0 */
   position: absolute;
   text-align: left;
   width: 100%;
   transition: opacity 0.20s linear, top 0.20s linear, visibility 0.20s linear;
-}
+} */
 
 .hoverable:hover .mega-menu-addons {
   opacity: 1;
@@ -409,7 +418,7 @@ body {
 .acno_1 {
   background-color: #FFF;
   border: 1px solid #E6E6E8;
-  box-shadow: 0px 4px 15px rgba(80, 105, 168, 0.13);
+  box-shadow: 0px 4px 15px rgba(69, 84, 121, 0.13);
   width: 185.52px;
   height: 185.713px;
   flex-shrink: 0;
@@ -672,8 +681,41 @@ input[type="range"]::-moz-range-thumb {
   -webkit-text-fill-color: transparent;
 }
 
-@media (min-width:320px) and (max-width:374px) {
+/* hireus icon jump */
+@keyframes jump {
 
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+.jump {
+  animation: jump 2s ease-in-out infinite;
+}
+
+.shape_bg {
+  background-image: url('/shape.png');
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+/* hireus icon jump */
+@media (min-width:320px) and (max-width:374px) {
+  .banner_input {
+    width: 185px !important;
+  }
+
+  .tab_button {
+    padding: 12px 10px;
+  }
+}
+
+@media (min-width:320px) and (max-width:374px) {
   .offer_xs {
     flex-wrap: wrap;
     border-radius: 8px;
@@ -711,23 +753,15 @@ input[type="range"]::-moz-range-thumb {
   }
 }
 
-@keyframes jump {
-
-  0%,
-  100% {
-    transform: translateY(0);
-  }
-
-  50% {
-    transform: translateY(-10px);
-  }
-}
-
-.jump {
-  animation: jump 2s ease-in-out infinite;
-}
-
 @media (min-width:320px) and (max-width:699px) {
+
+  .flex_fixed {
+    gap: 50px;
+  }
+
+  .company {
+    margin-right: 0;
+  }
 
   /* hireus  */
   .hire_us_image_sm {
@@ -854,7 +888,6 @@ input[type="range"]::-moz-range-thumb {
   }
 
   .gradient_text1 {
-    font-size: 24px !important;
     background: url('/home/grad1.jfif') no-repeat center;
     background-size: cover;
     -webkit-background-clip: text;
@@ -935,18 +968,15 @@ input[type="range"]::-moz-range-thumb {
   }
 
   /* about */
-}
-
-.shape_bg {
-  background-image: url('/shape.png');
-  background-repeat: no-repeat;
-  background-position: center;
+  .mega-menu,
+  .mega-menu-addons,
+  .mega-menu-why {
+    left: 48% !important;
+  }
 }
 
 @media (min-width:700px) and (max-width:1023px) {
-  .hidden_md {
-    display: none;
-  }
+
 
   .women_image {
     display: none;
@@ -1137,7 +1167,13 @@ input[type="range"]::-moz-range-thumb {
   .mega-menu,
   .mega-menu-addons,
   .mega-menu-why {
-    left: 0 !important;
+    left: 28% !important;
+  }
+
+  .why_menu {
+    flex-direction: column;
+    gap: 20px 24px !important;
+    align-items: start !important;
   }
 
   .hoverable:hover .mega-menu-addons {
@@ -1183,8 +1219,6 @@ input[type="range"]::-moz-range-thumb {
   }
 
   .gradient_text1 {
-    font-size: 30px !important;
-    line-height: 32px;
     background: url('/home/grad1.jfif') no-repeat center;
     background-size: cover;
     -webkit-background-clip: text;
@@ -1230,11 +1264,88 @@ input[type="range"]::-moz-range-thumb {
   .heading_text {
     font-size: 30px;
     line-height: 38px;
-
   }
+
+
+  /* footer */
+  .md_flex {
+    display: flex;
+    flex-direction: row;
+    gap: 0;
+  }
+
+  .hidden_md {
+    display: none;
+  }
+
+  .footer_bg {
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+
+  .md_w {
+    width: 50%;
+  }
+
+  .company {
+    margin-right: 30px;
+  }
+
+  .add_ons {
+    width: 326px;
+  }
+
+  /* footer */
+
 }
 
 @media (min-width:1024px) and (max-width:1279px) {
+  .mega-menu {
+    max-width: 900px !important;
+    width: 100%;
+  }
+
+  /* footer */
+  .md_flex {
+    display: flex;
+    flex-direction: row;
+    gap: 0;
+  }
+
+  .hidden_md {
+    display: none;
+  }
+
+  .footer_bg {
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+
+  .footer_man {
+    display: none;
+  }
+
+  .md_w {
+    width: 50%;
+  }
+
+  .company {
+    margin-right: 30px;
+  }
+
+  .add_ons {
+    width: 326px;
+  }
+
+  .thousand_screen {
+    display: none;
+  }
+
+
+  /* footer */
+
+
+
   .cartoon {
     display: none;
   }
@@ -1276,13 +1387,13 @@ input[type="range"]::-moz-range-thumb {
     padding-right: 20px;
   }
 
-  .hoverable:hover .mega-menu {
+  /* .hoverable:hover .mega-menu {
     left: 0 !important;
   }
 
   .mega-menu-addons {
     left: 0 !important;
-  }
+  } */
 
   .header_gap {
     gap: 20px;
@@ -1304,11 +1415,6 @@ input[type="range"]::-moz-range-thumb {
 
   .products_wrapper {
     grid-template-columns: repeat(3, minmax(0, 1fr));
-  }
-
-  .specialize_text {
-    /* flex-direction: column;
-    align-items: start; */
   }
 
   .specialize_text h2 {
@@ -1446,11 +1552,6 @@ input[type="range"]::-moz-range-thumb {
     gap: 24px !important;
   }
 
-  .gradient_text1 {
-    font-size: 45px;
-    line-height: 55px;
-  }
-
   .heading_text {
     font-size: 45px;
     line-height: 55px;
@@ -1505,10 +1606,6 @@ input[type="range"]::-moz-range-thumb {
 }
 
 @media (min-width:1441px) and (max-width:1806px) {
-
-
-
-
   .globally_items {
     padding-left: 54px !important;
   }

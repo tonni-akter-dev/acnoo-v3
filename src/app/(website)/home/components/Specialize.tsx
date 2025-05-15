@@ -39,20 +39,6 @@ const Button = ({
   };
 
   return (
-    // <button
-    //   className={className}
-    //   style={{
-    //     display: 'flex',
-    //     flexDirection: 'column',
-    //     alignItems: 'center',
-    //   }}
-    // >
-    //   <Image
-    //     src={image}
-    //     className="lg:size-[177px] md:size-[120px] size-[132px] specialize_btn_img"
-    //     alt={text}
-    //   />
-    // </button>
     <button className={className}
       style={buttonStyles}>
       <Image src={image} className='lg:size-[177px] md:size-[120px] size-[132px] specialize_btn_img' alt={text} />
@@ -97,9 +83,9 @@ const Specialize = () => {
           initial="hidden"
           animate={isInView ? 'visible' : 'hidden'}
           transition={{ duration: 0.8, ease: 'easeOut' }}
-          className="mb-5 lg:mb-0 max-w-[560px] w-full lg:text-[65px] text-2xl lg:leading-[65px] leading-[32px] font-bold text-white whitespace-nowrap specialize_heading"
+          className="mb-5 lg:mb-0 max-w-[560px] w-full lg:text-[65px] md:text-[30px] text-2xl lg:leading-[65px] leading-8 font-bold text-white  whitespace-nowrap specialize_heading"
         >
-          Specialize in many <br className="lg:block md:hidden block" />
+          Specialize in many <br className="lg:block md:hidden block break_clas" />
           Different <span className="gradient_text1">Sectors</span>
         </motion.h2>
 
@@ -173,7 +159,7 @@ const Specialize = () => {
       </div>
 
       {/* Mobile Version */}
-      <div className="lg:hidden md:hidden mobile grid grid-cols-2 gap-6 mt-10">
+      <div className="lg:hidden md:hidden mobile grid grid-cols-2 gap-6 mt-6">
         {[flutterAppDevelopment, softwareDevelopment, websiteDevelopment, uiUxDesign, digitalMarketing, saasProductDevelopment].map((image, i) => (
           <motion.div
             key={i}

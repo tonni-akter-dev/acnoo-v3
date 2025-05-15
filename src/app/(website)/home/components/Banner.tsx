@@ -347,7 +347,7 @@ const Banner = () => {
             <input
               type="text"
               placeholder="What are you looking for?"
-              className="flex-grow px-4 py-3 text-[#0A2C3D8A]  bg-white rounded-[8px] focus:outline-none"
+              className="flex-grow px-4 py-3 text-[#0A2C3D8A]  bg-white rounded-[8px] banner_input focus:outline-none"
             />
             <button className=" h-10  lg:h-[56px] my-1 me-1 flex items-center  px-2.5 lg:px-5 py-4 text-white bg-[#2F1C6A] rounded-[6px] focus:outline-none">
               <svg

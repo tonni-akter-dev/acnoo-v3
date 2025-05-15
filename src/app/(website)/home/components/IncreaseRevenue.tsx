@@ -9,7 +9,8 @@ const IncreaseRevenue = () => {
   const countUpRef = useRef(null);
   const desktopRef = useRef(null);
   const isInView = useInView(desktopRef, { once: true, margin: '-100px' }); // triggers slightly earlier
-
+const mobileStatsRef = useRef(null);
+const isMobileInView = useInView(mobileStatsRef, { once: true });
   const stats = [
     { value: 7, suffix: "+", label: "Years<br/>Of Experience" },
     { value: 20, suffix: "+", label: "Team<br/>Members" },
@@ -31,7 +32,7 @@ const IncreaseRevenue = () => {
           </span>
           Something new coming soon!
         </div>
-        <h2 className="heading_text text-center mb-7 lg:mb-[60px] w-full lg:text-[65px]  text-[26px] lg:leading-[65px] leading-[32px] font-bold text-primary md:whitespace-nowrap">
+        <h2 className="heading_text globbaly_heading text-center mb-7 lg:mb-[60px] w-full lg:text-[65px] md:text-3xl  text-2xl lg:leading-[65px] leading-[32px] font-bold text-primary md:whitespace-nowrap">
           We Makes <span className="gradient_text1">Globally</span> Growth <br className="md:block hidden" />
           & Increase Revenue
         </h2>
@@ -84,31 +85,31 @@ const IncreaseRevenue = () => {
       </div>
 
         {/* MOBILE STATS */}
-        <div className="lg:hidden xs_screen grid grid-cols-2 justify-center gap-5 md:gap-[70px] items-center">
-          {stats.map((item, i) => (
-            <div
-              key={i}
-              className="flex revenue_tab md:gap-8 gap-4 items-center"
-            >
-              <div
-                className="revenue_tab_card md:size-[100px] size-[64px] rounded-full ps-[19px] md:ps-[25px] pt-2 md:pt-[25px]"
-                style={{
-                  background:
-                    "linear-gradient(145deg, rgba(221, 134, 212, 0.50) 15.55%, rgba(255, 255, 255, 0.09) 86.81%)",
-                }}
-              >
-                <h3 className="text-primary text-[30px] md:text-[50px] font-medium">
-                  {isInView && <CountUp end={item.value} duration={2} />}
-                  {item.suffix}
-                </h3>
-              </div>
-              <p
-                className="text-[#141125] text-sm md:text-base font-semibold text-start"
-                dangerouslySetInnerHTML={{ __html: item.label }}
-              />
-            </div>
-          ))}
-        </div>
+      <div
+  ref={mobileStatsRef}
+  className="lg:hidden xs_screen grid grid-cols-2 justify-center gap-5 md:gap-[70px] items-center"
+>
+  {stats.map((item, i) => (
+    <div key={i} className="flex revenue_tab md:gap-8 gap-4 items-center">
+      <div
+        className="revenue_tab_card md:size-[100px] size-[64px] rounded-full ps-[19px] md:ps-[25px] pt-2 md:pt-[25px]"
+        style={{
+          background:
+            "linear-gradient(145deg, rgba(221, 134, 212, 0.50) 15.55%, rgba(255, 255, 255, 0.09) 86.81%)",
+        }}
+      >
+        <h3 className="text-primary text-[30px] md:text-[50px] font-medium">
+          {isMobileInView && <CountUp end={item.value} duration={2} />}
+          {item.suffix}
+        </h3>
+      </div>
+      <p
+        className="text-[#141125] text-sm md:text-base font-semibold text-start"
+        dangerouslySetInnerHTML={{ __html: item.label }}
+      />
+    </div>
+  ))}
+</div>
       </div>
     </div>
   );

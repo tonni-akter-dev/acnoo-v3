@@ -68,7 +68,7 @@ const GloballyGrowth = ({ text, color }: { text?: string; color?: string }) => {
             <motion.h3
               custom={1}
               variants={fadeLeft}
-              className="heading_text lg:text-[65px] md:text-[30px] text-[24px] lg:leading-[72px] leading-[30px] font-bold mb-7 text-white"
+              className="heading_text lg:text-[65px] md:text-[30px] text-2xl lg:leading-[72px] leading-[30px] font-bold mb-7 text-white"
             >
               We Makes Globally Growth & Increase Revenue
             </motion.h3>

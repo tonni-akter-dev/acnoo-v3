@@ -14,14 +14,14 @@ const WhyAcnoomenu = () => {
   return (
     <div className="w-full flex justify-center items-center">
       <div
-        className="mb-12 rounded-2xl  flex justify-center  left-0 lg:!left-[38%] mega-menu-why lg:max-w-[608px] mx-auto w-full bg-white"
+        className="mb-12 rounded-2xl  flex justify-center lg:!left-[38%] mega-menu-why lg:max-w-[608px] mx-auto w-full bg-white"
         style={{
           boxShadow: "0px 24px 56px 0px rgba(39, 40, 41, 0.16)",
         }}
       >
         <div className="container mx-auto ">
           {/* Top Links */}
-          <div className="pt-[38px] pb-6 lg:pb-8 px-8  grid grid-cols-1 lg:grid-cols-2 md:grid-cols-2">
+          <div className="pt-[38px] pb-6 lg:pb-8 px-8  grid grid-cols-1 lg:grid-cols-2 ">
             {/* Testimonial */}
             <div className="flex items-start space-x-4 cursor-pointer hover:bg-[#E4C2FF66] p-[15px] rounded-lg transition-all ease-in-out duration-100">
               <Image src={why1} alt="" />
@@ -84,7 +84,7 @@ const WhyAcnoomenu = () => {
           {/* Our Offices Section */}
           <div className="m-2 p-6 bg-[#F9FBFF] rounded-2xl">
             <h5 className="text-xs font-semibold text-[#6B7280] mb-4">OUR OFFICES</h5>
-            <div className="flex flex-col-reverse md:flex-row items-start md:items-center space-y-4 md:space-y-4 lg:gap-0 gap-4 md:space-x-6">
+            <div className="flex why_menu flex-col-reverse md:flex-row items-start md:items-center space-y-4 md:space-y-4 lg:gap-0 gap-4 md:space-x-6">
               <Image
                 src={officebuilding}
                 alt="office"
