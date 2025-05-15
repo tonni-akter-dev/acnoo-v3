@@ -20,7 +20,7 @@ const MobileHeader = () => {
           </Link>
         </li>
 
-        <li className="hoverable py-6 lg:py-11 flex justify-between items-center lg:border-none border-b border-b-[#E5E7EB]   ">
+        <li className="hoverable py-6 lg:py-11 flex justify-between items-center lg:border-none border-b border-b-[#E5E7EB]">
           <Link
             href="#"
             className="hover:border-b-[2.5px] border-[#673DE6] hover:text-[#673DE6] transition-all duration-75 ease-in-out relative block text-sm lg:text-base font-bold"
@@ -29,7 +29,7 @@ const MobileHeader = () => {
           </Link>  
           <ProductsMegamenu />
         </li>
-        <li className="hoverable py-6 lg:py-11 relative group">
+        <li className="hoverable py-6 lg:py-11 relative group lg:border-none border-b border-b-[#E5E7EB]">
           <Link
             href="#"
             className="hover:border-b-[2.5px] border-[#673DE6] hover:text-[#673DE6] transition-all duration-75 ease-in-out relative block text-sm lg:text-base font-bold"
@@ -46,7 +46,7 @@ const MobileHeader = () => {
             Services
           </Link>
         </li>
-         <li className="hoverable py-6 lg:py-11 relative group">
+         <li className="hoverable py-6 lg:py-11 relative group lg:border-none border-b border-b-[#E5E7EB]">
           <Link
             href="#"
             className="hover:border-b-[2.5px] border-[#673DE6] hover:text-[#673DE6] transition-all duration-75 ease-in-out relative block text-sm lg:text-base font-bold"

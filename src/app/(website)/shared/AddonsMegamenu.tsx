@@ -32,15 +32,15 @@ const AddonsMegamenu = () => {
   return (
     <div className="w-full flex justify-center items-center">
       <div
-        className="mb-12 rounded-2xl pt-5 lg:Lpt-[61px] pb-10 px-5 lg:px-10 flex justify-center  mega-menu-addons lg:max-w-[1015px] mx-auto w-full bg-white !md:group-hover:top-[190px]"
+        className="mb-12 rounded-2xl pt-5 lg:pt-[61px] pb-10 px-5 lg:px-10 flex justify-center  mega-menu-addons lg:max-w-[1015px] mx-auto w-full bg-white !md:group-hover:top-[190px]"
         style={{
           boxShadow: "0px 24px 56px 0px rgba(167, 174, 186, 0.16)",
         }}
       >
         <div className="container mx-auto ">
-          <ul className="w-full  grid lg:grid-cols-3 grid-cols-1 pt-6 lg:pt-3 ">
+          <ul className="w-full  grid lg:grid-cols-3 grid-cols-1 lg:pt-3 ">
             {products.map((product, i) => (
-              <div key={i} className="cursor-pointer flex items-start gap-3 mb-[25px] hover:bg-[#E4C2FF66] p-8 rounded-lg transition-all ease-in-out duration-100">
+              <div key={i} className="cursor-pointer flex items-start gap-3 lg:mb-[25px] hover:bg-[#E4C2FF66] p-4 lg:p-8 rounded-lg transition-all ease-in-out duration-100">
                 <Image src={product.icon} alt={product.title} />
                 <div>
                   <h3 className="font-bold text-[#282F39] text-base mb-2 whitespace-nowrap">

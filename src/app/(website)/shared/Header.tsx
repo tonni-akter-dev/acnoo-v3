@@ -64,7 +64,7 @@ const Header = () => {
               </Link>
               <ProductsMegamenu />
             </li>
-            <li className="group hoverable py-6 lg:py-9 relative group">
+            <li className="group hoverable py-6 lg:py-9 relative">
               <Link
                 href="#"
                 className="hover:border-b-[2.5px] border-[#673DE6] hover:text-[#673DE6] transition-all duration-75 ease-in-out relative block text-sm lg:text-base font-bold"
