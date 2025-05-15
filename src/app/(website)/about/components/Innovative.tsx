@@ -11,7 +11,7 @@ import Link from 'next/link'
 
 const Innovative = () => {
     return (
-        <div className='mt-6 md:mt-8 lg:mt-[107px] lg_screen_px lg:px-[100px] mb-[122px]'>
+        <div className='mt-6 md:mt-8 lg:mt-[107px] lg_screen_px containers mb-[122px]'>
             <h1 className='text-2xl md:text-[35px] lg:text-[55px] text-center mb-3 md:mb-4  lg:mb-[62px] font-bold text-[#59595C]  leading-8 md:leading-11 lg:leading-[68px] '><span className='text-primary'> A GLOBAL,</span> INNOVATIVE <br className='lg:hidden md:hidden block' /> SOFTWERE <br className='lg:hidden md:block hidden' /> COMPANY</h1>
             <div className="grid lg:grid-cols-2 grid-cols-1 items-end innovative">
                 <div>

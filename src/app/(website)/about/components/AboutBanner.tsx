@@ -20,7 +20,7 @@ const AboutBanner = () => {
           <div>
             <p className="text-base lg:text-xl font-medium text-[#010101] ">
               Creative
-              <span className="text-[#2353F5]"> Agency</span> Beside <br />{" "}
+              <span className="text-[#2353F5]"> Agency</span> Beside <br className="sm_br" />{" "}
               Dhaka, Bangladesh
             </p>
           </div>
@@ -44,7 +44,7 @@ const AboutBanner = () => {
         </div>
 
         {/* Main Title */}
-        <div className="flex lg:flex-row flex-col md:flex-col md:gap-6 lg:gap-[86px] md:items-start lg:items-end">
+        <div className="flex lg:flex-row flex-col md:flex-col md:gap-6 lg:gap-[86px] md:items-start about_banner_text lg:items-end">
           <div className="heading relative mt-3.5 lg:mt-6 text-[120px] font-bold text-primary leading-[142px] ">
             DIGITAL <span className="font-normal">SOFTWARE</span> <br /> AGENCY
             <Image
@@ -57,47 +57,47 @@ const AboutBanner = () => {
           {/* Tagline */}
           <p className="mt-4 text-base lg:text-xl font-semibold text-[#010101] ">
             Elevate your brand with{" "}
-            <span className="text-[#8D8F96]">the Agencyo</span> <br className="lg:block hidden"  />
-            Agency – everything from <br className="lg:hiudden md:block hidden"  /> strategy <br  className="lg:block hidden" />
+            <span className="text-[#8D8F96]">the Agencyo</span> <br className="lg:block   hidden"  />
+            Agency – everything from <br className="lg:hidden about_blockbr md:block hidden"  /> strategy <br  className="lg:block hidden" />
             to advertising & scale.
           </p>
         </div>
       </div>
 
       {/* Sidebar with Social Icons */}
-      <div className="absolute right-10 lg:right-[50px] md:top-1/2  lg:top-1/2  transform -translate-y-1/2 flex flex-row md:flex-col lg:flex-col lg:space-y-4 md:space-y-4 space-x-4  ">
+      <div className="absolute right-10 lg:right-[50px] social_md_icons md:top-1/2  lg:top-1/2  transform -translate-y-1/2 flex flex-row md:flex-col lg:flex-col space-y-4 space-x-4  ">
         <div
-          className="text-[#9497A3] hover:bg-[#1A0B49] hover:text-white cursor-pointer flex justify-center items-center bg-white size-[38px] rounded-full"
+          className="text-[#9497A3] hover:bg-[#1A0B49] hover:text-white icons cursor-pointer flex justify-center items-center bg-white size-[38px] rounded-full"
           style={{ boxShadow: "0 1px 8px rgba(1, 16, 61, 0.07)" }}
         >
           <FaFacebookF />
         </div>
         <div
-          className="text-[#9497A3] hover:bg-[#1A0B49] hover:text-white cursor-pointer flex justify-center items-center bg-white size-[38px] rounded-full"
+          className="text-[#9497A3] hover:bg-[#1A0B49] hover:text-white icons cursor-pointer flex justify-center items-center bg-white size-[38px] rounded-full"
           style={{ boxShadow: "0 1px 8px rgba(1, 16, 61, 0.07)" }}
         >
           <FaYoutube />
         </div>
         <div
-          className="text-[#9497A3] hover:bg-[#1A0B49] hover:text-white cursor-pointer flex justify-center items-center bg-white size-[38px] rounded-full"
+          className="text-[#9497A3] hover:bg-[#1A0B49] hover:text-white icons cursor-pointer flex justify-center items-center bg-white size-[38px] rounded-full"
           style={{ boxShadow: "0 1px 8px rgba(1, 16, 61, 0.07)" }}
         >
           <IoLogoDribbble />
         </div>
         <div
-          className="text-[#9497A3] hover:bg-[#1A0B49] hover:text-white cursor-pointer flex justify-center items-center bg-white size-[38px] rounded-full"
+          className="text-[#9497A3] hover:bg-[#1A0B49] hover:text-white icons cursor-pointer flex justify-center items-center bg-white size-[38px] rounded-full"
           style={{ boxShadow: "0 1px 8px rgba(1, 16, 61, 0.07)" }}
         >
           <FaBehance />
         </div>
         <div
-          className="text-[#9497A3] hover:bg-[#1A0B49] hover:text-white cursor-pointer flex justify-center items-center bg-white size-[38px] rounded-full"
+          className="text-[#9497A3] hover:bg-[#1A0B49] hover:text-white icons cursor-pointer flex justify-center items-center bg-white size-[38px] rounded-full"
           style={{ boxShadow: "0 1px 8px rgba(1, 16, 61, 0.07)" }}
         >
           <FaXTwitter />
         </div>
         <div
-          className="text-[#9497A3] hover:bg-[#1A0B49] hover:text-white cursor-pointer flex justify-center items-center bg-white size-[38px] rounded-full"
+          className="text-[#9497A3] hover:bg-[#1A0B49] hover:text-white icons cursor-pointer flex justify-center items-center bg-white size-[38px] rounded-full"
           style={{ boxShadow: "0 1px 8px rgba(1, 16, 61, 0.07)" }}
         >
           <FaLinkedinIn />
