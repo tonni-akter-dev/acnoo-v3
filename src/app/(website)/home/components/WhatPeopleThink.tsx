@@ -30,6 +30,7 @@ const WhatPeopleThink = () => {
             transition: { duration: 0.6, ease: "easeOut" },
         },
     };
+    
     return (
         <div className="lg:py-16 md:py-8 py-6 whatpeoplethink_wrapper relative  z-50">
             <Image className='absolute top-[-30%] md:top-[-87%] lg:top-[-48%]  z-[-10]' src={blur1} alt="" />

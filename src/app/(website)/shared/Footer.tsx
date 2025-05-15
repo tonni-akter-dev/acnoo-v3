@@ -17,7 +17,6 @@ import { FaAnglesUp, FaXTwitter } from "react-icons/fa6";
 import { IoLogoDribbble } from "react-icons/io";
 
 const Footer = () => {
-
     const scrollToTop = () => {
         console.log('skjdfklsd');
         window.scrollTo({
@@ -25,7 +24,6 @@ const Footer = () => {
           behavior: 'smooth'
         });
       };
-
   return (
     <footer className="relative bg-[#F3F0FD]  py-8 px-4 md:px-8 lg:px-[150px] footer_bg">
       <div className="">
@@ -293,7 +291,7 @@ const Footer = () => {
           </div>
         </div>
         {/* medium device */}
-        <div className="lg:hidden md:flex md:flex-row flex-col-reverse gap-[30px] flex mb-[27px] lg:mb-[84px]">
+        <div className="lg:hidden md:flex md:flex-row flex-col-reverse  md:gap-0 gap-[30px] flex mb-[27px] lg:mb-[84px]">
           {/* Add-ons Section */}
           <div className="me-[20px] w-full md:w-[326px]">
             <h3 className="font-bold text-[22px] mb-6 text-[#0D1224]">
@@ -400,7 +398,7 @@ const Footer = () => {
             </ul>
           </div>
         </div>
-        <div className="flex justify-center md:hidden lg:hidden">
+        <div className="flex justify-center hidden_md md:hidden lg:hidden">
           <button onClick={()=>scrollToTop} className="bg-[#2F1C6A] rounded-lg size-11 text-white flex justify-center items-center mb-6">
             <FaAnglesUp />
           </button>

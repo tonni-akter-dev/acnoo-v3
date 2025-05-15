@@ -1,12 +1,24 @@
-'use client'
-import { motion } from 'framer-motion';
-import React from "react";
+'use client';
+import { motion, useInView } from 'framer-motion';
+import React, { useRef } from "react";
 import globe from "/public/home/globe.png";
 import Image from "next/image";
 import CountUp from 'react-countup';
+
 const IncreaseRevenue = () => {
+  const countUpRef = useRef(null);
+  const desktopRef = useRef(null);
+  const isInView = useInView(desktopRef, { once: true, margin: '-100px' }); // triggers slightly earlier
+
+  const stats = [
+    { value: 7, suffix: "+", label: "Years<br/>Of Experience" },
+    { value: 20, suffix: "+", label: "Team<br/>Members" },
+    { value: 8, suffix: "k+", label: "Happy<br/>Clients" },
+    { value: 40, suffix: "+", label: "Country using our application" }
+  ];
   return (
-    <div className="increase_revenue lg_screen_px pt-6 pb-[34px] lg:pt-[93px] lg:pb-[118px] text-center lg:px-[150px] px-5">
+    <div ref={countUpRef} className="increase_revenue lg_screen_px pt-6 pb-[34px] lg:pt-[93px] lg:pb-[118px] text-center lg:px-[150px] px-5">
+      {/* HEADER */}
       <motion.div
         initial={{ opacity: 0, y: 40 }}
         whileInView={{ opacity: 1, y: 0 }}
@@ -24,13 +36,10 @@ const IncreaseRevenue = () => {
           & Increase Revenue
         </h2>
       </motion.div>
+
+      {/* GLOBE IMAGE */}
       <div className="text-center flex flex-col justify-center items-center">
-        <div
-          style={{
-            perspective: '1000px',
-            display: 'inline-block',
-          }}
-        >
+        <div style={{ perspective: '1000px', display: 'inline-block' }}>
           <Image
             src={globe}
             alt="Rotating Globe"
@@ -41,45 +50,42 @@ const IncreaseRevenue = () => {
             }}
           />
         </div>
-        <div className="increase_wrapper hidden lg:flex justify-center gap-[70px] items-center">
-          {[
-            { value: 7, suffix: "+", label: "Years<br/>Of Experience" },
-            { value: 20, suffix: "+", label: "Team<br/>Members" },
-            { value: 8, suffix: "k+", label: "Happy<br/>Clients" },
-            { value: 40, suffix: "+", label: "Country using our application" }
-          ].map((item, i) => (
-            <div
-              key={i}
-              className={`flex gap-8 items-center increase_card pe-[70px] ${i !== 3 ? "lg:border-r border-[#64607C40]" : ""}`}
-            >
-              <div
-                className="w-[100px] h-[100px] rounded-full ps-[25px] pt-[25px] rounded_card"
-                style={{
-                  background:
-                    "linear-gradient(145deg, rgba(221, 134, 212, 0.50) 15.55%, rgba(255, 255, 255, 0.09) 86.81%)",
-                }}
-              >
-                <p className="text-primary text-[50px] font-medium">
-                  <CountUp end={item.value} duration={2} />
-                  {item.suffix}
-                </p>
-              </div>
-              <p
-                className="text-[#141125] text-base font-semibold text-start"
-                dangerouslySetInnerHTML={{ __html: item.label }}
-              />
-            </div>
-          ))}
-        </div>
 
-        {/* mobile */}
+        {/* DESKTOP STATS */}
+       <div
+        ref={desktopRef}
+        className="increase_wrapper hidden lg:flex justify-center gap-[70px] items-center"
+      >
+        {stats.map((item, i) => (
+          <div
+            key={i}
+            className={`flex gap-8 items-center increase_card pe-[70px] ${
+              i !== 3 ? "lg:border-r border-[#64607C40]" : ""
+            }`}
+          >
+            <div
+              className="w-[100px] h-[100px] rounded-full ps-[25px] pt-[25px] rounded_card"
+              style={{
+                background:
+                  "linear-gradient(145deg, rgba(221, 134, 212, 0.50) 15.55%, rgba(255, 255, 255, 0.09) 86.81%)",
+              }}
+            >
+              <p className="text-primary text-[50px] font-medium">
+                {isInView && <CountUp end={item.value} duration={2} />}
+                {item.suffix}
+              </p>
+            </div>
+            <p
+              className="text-[#141125] text-base font-semibold text-start"
+              dangerouslySetInnerHTML={{ __html: item.label }}
+            />
+          </div>
+        ))}
+      </div>
+
+        {/* MOBILE STATS */}
         <div className="lg:hidden xs_screen grid grid-cols-2 justify-center gap-5 md:gap-[70px] items-center">
-          {[
-            { value: 7, suffix: "+", label: "Years<br/>Of Experience" },
-            { value: 20, suffix: "+", label: "Team<br/>Members" },
-            { value: 2, suffix: "k+", label: "Happy<br/>Clients" },
-            { value: 40, suffix: "+", label: "Country using our application" }
-          ].map((item, i) => (
+          {stats.map((item, i) => (
             <div
               key={i}
               className="flex revenue_tab md:gap-8 gap-4 items-center"
@@ -92,7 +98,7 @@ const IncreaseRevenue = () => {
                 }}
               >
                 <h3 className="text-primary text-[30px] md:text-[50px] font-medium">
-                  <CountUp end={item.value} duration={2} />
+                  {isInView && <CountUp end={item.value} duration={2} />}
                   {item.suffix}
                 </h3>
               </div>
@@ -103,7 +109,6 @@ const IncreaseRevenue = () => {
             </div>
           ))}
         </div>
-
       </div>
     </div>
   );

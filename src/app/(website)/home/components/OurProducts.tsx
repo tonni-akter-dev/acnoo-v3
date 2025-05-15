@@ -1,7 +1,7 @@
-'use client'
-import React, { useState } from 'react'
-import EnvatoProducts from './EnvatoProducts'
-import { motion } from 'framer-motion'
+'use client';
+import React, { useState, useRef } from 'react';
+import EnvatoProducts from './EnvatoProducts';
+import { motion, useInView } from 'framer-motion';
 
 const tabData = [
     {
@@ -12,23 +12,24 @@ const tabData = [
         title: 'Acnoo products',
         content: <EnvatoProducts />,
     },
-
 ];
 
 const OurProducts = () => {
     const [activeTab, setActiveTab] = useState(0);
+    const sectionRef = useRef(null);
+    const isInView = useInView(sectionRef, { once: true, margin: '-100px' });
 
     const handleTabClick = (index: React.SetStateAction<number>) => {
         setActiveTab(index);
     };
+
     return (
-        <div className='lg:pt-[128px]  pt-[30px] product_bg bg-[#fffdff] '>
+        <div ref={sectionRef} className='lg:pt-[128px] pt-[30px] product_bg bg-[#fffdff]'>
             <div>
                 <motion.div
                     initial={{ opacity: 0, y: 40 }}
-                    whileInView={{ opacity: 1, y: 0 }}
+                    animate={isInView ? { opacity: 1, y: 0 } : {}}
                     transition={{ duration: 0.6, ease: 'easeOut' }}
-                    viewport={{ once: true }}
                 >
                     <div className="text-black text-lg font-medium mb-2 lg:mb-4 text-center">
                         <span className='bg-[#F52366] text-base font-bold text-center text-white px-3 h-[25px] py-1 rounded-full w-fit me-[11px]'>
@@ -41,14 +42,19 @@ const OurProducts = () => {
                     </h3>
                 </motion.div>
 
-                {/* tabs */}
-                <div>
+                {/* Tabs */}
+                <motion.div
+                    initial={{ opacity: 0, y: 40 }}
+                    animate={isInView ? { opacity: 1, y: 0 } : {}}
+                    transition={{ duration: 0.6, ease: 'easeOut', delay: 0.2 }}
+                >
                     <div className='flex h-[60px] items-center mx-auto w-fit justify-center mt-2 rounded-[50px] px-2.5 lg:py-2 py-[6px]' style={{ boxShadow: '0px 7px 17px 0px rgba(0, 0, 0, 0.04)' }}>
                         {tabData.map((tab, index) => (
                             <button
                                 key={index}
                                 onClick={() => handleTabClick(index)}
-                                className={`${activeTab === index ? "bg-[#2F1C6A] text-white" : "bg-white"} cursor-pointer  text-base font-bold  rounded-4xl py-[13px]  px-2.5 md:px-6 tab_button lg:py-3 lg:px-5`}>
+                                className={`${activeTab === index ? "bg-[#2F1C6A] text-white" : "bg-white"} cursor-pointer  text-base font-bold  rounded-4xl py-[13px]  px-2.5 md:px-6 tab_button lg:py-3 lg:px-5`}
+                            >
                                 {tab.title}
                             </button>
                         ))}
@@ -56,10 +62,10 @@ const OurProducts = () => {
                     <div>
                         {tabData[activeTab].content}
                     </div>
-                </div>
+                </motion.div>
             </div>
         </div>
-    )
-}
+    );
+};
 
-export default OurProducts
+export default OurProducts;

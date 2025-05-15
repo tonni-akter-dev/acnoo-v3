@@ -18,7 +18,6 @@ export default function Home() {
       <IncreaseRevenue />
       <FreeResource />
       <GloballyGrowth />
-   
       <div
         style={{
           background: 'linear-gradient(0deg, rgba(240, 240, 252, 0.00) 0%, #F3F0FC 200%)', backgroundBlendMode: "normal",

@@ -1,10 +1,10 @@
 "use client";
 import Image from "next/image";
-import React, { useState } from "react";
+import React, { useRef, useState } from "react";
 import blur3 from "/public/home/blur3.png";
 import blur4 from "/public/home/blur4.png";
 import { homefaqData } from "@/app/utils/data";
-import { motion } from "framer-motion";
+import { motion, useInView } from "framer-motion";
 
 type IProps = {
   question?: string;
@@ -92,10 +92,13 @@ const FaqItem: React.FC<IProps> = ({ question, answer }) => {
 };
 
 const Faq = ({ color, btncolor }: { color?: string, btncolor?: string }) => {
+  const sectionRef = useRef(null);
+  const isInView = useInView(sectionRef, { once: true, margin: '-100px' });
+
   return (
-    <div className="z-50 bg-transparent relative flex lg:flex-row flex-col justify-between lg_screen_px lg:px-[120px] lg:mt-[81px] px-4 lg:mb-[160px] mb-6">
+    <div ref={sectionRef} className="z-50 bg-transparent relative flex lg:flex-row flex-col justify-between lg_screen_px lg:px-[120px] lg:mt-[81px] px-4 lg:mb-[160px] mb-6">
       <motion.div initial="hidden"
-        animate="visible"
+        animate={isInView ? "visible" : "hidden"}
         variants={{}} className="flex lg:flex-col flex-row lg:justify-start question_wrapper md:justify-between lg:items-start items-center">
         <div>
           <motion.div custom={0}
@@ -139,6 +142,7 @@ const Faq = ({ color, btncolor }: { color?: string, btncolor?: string }) => {
       </motion.div >
       {/* faq */}
       <motion.div
+        animate={isInView ? "show" : "hidden"}
         className="max-w-[730px] w-full border-[#E2E6ED] border-t faq_wrapper"
         variants={containerVariants}
         initial="hidden"
