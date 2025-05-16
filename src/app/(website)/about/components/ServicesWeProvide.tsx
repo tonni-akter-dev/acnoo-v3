@@ -59,7 +59,7 @@ const ServicesWeProvide = () => {
                             className="service-hover-bg group relative flex items-center justify-between pt-[18px] lg:pt-[47px] lg:pb-[41px] lg:ps-5 lg:pe-[65px] rounded-lg lg:border-t border-[#FDFDFD29]  transition-all duration-500 ease-in-out"
                         >
                             {/* Left Section: Number, Icon, and Text */}
-                            <div className="flex items-start space-x-2 lg:space-x-4">
+                            <div className="flex items-center space-x-2 lg:space-x-4">
                                 <div className=" text-lg lg:text-xl transition-all duration-500 ease-in-out">
                                     <span className="group-hover:hidden text-white text-lg lg:text-[28px] font-semibold transition-all duration-500">
                                         {service.number}.

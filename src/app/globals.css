@@ -998,7 +998,7 @@ input[type="range"]::-moz-range-thumb {
     width: 48px;
     height: 48px;
     right: 42%;
-    top: 45%;
+    /* top: 45%; */
   }
 
   .tenk_text {
@@ -1354,7 +1354,7 @@ input[type="range"]::-moz-range-thumb {
     width: 64px;
     height: 64px;
     right: 38%;
-    top: 48%;
+    /* top: 48%; */
   }
 
   .heading_text {

@@ -1,45 +1,6 @@
 import React from "react";
-import member from "/public/about/member.png";
 import Image from "next/image";
-// src/data/teamData.js
-export const teamMembers = [
-  {
-    id: 1,
-    name: "Esther Howar",
-    role: "Head of Design",
-    image: member, // Use the same image path or different ones
-  },
-  {
-    id: 2,
-    name: "Esther Howar",
-    role: "Head of Design",
-    image: member,
-  },
-  {
-    id: 3,
-    name: "Esther Howar",
-    role: "Head of Design",
-    image: member,
-  },
-  {
-    id: 4,
-    name: "Esther Howar",
-    role: "Head of Design",
-    image: member,
-  },
-  {
-    id: 5,
-    name: "Esther Howar",
-    role: "Head of Design",
-    image: member,
-  },
-  {
-    id: 6,
-    name: "Esther Howar",
-    role: "Head of Design",
-    image: member,
-  },
-];
+import { teamMembers } from "@/app/utils/data";
 
 const OurMembers = () => {
   return (

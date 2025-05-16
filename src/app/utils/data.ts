@@ -39,7 +39,11 @@ import service9 from '/public/service9.png';
 import service10 from '/public/service10.png';
 import service11 from '/public/service11.png';
 import service12 from '/public/service12.png';
-
+import member from "/public/about/member.png";
+import member1 from "/public/about/member1.png";
+import member2 from "/public/about/member2.png";
+import member3 from "/public/about/member3.png";
+import member4 from "/public/about/member4.png";
 interface FaqItem {
   title: string;
   answer: string;
@@ -880,5 +884,44 @@ export const growthItems = [
     shadow: "0px 10px 25px 0px rgba(0, 0, 0, 0.03)",
     align: "justify-end",
     margin: "lg:px-0 pl-[37px] pr-4"
+  },
+];
+
+export const teamMembers = [
+  {
+    id: 1,
+    name: "Esther Howar",
+    role: "Head of Design",
+    image: member,
+  },
+  {
+    id: 2,
+    name: "Esther Howar",
+    role: "Head of Design",
+    image: member1,
+  },
+  {
+    id: 3,
+    name: "Esther Howar",
+    role: "Head of Design",
+    image: member2,
+  },
+  {
+    id: 4,
+    name: "Esther Howar",
+    role: "Head of Design",
+    image: member3,
+  },
+  {
+    id: 5,
+    name: "Esther Howar",
+    role: "Head of Design",
+    image: member4,
+  },
+  {
+    id: 6,
+    name: "Esther Howar",
+    role: "Head of Design",
+    image: member,
   },
 ];
