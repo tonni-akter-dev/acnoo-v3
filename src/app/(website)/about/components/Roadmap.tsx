@@ -54,7 +54,7 @@ const Roadmap = () => {
               </h1>
             </div>
             <Image className="lg:flex hidden" src={roadmap} alt="" />
-            <Image className="lg:hidden md:block hidden" src={roadmaptab} alt="" />
+            <Image className="lg:hidden md:block hidden tab" src={roadmaptab} alt="" />
           </div>
         </div>
         <div className=" col-span-12 lg:col-span-8 flex justify-center">

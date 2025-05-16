@@ -45,7 +45,7 @@ const OurMembers = () => {
   return (
     <div className="bg-primary  lg_screen_px lg:py-[120px] lg:px-[250px] md:py-[30px] md:px-5 py-6 px-4">
       <section className=" text-white text-start">
-        <div className="flex justify-between ">
+        <div className="flex justify-between our_member_wrapper">
           <div>
             <p className="text-[#F52366] text-base font-bold mb-1 flex gap-1 items-center ">
               <svg
@@ -64,8 +64,8 @@ const OurMembers = () => {
             </p>
             <h2 className="text-[30px] md:text-[35px] lg:text-[55px] font-bold mb-2.5 md:mb-5 lg:mb-10">OUR MEMBERS</h2>
           </div>
-          <div className="lg:hidden md:block hidden lg:mt-[60px] mt-6 flex justify-center">
-          <button className="flex gap-2 items-center justify-center bg-[#2353F5]  text-white text-base font-bold capitalize lg:py-[21px] px-6 py-[13px] lg:px-[36px] rounded-[10px] transition">
+          <div className="lg:hidden md:flex our_member_btn1  hidden lg:mt-[60px] mt-6  justify-center">
+          <button className="flex gap-2 items-center justify-center hover:bg-transparent border border-[#2353F5] bg-[#2353F5]  text-white text-base font-bold capitalize lg:py-[21px] px-6 py-[13px] lg:px-[36px] rounded-[10px] transition">
             Join Our Team Today
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -83,8 +83,7 @@ const OurMembers = () => {
         </div>
 
         </div>
-
-        <div className="grid lg:grid-cols-3 sm:grid-cols-1 md:grid-cols-2 gap-4 md:gap-[18px] lg:gap-6 max-w-6xl mx-auto">
+        <div className="grid lg:grid-cols-3  products_wrapper sm:grid-cols-1 md:grid-cols-2 gap-4 md:gap-[18px] lg:gap-6 max-w-6xl mx-auto">
           {teamMembers.map((member) => (
             <div
               key={member.id}
@@ -113,8 +112,8 @@ const OurMembers = () => {
           ))}
         </div>
 
-        <div className="lg:mt-[60px] mt-6 lg:flex md:hidden flex justify-center">
-          <button className="flex gap-2 items-center justify-center bg-[#2353F5]  text-white text-base font-bold capitalize lg:py-[21px] px-6 py-[13px] lg:px-[36px] rounded-[10px] transition">
+        <div className="lg:mt-[60px] mt-6 lg:flex our_member_btn md:hidden flex justify-center">
+          <button className="flex gap-2 items-center justify-center hover:bg-transparent border border-[#2353F5] bg-[#2353F5]  text-white text-base font-bold capitalize lg:py-[21px] px-6 py-[13px] lg:px-[36px] rounded-[10px] transition">
             Join Our Team Today
             <svg
               xmlns="http://www.w3.org/2000/svg"

@@ -11,6 +11,7 @@ import OurMembers from "./components/OurMembers";
 import Roadmap from "./components/Roadmap";
 import JoinTeam from "./components/JoinTeam";
 import WorkTogether from "./components/WorkTogether";
+import BottomBanner from "../home/components/BottomBanner";
 
 const About = () => {
   return (
@@ -26,6 +27,7 @@ const About = () => {
       <Roadmap />
       <JoinTeam />
       <WorkTogether />
+      <BottomBanner/>
     </div>
   );
 };

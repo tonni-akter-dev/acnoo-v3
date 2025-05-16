@@ -315,6 +315,7 @@ body {
   background-repeat: no-repeat;
   background-position: center;
   height: 921px;
+  background-size: cover;
 }
 
 .service-hover-bg:hover {
@@ -768,6 +769,20 @@ input[type="range"]::-moz-range-thumb {
     height: 27px;
     margin-bottom: 0;
   }
+
+  .inno_br {
+    display: none;
+  }
+
+  .comapny_first_count {
+    left: 100px;
+  }
+}
+
+@media (min-width:320px) and (max-width:374px) {
+  .comapny_first_count {
+    left: 145px;
+  }
 }
 
 @media (min-width:320px) and (max-width:699px) {
@@ -858,6 +873,7 @@ input[type="range"]::-moz-range-thumb {
     background-image: url('/about/companyinside-mobile-bg.png') !important;
     height: 322px !important;
     background-position: top !important;
+    background-size: cover;
   }
 
   .mega-menu,
@@ -998,7 +1014,56 @@ input[type="range"]::-moz-range-thumb {
 }
 
 @media (min-width:700px) and (max-width:1023px) {
+  .our_member_btn {
+    display: none;
+  }
 
+  .our_member_btn1 {
+    display: block;
+  }
+.our_member_wrapper{
+  margin-bottom: 10px;
+}
+
+.our_member_wrapper h2{
+  font-size: 35px;
+}
+
+
+
+
+  .spacialize_text_inno {
+    font-size: 24px;
+  }
+
+  .service_heading {
+    font-size: 35px !important;
+  }
+
+  .work_heading {
+    font-size: 60px !important;
+  }
+
+  .service-hover-bg:hover {
+    background-image: none;
+  }
+
+  .company_inside {
+    display: flex;
+  }
+
+  .company_mobile {
+    display: none;
+  }
+
+  .work_m {
+    margin-top: 60px;
+  }
+
+  .work_bg {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 18px;
+  }
 
   .women_image {
     display: none;
@@ -1102,6 +1167,9 @@ input[type="range"]::-moz-range-thumb {
   .tab {
     display: block;
   }
+  .join_team_heading{
+    font-size: 65px;
+  }
 
   .mobile {
     display: none !important;
@@ -1184,6 +1252,7 @@ input[type="range"]::-moz-range-thumb {
     background-image: url('/about/company_inside_bg-tab.png') !important;
     background-position: top !important;
     height: 478px !important;
+    background-size: cover;
   }
 
   .mega-menu,
@@ -1293,6 +1362,30 @@ input[type="range"]::-moz-range-thumb {
     line-height: 38px;
   }
 
+  .innovative_hidden {
+    display: none;
+  }
+
+  .innovative_team {
+    display: block;
+  }
+
+  .inno_text {
+    flex-direction: row;
+    align-items: end;
+  }
+
+  .play_btn {
+    left: 60%;
+  }
+
+  .inno_line {
+    display: block;
+  }
+
+  .innovative_wrapper {
+    justify-content: end;
+  }
 
   /* footer */
   .md_flex {
@@ -1344,7 +1437,8 @@ input[type="range"]::-moz-range-thumb {
     max-width: 900px !important;
     width: 100%;
   }
-  .social_md_icons{
+
+  .social_md_icons {
     right: 0;
   }
 

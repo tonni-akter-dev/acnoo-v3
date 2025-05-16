@@ -46,7 +46,7 @@ const ServicesWeProvide = () => {
                     <Image src={vector1} alt="vector" />
                     Trusted web design agency
                 </p>
-                <h1 className="text-2xl md:text-[35px] lg:text-[55px] font-bold leading-8 md:leading-11 lg:leading-[63px] uppercase text-white mb-4 md:mb-6 lg:mb-14">
+                <h1 className="text-2xl service_heading md:text-[35px] lg:text-[55px] font-bold leading-8 md:leading-11 lg:leading-[63px] uppercase text-white mb-4 md:mb-6 lg:mb-14">
                     Most <span className="font-normal">experienced</span>  <br className='lg:hidden md:hidden block' /> services <br className='lg:block md:block hidden' />
                     we provided
                 </h1>

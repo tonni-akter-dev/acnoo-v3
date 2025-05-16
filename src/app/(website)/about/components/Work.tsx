@@ -4,7 +4,6 @@ import work1 from "/public/about/work1.png";
 import work2 from "/public/about/work2.png";
 import work3 from "/public/about/work3.png";
 import work4 from "/public/about/work4.png";
-
 import Image from "next/image";
 
 const Work = () => {
@@ -13,7 +12,7 @@ const Work = () => {
       <div className="lg:px-[100px] lg_screen_px px-5 mt-6 lg:mt-[100px] ">
         <div className="flex lg:flex-row flex-col items-start lg:items-center">
           <div className="flex items-center lg:mr-[95px]">
-            <h1 className="me-[100px] uppercase text-[35px] md:text-[60px] lg:text-[191px] font-medium text-primary
+            <h1 className="me-[100px] uppercase work_heading text-[35px] md:text-[60px] lg:text-[191px] font-medium text-primary
              work_title">
               Work
             </h1>
@@ -23,7 +22,7 @@ const Work = () => {
             We <span className="font-bold">provide</span> brilliant idea to grow
             the{" "}
             <span className="font-bold">
-              startup <br className="hidden md:block lg:hidden" /> — agency
+              startup <br className="hidden md:block about_blockbr lg:hidden" /> — agency
             </span>{" "}
             with your sharp brand.
           </p>
@@ -48,7 +47,7 @@ const Work = () => {
               </li>
             </ul>
           </div>
-          <div className=" mt-5 md:mt-10 lg:mt-[100px]">
+          <div className=" mt-5 md:mt-10 work_m lg:mt-[100px]">
             <Image src={work2} alt="" />
             <p className=" text-lg lg:text-2xl font-bold text-black mt-7 mb-4">
               Business card design{" "}
@@ -82,7 +81,7 @@ const Work = () => {
               </li>
             </ul>
           </div>
-          <div className=" mt-5 md:mt-10 lg:mt-[100px]">
+          <div className=" mt-5 md:mt-10 work_m lg:mt-[100px]">
             <Image src={work4} alt="" />
             <p className=" text-lg lg:text-2xl font-bold text-black mt-7 mb-4">
               Business card design

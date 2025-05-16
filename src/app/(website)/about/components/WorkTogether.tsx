@@ -6,7 +6,7 @@ const WorkTogether = () => {
   return (
     <div className="lg:px-[100px] lg_screen_px ">
       <div className=" mb-6 md:mb-[72px] lg:mb-[190px] mt-6 md:mt-[30px] lg:mt-[117px]">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-[124px] w-full items-center  rounded-lg overflow-hidden">
+        <div className="grid grid-cols-1 lg:grid-cols-2  gap-6 lg:gap-[124px] w-full items-center  rounded-lg overflow-hidden">
           {/* Form Section */}
           <div className="lg:px-0 px-5">
             <h1 className="text-[30px] lg:text-[60px] uppercase font-bold mb-4 lg:mb-12 whitespace-nowrap">{`LET'S`} <span className="font-normal"> WORK TOGETHER</span></h1>
