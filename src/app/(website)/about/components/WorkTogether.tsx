@@ -58,8 +58,6 @@ const WorkTogether = () => {
                 </motion.span>
               ))}
             </motion.h1>
-
-
             <form>
               {[
                 { id: 'fullName', label: 'Full Name', type: 'text', placeholder: 'Enter full name' },
