@@ -1021,13 +1021,14 @@ input[type="range"]::-moz-range-thumb {
   .our_member_btn1 {
     display: block;
   }
-.our_member_wrapper{
-  margin-bottom: 10px;
-}
 
-.our_member_wrapper h2{
-  font-size: 35px;
-}
+  .our_member_wrapper {
+    margin-bottom: 10px;
+  }
+
+  .our_member_wrapper h2 {
+    font-size: 35px;
+  }
 
 
 
@@ -1167,7 +1168,8 @@ input[type="range"]::-moz-range-thumb {
   .tab {
     display: block;
   }
-  .join_team_heading{
+
+  .join_team_heading {
     font-size: 65px;
   }
 
@@ -1684,6 +1686,11 @@ input[type="range"]::-moz-range-thumb {
 }
 
 @media (min-width:1280px) and (max-width:1440px) {
+   .inno_wrap {
+    padding-left: 81px;
+    padding-right: 81px;
+  }
+  
   .tenk_text {
     font-size: 300px;
   }
@@ -1830,6 +1837,11 @@ input[type="range"]::-moz-range-thumb {
 
 
 @media (min-width:1806px) and (max-width:1920px) {
+  .inno_wrap {
+    padding-left: 250px;
+    padding-right: 250px;
+  }
+
   .hire_us_image .bootstrap {
     left: 10% !important;
   }

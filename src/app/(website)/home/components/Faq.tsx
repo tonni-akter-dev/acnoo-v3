@@ -120,25 +120,37 @@ const Faq = ({ color, btncolor }: { color?: string, btncolor?: string }) => {
           </motion.p>
         </div>
         <motion.button
-          custom={3}
-          variants={fadeLeft}
-          className={`lg:flex question_btn md:flex hidden  ${btncolor ? "bg-[#C52127]" : color ? 'bg-[#7500FE]' : "bg-[#2353F5]"
-            }  gap-1.5 items-center text-white text-base font-bold md:px-5 lg:px-[36px] md:py-3 lg:py-[21px] rounded-[10px] w-fit`}
-        >
-          Browse All Questions
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="20"
-            height="19"
-            viewBox="0 0 20 19"
-            fill="none"
-          >
-            <path
-              d="M13.0592 9.50104L9.14062 5.58247L10.2602 4.46289L15.2983 9.50104L10.2602 14.5391L9.14062 13.4196L13.0592 9.50104Z"
-              fill="white"
-            />
-          </svg>
-        </motion.button>
+  custom={3}
+  variants={fadeLeft}
+  whileHover={{
+    scale: 1.05,
+    transition: { type: "spring", stiffness: 300 },
+  }}
+  whileTap={{ scale: 0.98 }}
+  className={`lg:flex question_btn md:flex hidden 
+    ${btncolor ? "bg-[#C52127]" : color ? "bg-[#7500FE]" : "bg-[#2353F5]"} 
+    hover:bg-transparent hover:text-[${btncolor || color || "#2353F5"}] 
+    border border-[${btncolor || color || "#2353F5"}]
+    transition-all duration-300 
+    gap-1.5 items-center text-white text-base font-bold md:px-5 lg:px-[36px] md:py-3 lg:py-[21px] 
+    rounded-[10px] w-fit group`}
+>
+  Browse All Questions
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="20"
+    height="19"
+    viewBox="0 0 20 19"
+    fill="none"
+    className="transition-transform duration-300 group-hover:translate-x-1"
+  >
+    <path
+      d="M13.0592 9.50104L9.14062 5.58247L10.2602 4.46289L15.2983 9.50104L10.2602 14.5391L9.14062 13.4196L13.0592 9.50104Z"
+      fill="currentColor"
+    />
+  </svg>
+</motion.button>
+
       </motion.div >
       {/* faq */}
       <motion.div
@@ -157,8 +169,8 @@ const Faq = ({ color, btncolor }: { color?: string, btncolor?: string }) => {
       </motion.div>
 
       <button
-        className={`lg:hidden md_hidden md:hidden block mt-9 mx-auto  ${btncolor ? "bg-[#C52127]" : "bg-[#2353F5]"
-          } flex gap-1.5 items-center text-white text-base font-bold px-5 py-3 rounded-[10px] w-fit`}
+        className={`group lg:hidden md_hidden md:hidden block mt-9 mx-auto ${btncolor ? "bg-[#C52127]" : "bg-[#2353F5]"
+          } flex gap-1.5 items-center text-white hover:text-red-500 text-base font-bold px-5 py-3 rounded-[10px] w-fit transition-colors duration-300`}
       >
         Browse All Questions{" "}
         <svg
@@ -167,13 +179,15 @@ const Faq = ({ color, btncolor }: { color?: string, btncolor?: string }) => {
           height="19"
           viewBox="0 0 20 19"
           fill="none"
+          className="transition-transform duration-300 group-hover:translate-x-1"
         >
           <path
             d="M13.0592 9.50104L9.14062 5.58247L10.2602 4.46289L15.2983 9.50104L10.2602 14.5391L9.14062 13.4196L13.0592 9.50104Z"
-            fill="white"
+            fill="currentColor"
           />
         </svg>
       </button>
+
       <Image
         className="lg:block hidden absolute left-0 top-[40%] lg:top-0 z-[-10]"
         src={blur3}

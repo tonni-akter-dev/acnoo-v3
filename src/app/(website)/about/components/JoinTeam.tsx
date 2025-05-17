@@ -1,11 +1,49 @@
+'use client'
 import React from 'react'
+import { motion } from 'framer-motion'
 
-const JoinTeam = () => {
+export default function JoinTeam() {
+  const words = ["join", "our", "team"]
+
+  const container = {
+    initial: {},
+    animate: {
+      transition: {
+        staggerChildren: 0.05,
+      },
+    },
+  }
+
+  const letter = {
+    initial: { opacity: 0, scale: 0.8, y: 20 },
+    animate: { opacity: 1, scale: 1, y: 0 },
+  }
+
   return (
-    <div className='join_team flex justify-center items-center'>
-        <h1 className='text-[40px] join_team_heading md:text-[65px] lg:text-[170px] uppercase text-white  leading-[146px] font-bold text-center'>join our <span className='font-[300]'>team</span></h1>
+    <div className="min-h-screen flex justify-center items-center bg-black">
+      <motion.div
+        variants={container}
+        initial="initial"
+        whileInView="animate"
+        viewport={{ once: false, amount: 0.3 }} // Trigger when 30% of the section is in view
+        className="join_team flex justify-center items-center overflow-hidden"
+      >
+        <h1 className="flex flex-wrap text-[40px] md:text-[65px] lg:text-[170px] uppercase text-white font-bold leading-[146px]">
+          {words.map((word, wordIdx) => (
+            <motion.span key={wordIdx} className="flex mr-[20px]">
+              {word.split('').map((char, charIdx) => (
+                <motion.span
+                  key={`${wordIdx}-${charIdx}`}
+                  variants={letter}
+                  className={`${word === "team" ? "font-normal" : "font-bold"}`}
+                >
+                  {char}
+                </motion.span>
+              ))}
+            </motion.span>
+          ))}
+        </h1>
+      </motion.div>
     </div>
   )
 }
-
-export default JoinTeam

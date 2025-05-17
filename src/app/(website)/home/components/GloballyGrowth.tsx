@@ -84,14 +84,30 @@ const GloballyGrowth = ({ text, color }: { text?: string; color?: string }) => {
             <motion.button
               custom={3}
               variants={fadeLeft}
-              style={{ backgroundColor: `${color ? color : "#2353F5"}` }}
-              className="md:flex hidden globally_btn gap-1.5 items-center text-white text-base font-bold px-[36px] py-[21px] rounded-[10px] w-fit"
+              style={{ backgroundColor: color || "#2353F5" }}
+              whileHover={{
+                scale: 1.05,
+                transition: { type: "spring", stiffness: 300 },
+              }}
+              whileTap={{ scale: 0.98 }}
+              className="md:flex hidden globally_btn gap-1.5 transition-all duration-300 items-center text-white text-base font-bold px-[36px] py-[21px] rounded-[10px] w-fit group"
             >
               Browse all Services
-              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
-                <path d="..." fill="white" />
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                viewBox="0 0 16 16"
+                fill="none"
+                className="transition-transform duration-300 group-hover:translate-x-1"
+              >
+                <path
+                  d="M14.5874 7.25598L10.0899 2.75848C9.96869 2.64145 9.8064 2.57669 9.63794 2.57815C9.46947 2.57961 9.30833 2.64718 9.1892 2.76631C9.07008 2.88543 9.00251 3.04658 9.00104 3.21504C8.99958 3.3835 9.06434 3.5458 9.18138 3.66698L12.5821 7.06773H1.28312C1.11272 7.06773 0.949301 7.13542 0.828809 7.25591C0.708317 7.37641 0.640625 7.53983 0.640625 7.71023C0.640625 7.88063 0.708317 8.04405 0.828809 8.16455C0.949301 8.28504 1.11272 8.35273 1.28312 8.35273H12.5821L9.18138 11.7535C9.12001 11.8127 9.07106 11.8836 9.03739 11.962C9.00372 12.0404 8.98599 12.1247 8.98525 12.21C8.98451 12.2954 9.00077 12.38 9.03307 12.4589C9.06538 12.5379 9.11309 12.6096 9.17341 12.6699C9.23374 12.7303 9.30547 12.778 9.38444 12.8103C9.4634 12.8426 9.548 12.8588 9.63331 12.8581C9.71862 12.8574 9.80293 12.8396 9.88132 12.806C9.95971 12.7723 10.0306 12.7233 10.0899 12.662L14.5874 8.16448C14.7078 8.04399 14.7755 7.8806 14.7755 7.71023C14.7755 7.53986 14.7078 7.37647 14.5874 7.25598Z"
+                  fill="currentColor"
+                />
               </svg>
             </motion.button>
+
           </motion.div>
           {/* Right Section */}
           <motion.div
