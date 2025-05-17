@@ -775,11 +775,11 @@ input[type="range"]::-moz-range-thumb {
   }
 
   .comapny_first_count {
-    left: 100px;
+    left: 98px;
   }
 }
 
-@media (min-width:320px) and (max-width:374px) {
+@media (min-width:375px) and (max-width:425px) {
   .comapny_first_count {
     left: 145px;
   }

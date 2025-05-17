@@ -20,7 +20,7 @@ export default function JoinTeam() {
   }
 
   return (
-    <div className="min-h-screen flex justify-center items-center bg-black">
+    <div className=" flex justify-center items-center">
       <motion.div
         variants={container}
         initial="initial"

@@ -11,7 +11,7 @@ import Image from "next/image";
 const Work = () => {
   return (
     <div className="lg:mb-[250px]">
-      <div className="lg:px-[100px] lg_screen_px px-5 mt-6 lg:mt-[100px] ">
+      <div className="containers lg_screen_px px-5 mt-6 lg:mt-[100px] ">
         {/* Title Row */}
         <motion.div
           initial={{ opacity: 0, x: -40 }}
