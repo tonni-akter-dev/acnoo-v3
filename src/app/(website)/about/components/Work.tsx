@@ -194,42 +194,34 @@ import work4 from "/public/about/work4.png";
 import Image from "next/image";
 
 const Work = () => {
-  // Correctly type the ref as an array of HTMLDivElement | null
   const imageRefs = useRef<(HTMLDivElement | null)[]>([]);
 
-  // State to track mouse position and hover state
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
   const [isHovered, setIsHovered] = useState<number | null>(null); // Track which image is hovered
-
-  // Function to handle mouse movement
   const handleMouseMove = (e: React.MouseEvent, index: number) => {
     const imageDiv = imageRefs.current[index];
     if (imageDiv) {
-        const imageRect = e.currentTarget.getBoundingClientRect(); // Get the image's bounds
-
-      // Check if mouse is within image bounds
+        const imageRect = e.currentTarget.getBoundingClientRect(); 
       const isInside = e.clientX >= imageRect.left && e.clientX <= imageRect.right &&
         e.clientY >= imageRect.top && e.clientY <= imageRect.bottom;
 
       if (isInside) {
         setMousePosition({
-          x: e.clientX - imageRect.left - 40, // Adjust for cursor size
+          x: e.clientX - imageRect.left - 40,
           y: e.clientY - imageRect.top - 40,
         });
       } else {
-        setIsHovered(null); // Reset hover state if outside image
+        setIsHovered(null); 
       }
     }
   };
 
-  // Handle mouse enter and leave for the image specifically
   const handleMouseEnter = (index: number) => setIsHovered(index);
   const handleMouseLeave = () => setIsHovered(null);
 
   return (
     <div className="lg:mb-[250px]">
       <div className="containers lg_screen_px px-5 mt-6 lg:mt-[100px]">
-        {/* Title Row */}
         <motion.div
           initial={{ opacity: 0, x: -40 }}
           whileInView={{ opacity: 1, x: 0 }}
@@ -297,7 +289,6 @@ const Work = () => {
                   </motion.div>
                 </motion.div>
 
-                {/* Custom cursor effect */}
                 {isHovered === index && (
                   <motion.div
                     className="absolute pointer-events-none flex items-center justify-center bg-yellow-400 rounded-full w-32 h-32 text-black text-sm font-bold"

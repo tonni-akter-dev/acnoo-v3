@@ -1014,6 +1014,14 @@ input[type="range"]::-moz-range-thumb {
 }
 
 @media (min-width:700px) and (max-width:1023px) {
+  .testimonial {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .testimonial_3rd_row {
+    display: none;
+  }
+
   .our_member_btn {
     display: none;
   }
@@ -1029,8 +1037,6 @@ input[type="range"]::-moz-range-thumb {
   .our_member_wrapper h2 {
     font-size: 35px;
   }
-
-
 
 
   .spacialize_text_inno {
@@ -1440,8 +1446,16 @@ input[type="range"]::-moz-range-thumb {
     width: 100%;
   }
 
+  .testimonial_3rd_row {
+    display: none;
+  }
+
   .social_md_icons {
     right: 0;
+  }
+
+  .first_two_row {
+    align-items: end;
   }
 
   /* footer */
@@ -1686,11 +1700,11 @@ input[type="range"]::-moz-range-thumb {
 }
 
 @media (min-width:1280px) and (max-width:1440px) {
-   .inno_wrap {
+  .inno_wrap {
     padding-left: 81px;
     padding-right: 81px;
   }
-  
+
   .tenk_text {
     font-size: 300px;
   }
