@@ -1,10 +1,41 @@
-import React from 'react'
-import { IoMdArrowDropdown } from 'react-icons/io'
+import React from 'react';
+import { IoMdArrowDropdown } from 'react-icons/io';
+import { motion } from 'framer-motion';
 
 const Coupon = () => {
+    // Animation variants
+    const containerVariants = {
+        hidden: { opacity: 0 },
+        visible: {
+            opacity: 1,
+            transition: {
+                staggerChildren: 0.2,
+                delayChildren: 0.1,
+            },
+        },
+    };
+
+    const itemVariants = {
+        hidden: { opacity: 0, y: 20 },
+        visible: {
+            opacity: 1,
+            y: 0,
+            transition: { duration: 0.5, ease: 'easeOut' },
+        },
+    };
+
     return (
-        <div className="bg-[#FDE5F9] rounded-md p-3 mb-6 flex items-center justify-between">
-            <div className="flex items-center gap-2 text-[#E430C6]">
+        <motion.div
+            className="bg-[#FDE5F9] rounded-md p-3 mb-6 flex items-center justify-between"
+            variants={containerVariants}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, amount: 0.2 }}
+        >
+            <motion.div
+                className="flex items-center gap-2 text-[#E430C6]"
+                variants={itemVariants}
+            >
                 <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="23"
@@ -18,10 +49,14 @@ const Coupon = () => {
                     />
                 </svg>
                 <span className="font-bold text-primary">Apply Coupon</span>
-            </div>
-            <IoMdArrowDropdown className="text-[#E430C6] text-xl" />
-        </div>
-    )
-}
+            </motion.div>
+            <motion.div
+                variants={itemVariants}
+            >
+                <IoMdArrowDropdown className="text-[#E430C6] text-xl" />
+            </motion.div>
+        </motion.div>
+    );
+};
 
-export default Coupon
+export default Coupon;

@@ -52,7 +52,6 @@ const BannerDetails = () => {
                         : "text-[#2F1C6A]"}`}>
                     <div className="flex items-center gap-1">
                       <span>{tabItem.title}</span>
-                      {/* Show stars if the tab is "Reviews" */}
                       {tabItem.title === "Reviews" && (
                         <div className="flex items-center gap-1 text-yellow-500 text-lg font-medium ml-2">
                           {[...Array(5)].map((_, index) => (
