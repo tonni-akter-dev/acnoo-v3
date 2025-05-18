@@ -54,16 +54,16 @@ const LoginModal: React.FC<IProps> = ({ setShowModal }) => {
                     {/* Login Form */}
                     {/* <input type="email" placeholder="Enter your email" className="border w-full p-2 rounded mb-2" /> */}
                     <div>
-    <label htmlFor="email" className="block text-sm font-bold text-[#2B2B75] mb-1">
-      Email
-    </label>
-    <input
-      type="email"
-      id="email"
-      placeholder="Enter your email"
-      className="w-full border border-gray-200 rounded-md py-2 px-3 text-sm outline-none focus:ring-2 focus:ring-[#2B2B75] focus:border-transparent"
-    />
-  </div>
+                        <label htmlFor="email" className="block text-sm font-bold text-[#2B2B75] mb-1">
+                            Email
+                        </label>
+                        <input
+                            type="email"
+                            id="email"
+                            placeholder="Enter your email"
+                            className="w-full border border-gray-200 rounded-md py-2 px-3 text-sm outline-none focus:ring-2 focus:ring-[#2B2B75] focus:border-transparent"
+                        />
+                    </div>
                     <input type="password" placeholder="********" className="border w-full p-2 rounded mb-2" />
                     <div className="flex justify-between items-center w-full mb-4 text-sm">
                         <label><input type="checkbox" /> Remember me</label>

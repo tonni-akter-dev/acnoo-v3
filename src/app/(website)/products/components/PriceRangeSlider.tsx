@@ -2,7 +2,7 @@
 import { useState } from "react";
 import Title from "./Title";
 
-const PriceRangeSlider=() =>{
+const PriceRangeSlider = () => {
   const [minPrice, setMinPrice] = useState(0);
   const [maxPrice, setMaxPrice] = useState(1000);
 
@@ -27,7 +27,7 @@ const PriceRangeSlider=() =>{
           max="1000"
           value={minPrice}
           onChange={handleMinChange}
-        className="appearance-none w-full h-1 bg-gray-200 rounded-md outline-none focus:outline-none focus:ring-0"
+          className="appearance-none w-full h-1 bg-gray-200 rounded-md outline-none focus:outline-none focus:ring-0"
           style={{
             background: `linear-gradient(to right, #1A0B49 ${(minPrice / 1000) * 100}%, #E5E7EB ${(minPrice / 1000) * 100}%)`,
           }}

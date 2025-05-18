@@ -7,12 +7,12 @@ const products = () => {
    return (
       <>
          <Banner title="Products" />
-         <div className="lg:mb-[60px] max-w-[1461px] w-full mx-auto px-4 md:px-5 lg:px-0">
-            <div className="grid grid-cols-12 gap-8 py-2.5 mb-8 lg:py-[60px]">
-               <div className="col-span-12 lg:col-span-4 lg:block hidden">
+         <div className="lg:mb-[60px] products_wrapper w-full mx-auto px-5">
+            <div className="flex gap-8 py-2.5 mb-8 lg:py-[60px]">
+               <div className="w-[344px] lg:block hidden category_wrapper">
                   <Categories />
                </div>
-               <div className="col-span-12 lg:col-span-8">
+               <div className="w-full">
                   <RightSideCard />
                </div>
             </div>

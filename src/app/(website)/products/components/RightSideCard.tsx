@@ -2,15 +2,20 @@
 import { useState } from "react"
 import { FiGrid } from "react-icons/fi"
 import { IoListOutline } from "react-icons/io5"
-
 import ListView from "./ListView"
-import Link from "next/link"
 import ProductCard from "../../components/ProductCard"
 import search from '/public/search.png'
 import Image from "next/image"
 import filter from '/public/filter.png';
 import SortDropDown from "./SortDropDown"
 import Search from "./Search"
+import { motion } from 'framer-motion';
+import Categories from "./Categories"
+
+const fadeUpVariant = {
+  hidden: { opacity: 0, y: 30 },
+  visible: { opacity: 1, y: 0, transition: { duration: 0.4 } },
+};
 
 const RightSideCard = () => {
   const [viewMode, setViewMode] = useState<"grid" | "list">("grid")
@@ -19,18 +24,24 @@ const RightSideCard = () => {
 
   const totalResults = 15
   const totalPages = Math.ceil(totalResults / itemsPerPage)
-
   const products = Array.from({ length: totalResults }, (_, index) => <ProductCard key={index} />)
-
   const indexOfLastProduct = currentPage * itemsPerPage
   const indexOfFirstProduct = indexOfLastProduct - itemsPerPage
   const currentProducts = products.slice(indexOfFirstProduct, indexOfLastProduct)
   const min = Math.min(itemsPerPage, totalResults - indexOfFirstProduct)
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
+  const openModal = () => {
+    setIsModalOpen(true);
+  };
+
+  const closeModal = () => {
+    setIsModalOpen(false);
+  };
 
   return (
     <div className="">
-      {/* Sort & View Controls */}
-      <div className="relative lg:hidden md:hidden block flex-1 w-full">
+      <div className="relative lg:hidden md:hidden md_hidden block flex-1 w-full">
         <input
           type="text"
           className="bg-white rounded-full border mb-3 border-[#EDEEF3] w-full h-12 px-6 pr-10"
@@ -41,10 +52,13 @@ const RightSideCard = () => {
       <Search viewMode={viewMode} setViewMode={setViewMode} min={min} totalResults={totalResults} />
 
       {/* category */}
-      <div className="">
+      <div>
         <div className="flex  lg:hidden justify-between  items-center w-full p-2.5 border rounded-md border-[#EDEEF3] font-bold text-primary mb-2" style={{ background: 'rgba(191, 5, 176, 0.05)' }}>
-          <Image className="" src={filter} alt="" />
-          <div className="relative hidden md:block">
+          <button onClick={openModal}>
+            <Image src={filter} alt="" />
+          </button>
+          {/* search */}
+          <div className="relative hidden md:block md_block">
             <input type="text" className="bg-white rounded-full w-[380px] h-11 px-6 " placeholder="Search product" />
             <Image className="absolute  right-3 top-3" src={search} alt="" />
           </div>
@@ -68,18 +82,35 @@ const RightSideCard = () => {
 
       {/* Product Display */}
       {viewMode === "grid" ? (
-        <Link href='/products-details'>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-[40px]">
-            {currentProducts}
-          </div>
-        </Link>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-[40px] products_grid">
+          {currentProducts.map((product, index) => (
+            <motion.div
+              key={index}
+              variants={fadeUpVariant}
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: true, amount: 0.2 }}
+            >
+              {product}
+            </motion.div>
+          ))}
+        </div>
       ) : (
         <div className="flex flex-col gap-4 mb-[40px]">
           {currentProducts.map((_, index) => (
-            <ListView key={index} />
+            <motion.div
+              key={index}
+              variants={fadeUpVariant}
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: true, amount: 0.2 }}
+            >
+              <ListView />
+            </motion.div>
           ))}
         </div>
       )}
+
 
       {/* Pagination */}
       <div className="flex justify-center items-center space-x-2">
@@ -109,6 +140,29 @@ const RightSideCard = () => {
           »
         </button>
       </div>
+
+
+      {/* category modal */}
+      {isModalOpen && (
+        <div className="fixed inset-0 bg-white flex justify-start items-center z-50">
+          <motion.div
+            className="bg-white w-full h-full overflow-y-auto"
+            initial="hidden"
+            animate="visible"
+            exit="exit">
+            {/* Modal Content */}
+            <div className="w-full bg-white category_modal">
+              <button
+                className="absolute top-2 right-4 text-gray-600 hover:text-gray-800 text-2xl"
+                onClick={closeModal}
+              >
+                ×
+              </button>
+              <Categories />
+            </div>
+          </motion.div>
+        </div>
+      )}
     </div>
   )
 }
