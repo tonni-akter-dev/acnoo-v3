@@ -999,7 +999,6 @@ input[type="range"]::-moz-range-thumb {
     width: 48px;
     height: 48px;
     right: 42%;
-    /* top: 45%; */
   }
 
   .tenk_text {
@@ -1023,6 +1022,10 @@ input[type="range"]::-moz-range-thumb {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
+  .pricing_text {
+    font-size: 20px;
+  }
+
   .md_flex {
     display: flex;
   }
@@ -1030,7 +1033,12 @@ input[type="range"]::-moz-range-thumb {
   .md_block {
     display: block;
   }
-
+  .time_limit{
+    font-size: 16px;
+  }
+.pricing_service h1{
+  font-size: 24px;
+}
   .md_hidden {
     display: none;
   }
