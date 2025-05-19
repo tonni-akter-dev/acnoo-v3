@@ -7,9 +7,9 @@ import AllService from './component/AllService';
 const Service = () => {
     return (
         <>
-        <Banner title='Services'/>
-        <AllService/>
-        <BottomBanner />
+            <Banner title='Services' />
+            <AllService />
+            <BottomBanner />
         </>
     );
 };

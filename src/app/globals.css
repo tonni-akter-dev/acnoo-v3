@@ -1033,12 +1033,15 @@ input[type="range"]::-moz-range-thumb {
   .md_block {
     display: block;
   }
-  .time_limit{
+
+  .time_limit {
     font-size: 16px;
   }
-.pricing_service h1{
-  font-size: 24px;
-}
+
+  .pricing_service h1 {
+    font-size: 24px;
+  }
+
   .md_hidden {
     display: none;
   }
@@ -1471,6 +1474,26 @@ input[type="range"]::-moz-range-thumb {
     width: 100%;
   }
 
+  .contact_grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .contactForm h1 {
+    font-size: 30px;
+  }
+
+  .contactForm .text_start {
+    text-align: center;
+  }
+
+  .contact_form {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .contactForm button {
+    margin: auto;
+    margin-bottom: 30px;
+  }
 }
 
 @media (min-width:1024px) and (max-width:1279px) {
@@ -1745,6 +1768,15 @@ input[type="range"]::-moz-range-thumb {
 }
 
 @media (min-width:1280px) and (max-width:1440px) {
+  .service_image {
+    margin-bottom: 0;
+    height: 196px;
+  }
+
+  .service_card {
+    padding: 16px;
+  }
+
   .category_wrapper {
     width: 303px !important;
   }
@@ -1780,8 +1812,8 @@ input[type="range"]::-moz-range-thumb {
   }
 
   .containers {
-    padding-left: 100px;
-    padding-right: 100px;
+    padding-left: 80px;
+    padding-right: 80px;
   }
 
   .specialize_heading {
@@ -1852,6 +1884,11 @@ input[type="range"]::-moz-range-thumb {
 }
 
 @media (min-width:1441px) and (max-width:1806px) {
+
+  .service_image {
+    height: 273px;
+  }
+
   .products_wrapper {
     padding-left: 80px;
     padding-right: 80px;

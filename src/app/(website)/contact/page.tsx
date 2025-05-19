@@ -6,14 +6,14 @@ import BottomBanner from '../home/components/BottomBanner';
 
 const Contact = () => {
     return (
-       <>
-       <Banner title='Contact Us'/>
-       <div className='p-4 md:p-0'>
-       <Address/>
-       <ContactForm/>
-       </div>
-       <BottomBanner/>
-       </>
+        <>
+            <Banner title='Contact Us' />
+            <div className='p-4 md:p-0'>
+                <Address />
+                <ContactForm />
+            </div>
+            <BottomBanner />
+        </>
     );
 };
 

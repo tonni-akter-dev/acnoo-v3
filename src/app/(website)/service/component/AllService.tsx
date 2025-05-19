@@ -30,7 +30,7 @@ const AllService = () => {
 
     return (
         <div className='allService mt-6 md:mt-12 lg:mt-24'>
-            <div className="container mx-auto">
+            <div className="containers mx-auto">
                 <div className='flex items-center justify-center mx-auto gap-2.5 mb-3.5'>
                     <h2 className='text-white bg-[#F52366] px-3.5 py-2 rounded-full text-base font-bold'>new</h2>
                     <p className='text-lg text-black font-medium'>
