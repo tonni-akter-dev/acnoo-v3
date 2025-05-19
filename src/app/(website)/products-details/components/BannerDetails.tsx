@@ -29,7 +29,7 @@ const BannerDetails = () => {
   return (
     <div>
       <div className="service service-bg pt-3.5 lg:pt-16">
-        <div className="container max-w-screen-xl mx-auto px-5 lg::px-10 lg:px-20 text-left">
+        <div className="container max-w-screen-xl mx-auto px-5 lg:px-10 text-left">
           {/* Dynamic Heading based on Active Tab */}
           <h1 className="text-base md:text-lg lg:text-6xl font-bold text-primary mb-1 lg:mb-3.5">
             {activeTab}
@@ -37,10 +37,33 @@ const BannerDetails = () => {
           <Breadcrumb />
         </div>
 
-        <div className="container lg:px-0 px-4 lg:mt-0 mt-2">
+        <div className="container px-4 lg:mt-0 mt-2">
+
+          <div className="md:hidden  mt-3 flex justify-between lg:w-fit w-full gap-3 font-bold">
+            {/* Sales */}
+            <div className='flex md:flex-nowrap flex-wrap'>
+              <div className="text-[13px] lg:text-base flex items-center gap-1 px-2 text-[#2F1C6A] font-bold whitespace-nowrap">
+                <BsCartCheck className="text-[#000D2B]" /> Sales: {product.sales}
+              </div>
+
+              {/* Support Info */}
+              <div className="text-[13px] lg:text-base flex items-center gap-1 text-orange-500 px-2 whitespace-nowrap">
+                <BiCheckDouble className="text-xl" /> {product.support}
+              </div>
+
+              {/* Update Info */}
+              <div className="text-[13px] lg:text-base flex items-center gap-1 text-green-500 px-2 whitespace-nowrap">
+                <BiCheckDouble className="text-xl" />{product.update}
+              </div>
+            </div>
+
+            {/* Share Icon */}
+            <button className="text-gray-600 p-1 hover:bg-gray-100 rounded-full">
+              <BsFillShareFill />
+            </button>
+          </div>
           <div className="overflow-x-auto scrollbar-hide">
             <div className="flex justify-between mt-2 lg:mt-0 lg:flex-row flex-col-reverse gap-3.5 items-start lg:items-center flex-wrap">
-             
               <div className="flex  gap-3.5">
                 {tabs.map((tabItem) => (
                   <div
@@ -68,7 +91,7 @@ const BannerDetails = () => {
                 ))}
               </div>
 
-              <div className="flex justify-between lg:w-fit w-full gap-3 font-bold">
+              <div className="md:flex hidden justify-between lg:w-fit w-full gap-3 font-bold">
                 {/* Sales */}
                 <div className='flex md:flex-nowrap flex-wrap'>
                   <div className="text-[13px] lg:text-base flex items-center gap-1 px-2 text-[#2F1C6A] font-bold whitespace-nowrap">
@@ -96,7 +119,7 @@ const BannerDetails = () => {
         </div>
       </div>
       <div className='flex  lg:flex-row flex-col gap-4 lg:gap-8 container py-6 lg:py-[67px] px-5 md:px-0'>
-        <div className='w-full lg:w-[836px] product_wrap lg:px-0 md:px-5'>
+        <div className='w-full lg:w-[836px] product_wrap  md:px-5'>
           {activeTab === "Product Details" && <Details />}
           {activeTab === "Reviews" && (
             <div>
