@@ -682,6 +682,33 @@ input[type="range"]::-moz-range-thumb {
   -webkit-text-fill-color: transparent;
 }
 
+/* admindashboard */
+.flutter_app_text {
+  position: relative;
+  display: inline-block;
+}
+
+.flutter_app_text .flutter-underline {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  overflow: hidden;
+  animation: underlineGrow 1s ease-out forwards;
+}
+
+@keyframes underlineGrow {
+  0% {
+    width: 0;
+  }
+
+  100% {
+    width: 100%;
+  }
+}
+
+/* admindashboard */
+
 /* hireus icon jump */
 @keyframes jump {
 

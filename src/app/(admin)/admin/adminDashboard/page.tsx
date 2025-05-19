@@ -3,10 +3,7 @@ import TopTabs from './components/TopTabs'
 
 const AdminDashboard = () => {
     return (
-        <div className='' >
-            <TopTabs />
-
-        </div>
+        <TopTabs />
     )
 }
 

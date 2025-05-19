@@ -23,7 +23,7 @@ const Overview = () => {
       <Hero />
       <CountClients />
       <ProductsFeature />
-      <GloballyGrowth text="Something new coming soon!" color="#C52127" />
+      <GloballyGrowth text="Something new coming soon!"  />
       <ResponsiveRetina />
       <AcceptedPaymen />
       <ResourcePlannning />
