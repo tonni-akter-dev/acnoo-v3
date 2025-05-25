@@ -158,7 +158,7 @@ const ProductsFeature = () => {
 
       {/* Mobile Features */}
       <motion.div
-        className="lg:px-[230px] px-5 lg:hidden md:hidden block"
+        className="containers px-5 lg:hidden md:hidden block"
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true }}

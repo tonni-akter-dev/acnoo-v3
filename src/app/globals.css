@@ -1524,6 +1524,14 @@ input[type="range"]::-moz-range-thumb {
 }
 
 @media (min-width:1024px) and (max-width:1279px) {
+  .buisness2 {
+    right: 0;
+  }
+
+  .buisness1 {
+    left: 0;
+  }
+
   .list_desc {
     display: block !important;
   }
@@ -1795,6 +1803,13 @@ input[type="range"]::-moz-range-thumb {
 }
 
 @media (min-width:1280px) and (max-width:1440px) {
+
+  .testimonial .swiper {
+    width: 645px;
+    height: 372px;
+    flex-shrink: 0;
+  }
+
   .service_image {
     margin-bottom: 0;
     height: 196px;
@@ -1911,6 +1926,10 @@ input[type="range"]::-moz-range-thumb {
 }
 
 @media (min-width:1441px) and (max-width:1806px) {
+  .testimonial {
+    padding-left: 80px !important;
+    padding-right: 80px !important;
+  }
 
   .service_image {
     height: 273px;
@@ -1974,6 +1993,14 @@ input[type="range"]::-moz-range-thumb {
 
 
 @media (min-width:1806px) and (max-width:1920px) {
+  .buisness2 {
+    right: 310px;
+  }
+
+  .buisness1 {
+    left: 400px;
+  }
+
   .products_wrapper {
     padding-left: 200px;
     padding-right: 200px;

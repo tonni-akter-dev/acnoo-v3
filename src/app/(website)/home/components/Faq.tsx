@@ -91,7 +91,7 @@ const FaqItem: React.FC<IProps> = ({ question, answer }) => {
   );
 };
 
-const Faq = ({ color, btncolor }: { color?: string, btncolor?: string }) => {
+const Faq = ({ color, btncolor, classname }: { color?: string, btncolor?: string, classname?: string }) => {
   const sectionRef = useRef(null);
   const isInView = useInView(sectionRef, { once: true, margin: '-100px' });
 
@@ -120,36 +120,36 @@ const Faq = ({ color, btncolor }: { color?: string, btncolor?: string }) => {
           </motion.p>
         </div>
         <motion.button
-  custom={3}
-  variants={fadeLeft}
-  whileHover={{
-    scale: 1.05,
-    transition: { type: "spring", stiffness: 300 },
-  }}
-  whileTap={{ scale: 0.98 }}
-  className={`lg:flex question_btn md:flex hidden 
+          custom={3}
+          variants={fadeLeft}
+          whileHover={{
+            scale: 1.05,
+            transition: { type: "spring", stiffness: 300 },
+          }}
+          whileTap={{ scale: 0.98 }}
+          className={`lg:flex question_btn md:flex hidden  ${classname}
     ${btncolor ? "bg-[#C52127]" : color ? "bg-[#7500FE]" : "bg-[#2353F5]"} 
     hover:bg-transparent hover:text-[${btncolor || color || "#2353F5"}] 
     border border-[${btncolor || color || "#2353F5"}]
     transition-all duration-300 
     gap-1.5 items-center text-white text-base font-bold md:px-5 lg:px-[36px] md:py-3 lg:py-[21px] 
     rounded-[10px] w-fit group`}
->
-  Browse All Questions
-  <svg
-    xmlns="http://www.w3.org/2000/svg"
-    width="20"
-    height="19"
-    viewBox="0 0 20 19"
-    fill="none"
-    className="transition-transform duration-300 group-hover:translate-x-1"
-  >
-    <path
-      d="M13.0592 9.50104L9.14062 5.58247L10.2602 4.46289L15.2983 9.50104L10.2602 14.5391L9.14062 13.4196L13.0592 9.50104Z"
-      fill="currentColor"
-    />
-  </svg>
-</motion.button>
+        >
+          Browse All Questions
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="20"
+            height="19"
+            viewBox="0 0 20 19"
+            fill="none"
+            className="transition-transform duration-300 group-hover:translate-x-1"
+          >
+            <path
+              d="M13.0592 9.50104L9.14062 5.58247L10.2602 4.46289L15.2983 9.50104L10.2602 14.5391L9.14062 13.4196L13.0592 9.50104Z"
+              fill="currentColor"
+            />
+          </svg>
+        </motion.button>
 
       </motion.div >
       {/* faq */}

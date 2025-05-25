@@ -1,7 +1,7 @@
 import { plans } from '@/app/utils/data'
 import React from 'react'
 
-const InstallationService = ({ color }: { color?: string }) => {
+const InstallationService = ({ color, classname }: { color?: string, classname?: string }) => {
   return (
     <div>
       <div className="text-black text-lg font-medium mb-4 text-center">
@@ -22,11 +22,18 @@ const InstallationService = ({ color }: { color?: string }) => {
               <div>
                 <p className="text-[#1351D8] font-semibold text-base mb-2">{plan.discount} <span className='text-[#150E3D]'>OFF</span></p>
                 <h3 className="text-xl lg:text-2xl text-[#150E3D] font-medium mb-4 lg:mb-8">{plan.title}</h3>
-                <p className="text-3xl lg:text-[50px] font-bold text-[#150E3D]">
+                <p className="text-3xl lg:text-[50px] font-bold text  -[#150E3D]">
                   {plan.price}<span className="text-base lg:text-lg font-bold">/{plan.type}</span>
                 </p>
-
-                <button style={{ backgroundColor: index === 1 ? `${color || '#1351D8'}` : '', color: index === 1 ? 'white' : 'black' }} className={`  mt-6 lg:mt-10 text-base font-medium w-full bg-transparent  lg:h-[60px] h-12 rounded-lg flex justify-center items-center  border border-[#1351D8] `}>
+                <button
+                  className={`${classname} mt-6 lg:mt-10 cursor-pointer text-base font-medium w-full lg:h-[60px] h-12 rounded-lg flex justify-center items-center border transition-all duration-300
+                    ${index === 1 ? 'bg-[#1351D8] text-white hover:bg-transparent hover:!text-black'
+                      : 'bg-transparent text-black hover:bg-[#1351D8] hover:text-white'}`}
+                  // style={{
+                  //   '--btnColor': color || '#1351D8',
+                  //   borderColor: color || '#1351D8',
+                  // } as React.CSSProperties}
+                  >
                   Purchase now
                 </button>
                 <ul className="mt-5 lg:mt-7 space-y-3">

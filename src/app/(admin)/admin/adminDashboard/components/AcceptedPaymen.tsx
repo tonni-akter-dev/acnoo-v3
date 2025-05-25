@@ -47,7 +47,7 @@ const AcceptedPayment = () => {
     ];
 
     return (
-        <div className="lg:px-[276px] px-5 mb-6 md:mb-8 lg:mb-[161px] mt-6 md:mt-[50px] lg:mt-[124px]">
+        <div className="containers px-5 mb-6 md:mb-8 lg:mb-[161px] mt-6 md:mt-[50px] lg:mt-[124px]">
             <motion.h2
                 className="text-2xl md:text-[30px] lg:text-[60px] text-[#0B071A] font-bold text-center"
                 initial={{ opacity: 0, y: 30 }}

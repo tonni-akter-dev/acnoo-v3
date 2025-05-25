@@ -23,7 +23,7 @@ const Overview = () => {
       <Hero />
       <CountClients />
       <ProductsFeature />
-      <GloballyGrowth text="Something new coming soon!"  />
+      <GloballyGrowth text="Something new coming soon!" />
       <ResponsiveRetina />
       <AcceptedPaymen />
       <ResourcePlannning />
@@ -37,9 +37,9 @@ const Overview = () => {
       </div>
       <Pricing />
       <div className='pt-6 md:pt-[30px] lg:pt-[145px] mb-8 lg:mb-[122px]'>
-        <Faq btncolor="#C52127" />
+        <Faq classname="hover:bg-transparent border hover:text-[#C52127] border-[#C52127]" btncolor="#C52127" />
       </div>
-      <InstallationService />
+      <InstallationService  classname="hover:bg-[#1351D8] hover:text-white" />
       <SupportTicket />
     </div>
   )

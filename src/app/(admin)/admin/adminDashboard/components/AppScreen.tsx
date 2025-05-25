@@ -69,31 +69,31 @@ function AppScreenSlider() {
             <h3 className="text-2xl md:text-3xl lg:text-[60px]  font-bold text-gray-900 leading-tight mb-[50px]">
                 POSpro App screen
             </h3>
-            <div className="relative w-full max-w-full h-[600px] flex items-center justify-center">
+            <div className="relative w-full max-w-full h-[800px] flex items-center justify-center">
                 <div className="absolute inset-0 z-0">
-                    <Slider {...settings} className="h-[500px]">
+                    <Slider {...settings} className="h-[600px]">
                         {slides.map((slide, index) => (
                             <div key={index} className="" style={{ width: '300px', marginRight: '42px' }}>
-                                <div className="w-full h-[550px]">
+                                <div className="w-full h-[700px]">
                                     <Image
                                         src={slide.image}
                                         alt={`Screen ${index + 1}`}
                                         className="object-contain w-full h-full"
                                         width={300}
-                                        height={550}
+                                        height={700}
                                     />
                                 </div>
                             </div>
                         ))}
                     </Slider>
                 </div>
-                <div className="absolute inset-0 flex top-[-50px] items-center justify-center z-10 pointer-events-none">
+                <div className="absolute inset-0 flex top-[-82px] items-center justify-center z-10 pointer-events-none">
                     <Image
                         src={applePhone}
                         alt="Apple Phone"
-                        className="w-[350px] h-[650px]"
+                        className="w-[368px] h-[766px]"
                         width={350}
-                        height={600}
+                        height={766}
                     />
                 </div>
             </div>

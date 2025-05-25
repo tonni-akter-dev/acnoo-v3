@@ -65,7 +65,7 @@ const Pricing = ({ color }: { color?: string }) => {
                                     50k design & prints
                                 </li>
                             </ul>
-                            <button className="bg-white border border-[#F0F2F3] text-[#4B5563] text-base font-medium py-5 lg:py-6  rounded-[37px] w-full ">
+                            <button className="bg-white hover:bg-black hover:text-white transition-all ease-in-out duration-300 border border-[#F0F2F3] text-[#4B5563] text-base font-medium py-5 lg:py-6  rounded-[37px] w-full ">
                                 Buy Now
                             </button>
                         </div>
@@ -131,9 +131,25 @@ const Pricing = ({ color }: { color?: string }) => {
                                     50k design & prints
                                 </li>
                             </ul>
-                            <button className="text-base font-medium py-5 lg:h-[62px]  rounded-[37px] w-full   text-white  px-6 " style={{ backgroundColor: color || 'black' }}>
+                            <button
+                                className="text-base font-medium py-5 lg:h-[62px] rounded-[37px] w-full px-6 border transition-all duration-300"
+                                style={{
+                                    backgroundColor: color || 'black',
+                                    color: 'white',
+                                    borderColor: color || 'black',
+                                }}
+                                onMouseEnter={(e) => {
+                                    e.currentTarget.style.backgroundColor = 'transparent';
+                                    e.currentTarget.style.color = color || 'black';
+                                }}
+                                onMouseLeave={(e) => {
+                                    e.currentTarget.style.backgroundColor = color || 'black';
+                                    e.currentTarget.style.color = 'white';
+                                }}
+                            >
                                 Buy Now
                             </button>
+
                         </div>
                     </div>
                 </div>
