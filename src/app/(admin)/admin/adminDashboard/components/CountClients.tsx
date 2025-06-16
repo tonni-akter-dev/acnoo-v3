@@ -9,33 +9,32 @@ import { useInView } from 'react-intersection-observer';
 const stats = [
     { value: 7, suffix: "+", label: "Years of Experience" },
     { value: 20, suffix: "+", label: "Team Members" },
-    { value: 2000, suffix: "+", label: "Happy Clients" },
+    { value: 2, suffix: "k+", label: "Happy Clients" },
     { value: 40, suffix: "+", label: "using our application" },
 ];
 
 const floatAnimation = {
-  y: ["0%", "-10%", "0%"],
-  transition: {
-    duration: 4,
-    repeat: Infinity,
-    ease: "easeInOut",
-  },
+    y: ["0%", "-10%", "0%"],
+    transition: {
+        duration: 4,
+        repeat: Infinity,
+        ease: "easeInOut",
+    },
 };
 
 const CountClients = () => {
     const [ref, inView] = useInView({
-      triggerOnce: true, 
-      threshold: 0.3,
+        triggerOnce: true,
+        threshold: 0.3,
     });
 
     return (
         <div
-          ref={ref}
-          className="flex justify-center items-center mt-8 lg:mt-[117px] mb-8 lg:mb-[100px] lg:px-[150px] md:px-5 px-4 relative"
+            ref={ref}
+            className="flex justify-center items-center mt-8 lg:mt-[117px] mb-8 lg:mb-[100px] containers relative"
         >
             <motion.div
-                className="absolute right-0 md:right-0 !lg:right-[9%] top-[-13%] z-10"
-                style={{ width: 83, height: 83 }}
+                className="absolute animate_cartoon right-0 top-[-13%] lg:right-[8%] z-10 lg:size-[83px] size-[43px]"
                 animate={floatAnimation}
             >
                 <Image
@@ -47,7 +46,7 @@ const CountClients = () => {
             </motion.div>
 
             <motion.div
-                className="absolute md:left-[45%] lg:left-[51%] bottom-[-13%] md:bottom-[-18%] lg:bottom-[-31%] z-10"
+                className="absolute md:left-[45%] lg:left-[51%] bottom-[-13%] animated_box md:bottom-[-18%] lg:bottom-[-31%] z-10"
                 style={{ width: 50, height: 45 }}
                 animate={floatAnimation}
             >
@@ -61,7 +60,7 @@ const CountClients = () => {
 
             <motion.div
                 className="absolute left-0 lg:left-[8%] top-[-22px] lg:bottom-[-41%] z-10
-                    lg:w-20 lg:h-[96px] md:w-12 md:h-[57px] w-[37px] h-11"
+                    lg:w-20 lg:h-[96px] md:w-12 md:h-[57px] w-[37px] h-11 animate_bar"
                 animate={floatAnimation}
             >
                 <Image
@@ -84,15 +83,14 @@ const CountClients = () => {
                 {stats.map((stat, index) => (
                     <div
                         key={index}
-                        className={`flex-1 flex ps-[65px] flex-col py-9 justify-start items-start text-center relative z-50 ${
-                            index !== stats.length - 1 ? "border-r border-gray-300" : ""
-                        }`}
+                        className={`flex-1 flex count_ps ps-[65px] flex-col py-9 justify-start items-start  relative z-50 ${index !== stats.length - 1 ? "border-r border-gray-300" : ""
+                            }`}
                     >
                         <h2 className="text-[45px] font-bold text-black">
                             {inView ? (
-                              <CountUp start={0} end={stat.value} duration={2.5} />
+                                <CountUp start={0} end={stat.value} duration={2.5} />
                             ) : (
-                              0
+                                0
                             )}
                             {stat.suffix}
                         </h2>
@@ -113,29 +111,26 @@ const CountClients = () => {
                 {stats.map((stat, index) => (
                     <div
                         key={index}
-                        className={`flex-1 px-4 md:px-8 flex flex-col py-4 justify-start items-start relative z-50 ${
-                            index !== stats.length - 1 && index !== stats.length - 3
+                        className={`flex-1 px-4 md:px-8 flex flex-col py-4 justify-start items-start relative z-50 md_stats ${index !== stats.length - 1 && index !== stats.length - 3
                                 ? "border-r border-gray-300"
                                 : ""
-                        } ${
-                            index !== stats.length - 1 && index !== stats.length - 2
+                            } ${index !== stats.length - 1 && index !== stats.length - 2
                                 ? "border-b border-gray-300"
                                 : ""
-                        } ${
-                            index !== stats.length - 2 && index !== stats.length - 4
+                            } ${index !== stats.length - 2 && index !== stats.length - 4
                                 ? "md:ps-10 ps-5"
                                 : ""
-                        } `}
+                            } `}
                     >
                         <h2 className="text-3xl font-bold text-[#0B071A]">
                             {inView ? (
-                              <CountUp start={0} end={stat.value} duration={2.5} />
+                                <CountUp start={0} end={stat.value} duration={2.5} />
                             ) : (
-                              0
+                                0
                             )}
                             {stat.suffix}
                         </h2>
-                        <p className="text-[#6B7280] text-sm md:text-base whitespace-nowrap">
+                        <p className="text-[#6B7280] text-sm md:text-base whitespace-nowrap stat_lebel">
                             {stat.label}
                         </p>
                     </div>

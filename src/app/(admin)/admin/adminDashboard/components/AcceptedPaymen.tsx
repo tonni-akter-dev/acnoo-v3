@@ -3,7 +3,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import Image from 'next/image';
 import pay1 from '/public/admindashboard/pay1.png';
-import pay2 from '/public/admindashboard/pay2.png';
+import pay2 from '/public/admindashboard/pay22.png';
 import pay3 from '/public/admindashboard/pay3.png';
 import pay4 from '/public/admindashboard/pay4.png';
 import pay5 from '/public/admindashboard/pay5.png';
@@ -49,7 +49,7 @@ const AcceptedPayment = () => {
     return (
         <div className="containers px-5 mb-6 md:mb-8 lg:mb-[161px] mt-6 md:mt-[50px] lg:mt-[124px]">
             <motion.h2
-                className="text-2xl md:text-[30px] lg:text-[60px] text-[#0B071A] font-bold text-center"
+                className="text-2xl md:text-[30px] lg:text-[60px] text-[#0B071A] font-bold text-center heading_text"
                 initial={{ opacity: 0, y: 30 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6, ease: 'easeOut' }}
@@ -80,8 +80,7 @@ const AcceptedPayment = () => {
                     <motion.div
                         key={rowIndex}
                         className="flex justify-center gap-3 lg:gap-[25px] mb-[25px]"
-                        variants={containerVariants}
-                    >
+                        variants={containerVariants}>
                         {row.map((payImage, index) => (
                             <motion.div key={index} variants={itemVariants}>
                                 <Image
@@ -104,12 +103,11 @@ const AcceptedPayment = () => {
                 whileInView="show"
                 viewport={{ once: true }}
             >
-                <div className="grid grid-cols-2 md:grid-cols-4 justify-center gap-3">
+                <div className="grid grid-cols-2 md:grid-cols-4 payment_card_grid justify-center gap-3">
                     {mdpaymentRows.map((payImage, index) => (
                         <motion.div key={index} variants={itemVariants}>
                             <Image
                                 className="w-full h-[64px] md:h-[69px] rounded-lg"
-                                style={{ boxShadow: '0px 4px 4px rgba(0, 0, 0, 0.25)' }}
                                 src={payImage}
                                 alt={`Payment method ${index + 1}`}
                             />

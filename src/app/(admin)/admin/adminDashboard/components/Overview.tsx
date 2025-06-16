@@ -25,10 +25,10 @@ const Overview = () => {
       <ProductsFeature />
       <GloballyGrowth text="Something new coming soon!" />
       <ResponsiveRetina />
-      <AcceptedPaymen />
+       <AcceptedPaymen />
       <ResourcePlannning />
       <BuisnessNeeds />
-      <AppScreen />
+     {/* <AppScreen />
       <Compatible />
       <Support />
       <div className='sky-bg'>
@@ -40,7 +40,7 @@ const Overview = () => {
         <Faq classname="hover:bg-transparent border hover:text-[#C52127] border-[#C52127]" btncolor="#C52127" />
       </div>
       <InstallationService  classname="hover:bg-[#1351D8] hover:text-white" />
-      <SupportTicket />
+      <SupportTicket /> */}
     </div>
   )
 }

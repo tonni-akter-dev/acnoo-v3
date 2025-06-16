@@ -815,6 +815,34 @@ input[type="range"]::-moz-range-thumb {
 
 @media (min-width:320px) and (max-width:699px) {
 
+  .aniamted_1 {
+    right: -20px;
+  }
+
+
+  .aniamted_1 img {
+    width: 180px !important;
+    height: 170px !important;
+  }
+
+  .aniamted_2 {
+    left: -22px;
+  }
+
+  .aniamted_2 img {
+    width: 250px !important;
+    height: 150px !important;
+  }
+
+  .order_custom {
+    order: 1;
+  }
+
+  .white_bg {
+    margin: 16px;
+    padding: 16px 0;
+  }
+
   .social_md_icons {
     top: 90%;
     left: 12%;
@@ -1041,6 +1069,79 @@ input[type="range"]::-moz-range-thumb {
 }
 
 @media (min-width:700px) and (max-width:1023px) {
+  .enter_img2 {
+    height: 300px;
+  }
+
+  .ent_main_img {
+    width: 307px;
+  }
+
+  .planning_grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+  }
+
+  .aniamted_1 {
+    right: -20px;
+  }
+
+
+  .aniamted_1 img {
+    width: 180px !important;
+    height: 170px !important;
+  }
+
+  .aniamted_2 {
+    left: -22px;
+  }
+
+  .aniamted_2 img {
+    width: 250px !important;
+    height: 150px !important;
+  }
+
+  .enterprise_text {
+    font-size: 30px;
+  }
+
+  .resource_planning_wrapper {
+    padding-left: 35px !important;
+    padding-right: 35px !important;
+  }
+
+  .payment_card_grid {
+    grid-template-columns: repeat(4, minmax(0, 1fr)) !important;
+  }
+
+  .admin_heading {
+    font-size: 40px;
+    line-height: 50px;
+  }
+
+  .feature_card_wrapper {
+    display: block;
+  }
+
+  .feature_card {
+    grid-template-columns: repeat(4, minmax(0, 1fr)) !important;
+  }
+
+  .feature_heading {
+    font-size: 30px;
+  }
+
+  .md_stats {
+    padding: 16px 32px;
+  }
+
+  .stat_lebel {
+    font-size: 16px;
+  }
+
+  .hero_bg {
+    gap: 20px;
+  }
+
   .category_modal .category {
     width: 100%;
   }
@@ -1286,7 +1387,7 @@ input[type="range"]::-moz-range-thumb {
   }
 
   .responsive_bg {
-    height: 494px !important;
+    height: 580px !important;
   }
 
   .white_bg {
@@ -1416,6 +1517,10 @@ input[type="range"]::-moz-range-thumb {
     gap: 8px;
   }
 
+  .payment_shadow {
+    box-shadow: none !important;
+  }
+
   /* about */
   .arrow_cls {
     width: 64px;
@@ -1521,9 +1626,86 @@ input[type="range"]::-moz-range-thumb {
     margin: auto;
     margin-bottom: 30px;
   }
+
+  .retina_text_wrapper {
+    padding-left: 20px;
+  }
+
+  .retina_text_wrapper h3 {
+    font-size: 30px;
+    line-height: 32px;
+  }
+
+  .white_bg {
+    margin: 20px;
+  }
+}
+
+.payment_shadow {
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 @media (min-width:1024px) and (max-width:1279px) {
+  .enterprise_text {
+    font-size: 45px;
+  }
+
+  .resource_faq {
+    width: 400px;
+  }
+
+  .enter_img2 {
+    height: 400px;
+  }
+
+  /* admindashboard page */
+  .animate_cartoon {
+    right: 4%;
+  }
+
+  .animate_bar {
+    left: 4%;
+  }
+
+  .animated_box {
+    bottom: -17%;
+  }
+
+  .white_bg {
+    height: 600px;
+  }
+
+  .retina_text_wrapper {
+    padding-left: 40px;
+  }
+
+  .retina_text_wrapper h3 {
+    font-size: 50px;
+  }
+
+  /* admindashboard page */
+
+
+
+
+
+  .hero_bg {
+    padding-left: 50px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+
+  .count_ps {
+    padding-left: 50px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+
+  .admin_heading {
+    font-size: 40px;
+    line-height: 50px;
+  }
+
   .buisness2 {
     right: 0;
   }
@@ -1804,6 +1986,46 @@ input[type="range"]::-moz-range-thumb {
 
 @media (min-width:1280px) and (max-width:1440px) {
 
+  /* admindashboard page */
+  .enterprise_text {
+    font-size: 45px;
+    line-height: 56px;
+  }
+
+  .animate_cartoon {
+    right: 4%;
+  }
+
+  .animate_bar {
+    left: 4%;
+  }
+
+  .animated_box {
+    bottom: -17%;
+  }
+
+  /* admindashboard page */
+
+
+
+
+
+
+
+
+  .admin_hero_br {
+    display: none;
+  }
+
+  .admin_hero_desc {
+    max-width: 551px;
+    width: 100%;
+  }
+
+  .admin_heading {
+    font-size: 56px;
+  }
+
   .testimonial .swiper {
     width: 645px;
     height: 372px;
@@ -1854,8 +2076,8 @@ input[type="range"]::-moz-range-thumb {
   }
 
   .containers {
-    padding-left: 80px;
-    padding-right: 80px;
+    padding-left: 150px;
+    padding-right: 150px;
   }
 
   .specialize_heading {
@@ -1993,6 +2215,22 @@ input[type="range"]::-moz-range-thumb {
 
 
 @media (min-width:1806px) and (max-width:1920px) {
+
+  /* admindashboard page */
+  .animate_cartoon {
+    right: 12%;
+  }
+
+  .animate_bar {
+    left: 12%;
+  }
+
+  .animated_box {
+    bottom: -17%;
+  }
+
+  /* admindashboard page */
+
   .buisness2 {
     right: 310px;
   }

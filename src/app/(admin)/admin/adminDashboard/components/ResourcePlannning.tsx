@@ -93,17 +93,15 @@ const ResourcePlannning = () => {
     }),
   };
 
-
   return (
-    <div className='lg:px-[150px] px-5'>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 lg:flex-row md:flex-row flex-col-reverse gap-5 lg:gap-[87px] items-center">
+    <div className='containers resource_planning_wrapper px-5'>
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 planning_grid lg:flex-row md:flex-row flex-col gap-5 lg:gap-[87px] items-center">
         <div
-          className='order-1 relative md:order-none'
-          ref={containerRef}
-        >
-          <Image src={ent1} alt="Main Image" />
+          className='order_custom relative'
+          ref={containerRef}>
+          <Image src={ent1} alt="Main Image" className='ent_main_img' />
           <div
-            className="absolute right-[-100px] bottom-[54px] will-change-transform"
+            className="absolute aniamted_1 right-[-100px] bottom-[54px] will-change-transform"
             ref={animatedRef}
           >
             <Image src={ent11} alt="Animated Image" />
@@ -122,7 +120,7 @@ const ResourcePlannning = () => {
           </motion.p>
 
           <motion.h2
-            className='text-2xl md:text-[30px] lg:text-[60px] text-[#0B071A] font-bold leading-[35px] lg:leading-[56px] mb-3 lg:mb-5'
+            className='text-2xl md:text-[30px] lg:text-[60px] text-[#0B071A] enterprise_text font-bold leading-[35px] lg:leading-[56px] mb-3 lg:mb-5'
             variants={fadeUp}
             initial="hidden"
             whileInView="visible"
@@ -165,8 +163,7 @@ const ResourcePlannning = () => {
         </div>
       </div>
       {/* second row */}
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-5 lg:gap-[87px] items-center lg:mt-0 mt-10">
-
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-5 lg:gap-[87px] items-center planning_grid  mt-10">
         <div>
           <motion.p
             className='text-red text-sm lg:text-base uppercase font-bold mb-4 lg:mb-3.5'
@@ -179,7 +176,7 @@ const ResourcePlannning = () => {
           </motion.p>
 
           <motion.h2
-            className='text-2xl md:text-[30px] lg:text-[60px] text-[#0B071A] font-bold leading-[35px] lg:leading-[56px] mb-3 lg:mb-5'
+            className='text-2xl enterprise_text md:text-[30px] lg:text-[60px] text-[#0B071A] font-bold leading-[35px] lg:leading-[56px] mb-3 lg:mb-5'
             variants={fadeUp}
             initial="hidden"
             animate="visible"
@@ -191,7 +188,7 @@ const ResourcePlannning = () => {
           {faqs.map((faq, index) => (
             <motion.div
               key={index}
-              className='w-[335px] lg:w-[470px] mt-2 lg:mt-[14px] rounded-lg lg:rounded-2xl px-4 py-[22px] lg:p-[30px] bg-[#F7F9FB]'
+              className='w-[335px] resource_faq lg:w-[470px] mt-2 lg:mt-[14px] rounded-lg lg:rounded-2xl px-4 py-[22px] lg:p-[30px] bg-[#F7F9FB]'
               variants={fadeUp}
               initial="hidden"
               animate="visible"
@@ -239,12 +236,12 @@ const ResourcePlannning = () => {
         </div>
         <div className='relative'
           ref={containerRef2}>
-          <Image className='h-[300px] lg:h-[600px] w-full' src={ent2} alt="" />
+          <Image className='h-[300px] enter_img2 lg:h-[600px] w-full' src={ent2} alt="" />
           <div
-            className="absolute left-[-100px] bottom-[54px] will-change-transform"
+            className="absolute aniamted_2 left-[-100px] bottom-[54px] will-change-transform"
             ref={animatedRef2}
           >
-            <Image src={ent22} alt="Animated Image" />
+            <Image className='' src={ent22} alt="Animated Image" />
           </div>
         </div>
 

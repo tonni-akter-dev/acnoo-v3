@@ -110,7 +110,6 @@ const itemVariant = {
 const ProductsFeature = () => {
   return (
     <div className='mt-9 lg:mt-[100px] mb-[83px]'>
-      {/* Header Animation */}
       <motion.div
         className='mb-9'
         initial="hidden"
@@ -126,7 +125,7 @@ const ProductsFeature = () => {
           Greate features for POSpro
         </motion.div>
         <motion.h3
-          className='text-2xl md:text-3xl lg:text-[60px] lg:leading-[72px] leading-[30px] font-bold text-center lg:mb-9 md:mb-9 mb-4 text-primary'
+          className='text-2xl feature_heading md:text-3xl lg:text-[60px] lg:leading-[72px] leading-[30px] font-bold text-center lg:mb-9 md:mb-9 mb-4 text-primary'
           variants={itemVariant}
         >
           Product Features
@@ -135,13 +134,13 @@ const ProductsFeature = () => {
 
       {/* Desktop Features */}
       <motion.div
-        className="lg:px-[230px] px-5 lg:block md:block hidden"
+        className="containers lg:block md:block hidden feature_card_wrapper"
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true }}
         variants={containerVariant}
       >
-        <div className="grid grid-cols-2 md:grid-cols-4">
+        <div className="grid grid-cols-2 md:grid-cols-4 feature_card">
           {productFeatures.map((feature, index) => (
             <motion.div
               key={index}
@@ -158,7 +157,7 @@ const ProductsFeature = () => {
 
       {/* Mobile Features */}
       <motion.div
-        className="containers px-5 lg:hidden md:hidden block"
+        className="containers px-5 lg:hidden md:hidden block md_hidden"
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true }}

@@ -100,7 +100,7 @@ const ResponsiveRetina = () => {
                     <Image className='lg:block hidden absolute bottom-[-18%] left-0 rotate-[45deg] z-[-999]' src={resblur1} alt="" />
                     <div className="grid grid-cols-1 lg:grid-cols-2 items-center">
                         {/* Left Section */}
-                        <div className="text-black lg:ps-[96px] md:ps-5 ps-3 lg:pe-0 md:pe-0 pe-3">
+                        <div className="text-black retina_text_wrapper lg:ps-[96px] md:ps-5 ps-3 lg:pe-0 md:pe-0 pe-3">
                             <motion.div
                                 className="text-black text-[15px] lg:text-lg font-medium mb-4 text-start"
                                 initial="hidden"
