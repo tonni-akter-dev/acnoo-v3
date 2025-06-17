@@ -33,7 +33,7 @@ const Overview = () => {
       <Support />
        <div className='sky-bg'>
         <Testimonial />
-        {/* <Trusted /> */}
+        <Trusted />
       </div>
        {/* <Pricing />
       <div className='pt-6 md:pt-[30px] lg:pt-[145px] mb-8 lg:mb-[122px]'>

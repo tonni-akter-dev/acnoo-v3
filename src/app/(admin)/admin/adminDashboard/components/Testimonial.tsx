@@ -45,7 +45,7 @@ export default function Testimonial({ color }: { color?: string }) {
     };
 
     return (
-        <div className="mb-15 lg:mb-[90px] relative testimonial pt-6 md:pt-8 lg:pt-30 containers px-5">
+        <div className="pb-15 lg:pb-[90px] relative testimonial pt-6 md:pt-8 lg:pt-30 containers px-5">
             {/* Header */}
             <div>
                 <div className="text-black text-base lg:text-lg font-medium mb-3 lg:mb-4 text-center">
@@ -92,7 +92,7 @@ export default function Testimonial({ color }: { color?: string }) {
                 {/* Navigation buttons */}
                 <button
                     ref={prevRef}
-                    className={`absolute flex justify-center items-center left-[35%] md:left-[43%] lg:left-[46%] bottom-[-33%] lg:bottom-[-18%] -translate-y-1/2 z-10 
+                    className={`absolute flex justify-center testimonial_arrow_btn items-center left-[35%] md:left-[43%] lg:left-[46%] bottom-[-33%] lg:bottom-[-20%] -translate-y-1/2 z-10 
               w-10 h-10 rounded-full transition-all`}
                     style={{ backgroundColor: activeIndex === 0 ? '#ffffff' : color || '#C52127' }}
                 >
@@ -104,7 +104,7 @@ export default function Testimonial({ color }: { color?: string }) {
                 </button>
                 <button
                     ref={nextRef}
-                    className={`absolute flex justify-center items-center right-[35%] md:right-[43%] lg:right-[46%] bottom-[-33%] lg:bottom-[-18%] -translate-y-1/2 z-10 
+                    className={`absolute flex justify-center testimonial_arrow_btn items-center right-[35%] md:right-[43%] lg:right-[46%] bottom-[-33%] lg:bottom-[-20%] -translate-y-1/2 z-10 
               w-10 h-10 rounded-full transition-all`}
                     style={{ backgroundColor: activeIndex === testimonials.length - 1 ? '#ffffff' : color || '#C52127' }}
                 >
@@ -139,16 +139,17 @@ export default function Testimonial({ color }: { color?: string }) {
                     >
                         {testimonials.map((testimonialImg, index) => (
                             <SwiperSlide key={index}>
-                                <div className="lg:px-0 px-4 bg-white flex justify-center flex-col items-center py-4 lg:py-10 rounded-[20px]">
+                                <div className="lg:px-[110px] h-auto testimonial_card px-4 bg-white flex justify-center flex-col items-center py-4 lg:py-10 rounded-[20px]">
                                     <Image
                                         className="md:size-22 size-16"
                                         src={testimonialImg}
                                         alt={`Testimonial ${index + 1}`}
                                     />
                                     <p className="mt-2.5 lg:mt-[22px] mb-3 lg:mb-8 text-[#3C4256] text-center text-sm lg:text-xl font-medium">
-                                        The experience with Ave has been nothing short of amazing. So much better than other themes I’ve used – wish I had seen this{' '}
-                                        <span className="md:block hidden">one first and saved my wasted time and money on</span>{' '}
-                                        <span className="lg:block hidden">other themes! I’d recommend this theme in a heartbeat!</span>
+                                        The experience with Ave has been nothing short of amazing. So much better than other themes I’ve used – wish I had seen this one first and saved my wasted time and money on
+                                       other themes! I’d recommend this theme in a heartbeat!
+                                        {/* <span className="md:block hidden">one first and saved my wasted time and money on</span>{' '} */}
+                                        {/* <span className="lg:block hidden">other themes! I’d recommend this theme in a heartbeat!</span> */}
                                     </p>
                                     <div className="text-center flex flex-col justify-center items-center lg:gap-1">
                                         <h5 className="text-[#0B071A] text-base lg:text-lg font-bold">Mathias Herasen</h5>

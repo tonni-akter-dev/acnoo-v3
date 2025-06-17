@@ -738,9 +738,11 @@ input[type="range"]::-moz-range-thumb {
   .banner_input {
     width: 185px !important;
   }
-  .support_bg{
+
+  .support_bg {
     background-image: url('/admindashboard/supportbg_mobile.png') !important;
   }
+
   .br_compatible {
     display: none;
   }
@@ -822,7 +824,7 @@ input[type="range"]::-moz-range-thumb {
     display: none;
   }
 
-  .support_bg{
+  .support_bg {
     background-image: url('/admindashboard/supportbg_mobile.png') !important;
   }
 }
@@ -2011,9 +2013,25 @@ input[type="range"]::-moz-range-thumb {
   /* about */
 }
 
+.swiper-3d .swiper-slide-shadow {
+  background: rgb(0 0 0 / 3%) !important;
+}
+
+.testimonial .swiper-slide {
+  height: 450px;
+}
+
 @media (min-width:1280px) and (max-width:1440px) {
+  .testimonial_arrow_btn {
+    bottom: -50%;
+  }
+
   .support_bg {
     padding-left: 150px;
+  }
+
+  .testimonial_card {
+    padding: 35px 45px;
   }
 
   /* admindashboard page */
