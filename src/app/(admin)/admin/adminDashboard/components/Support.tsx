@@ -10,7 +10,7 @@ const Support = () => {
                     <span className='bg-red rounded-[14px] text-sm lg:text-base font-bold text-center text-white px-3 h-[25px] py-1 w-fit me-[11px]'>New</span>
                     New Customer support featured reval
                 </div>
-                <h3 className='text-2xl md:text-[30px] lg:text-[60px] text-white font-bold leading-8 lg:leading-[56px] mb-3 lg:mb-5'>
+                <h3 className='text-2xl md:text-[30px] heading_text lg:text-[60px] text-white font-bold leading-8 lg:leading-[56px] mb-3 lg:mb-5'>
                     Need support?start today
                 </h3>
                 <p className='text-[#CDD0DA] text-base lg:text-lg mb-6 font-medium'>The layout is responsive and looks gorgeous and

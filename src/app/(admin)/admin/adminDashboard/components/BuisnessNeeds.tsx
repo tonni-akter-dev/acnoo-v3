@@ -58,7 +58,7 @@ const BuisnessNeeds = () => {
                     Greate features for POSpro
                 </motion.div>
                 <motion.h3
-                    className='text-2xl md:text-[30px] lg:text-[60px] lg:leading-[72px] md:leading-10 leading-6 font-bold text-center text-black'
+                    className='heading_text text-2xl md:text-[30px] lg:text-[60px] lg:leading-[72px] md:leading-10 leading-6 font-bold text-center text-black'
                     variants={fadeUp}
                     initial="hidden"
                     whileInView="visible"
@@ -69,16 +69,11 @@ const BuisnessNeeds = () => {
                 </motion.h3>
             </div>
             <div>
-                {/* <div className='relative h-[720px]'>
-                    <Image className=' mx-auto' src={buisnessneeds} alt="" />
-                    <Image className='absolute right-[110px] buisness2 top-[120px]' src={buisnessneeds2} alt="" />
-                    <Image className=' buisness1 absolute left-[200px] bottom-[145px]' src={buisnessneeds1} alt="" />
-                </div> */}
                 <div>
-                     <Image className=' mx-auto' src={buisnessneeds11} alt="" />
+                    <Image className=' mx-auto' src={buisnessneeds11} alt="" />
                 </div>
                 <div>
-                    <ul className='flex lg:flex-row md:flex-row flex-col gap-3 md:gap-6 lg:gap-[70px] items-start md:items-center lg:items-center justify-center'>
+                    <ul className='flex lg:flex-row md:flex-row buisness_wrapper flex-col gap-3 md:gap-6 lg:gap-[70px] items-start md:items-center lg:items-center justify-center'>
                         {[
                             'One Click Installation',
                             'Mix and Match Section Blocks',

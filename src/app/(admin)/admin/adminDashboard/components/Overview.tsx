@@ -25,17 +25,17 @@ const Overview = () => {
       <ProductsFeature />
       <GloballyGrowth text="Something new coming soon!" />
       <ResponsiveRetina />
-       <AcceptedPaymen />
+      <AcceptedPaymen />
       <ResourcePlannning />
       <BuisnessNeeds />
-     {/* <AppScreen />
+      <AppScreen />
       <Compatible />
       <Support />
-      <div className='sky-bg'>
+       <div className='sky-bg'>
         <Testimonial />
-        <Trusted />
+        {/* <Trusted /> */}
       </div>
-      <Pricing />
+       {/* <Pricing />
       <div className='pt-6 md:pt-[30px] lg:pt-[145px] mb-8 lg:mb-[122px]'>
         <Faq classname="hover:bg-transparent border hover:text-[#C52127] border-[#C52127]" btncolor="#C52127" />
       </div>
