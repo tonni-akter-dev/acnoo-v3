@@ -15,7 +15,7 @@ const Pricing = ({ color }: { color?: string }) => {
             <h3 className="text-[28px] md:text-[30px] lg:text-[60px] capitalize mb-4 lg:mb-8 lg:leading-[72px] leading-[30px] font-bold text-center text-white">
                 our pricing plan </h3>
             <div className="">
-                <div className="max-w-4xl lg:mx-auto  md:mx-5 mx-4 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-4 md:gap-[18px] lg:gap-8">
+                <div className="max-w-4xl lg:mx-auto  md:mx-5 mx-4 grid grid-cols-1 pricing_grid md:grid-cols-2 lg:grid-cols-2 gap-4 md:gap-[18px] lg:gap-8">
                     <div className="bg-white rounded-[20px] shadow-lg overflow-hidden" style={{ filter: 'drop-shadow(0px 10px 37px rgba(0, 0, 0, 0.06))' }}>
                         <div className="pt-8 lg:pt-[65px] lg:ps-[35px] px-5 lg:pe-[45px]  pb-6 lg:pb-[50px]">
                             <div className="flex items-baseline ps-6">

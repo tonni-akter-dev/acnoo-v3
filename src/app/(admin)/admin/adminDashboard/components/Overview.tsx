@@ -35,12 +35,12 @@ const Overview = () => {
         <Testimonial />
         <Trusted />
       </div>
-       {/* <Pricing />
-      <div className='pt-6 md:pt-[30px] lg:pt-[145px] mb-8 lg:mb-[122px]'>
+       <Pricing />
+       <div className='pt-6 md:pt-[30px] lg:pt-[145px] mb-8 lg:mb-[122px]'>
         <Faq classname="hover:bg-transparent border hover:text-[#C52127] border-[#C52127]" btncolor="#C52127" />
       </div>
       <InstallationService  classname="hover:bg-[#1351D8] hover:text-white" />
-      <SupportTicket /> */}
+     <SupportTicket />
     </div>
   )
 }

@@ -218,6 +218,7 @@ body {
 .supportticket_bg {
   background-image: url('/admindashboard/supportticket-bg.png');
   background-repeat: no-repeat;
+  background-size: cover;
   height: 100%;
 }
 
@@ -590,7 +591,6 @@ input[type="range"]::-moz-range-thumb {
   color: #fff;
   border-radius: 20px;
   background: #FFF;
-  /* box-shadow: 0px 6px 44px 0px rgba(181, 181, 234, 0.20); */
   transition: all 0.3s ease;
 }
 
@@ -602,13 +602,11 @@ input[type="range"]::-moz-range-thumb {
 .testimonial .swiper-slide:nth-child(2n) {
   z-index: 2;
   background: white;
-
 }
 
 .testimonial .swiper-slide:nth-child(3n) {
   z-index: 1;
   background: white;
-  /* Bottom layer */
 }
 
 /* Optional: Add slight scale and opacity for depth */
@@ -1085,6 +1083,11 @@ input[type="range"]::-moz-range-thumb {
 }
 
 @media (min-width:700px) and (max-width:1023px) {
+  .supportticket_bg {
+    background-image: url('/ecommerce/mobile-support.png') !important;
+    height: 225px !important;
+  }
+
   .enter_img2 {
     height: 300px;
   }
@@ -1638,6 +1641,15 @@ input[type="range"]::-moz-range-thumb {
     text-align: center;
   }
 
+  .pricing_grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+
+  }
+
+  .md_grid {
+    display: grid;
+  }
+
   .contact_form {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
@@ -1659,6 +1671,16 @@ input[type="range"]::-moz-range-thumb {
   .white_bg {
     margin: 20px;
   }
+
+  .testimonial1 {
+    left: 0 !important;
+  }
+
+  .testimonial1 img {
+    width: 44px;
+    height: 44px;
+    left: 0 !important;
+  }
 }
 
 .payment_shadow {
@@ -1666,6 +1688,15 @@ input[type="range"]::-moz-range-thumb {
 }
 
 @media (min-width:1024px) and (max-width:1279px) {
+  .testimonial .swiper {
+    width: 645px !important;
+    /* height: 444px; */
+  }
+
+  .testimonial_card {
+    padding-left: 45px;
+    padding-right: 45px;
+  }
 
   .support_bg {
     padding-left: 40px;
@@ -2018,10 +2049,24 @@ input[type="range"]::-moz-range-thumb {
 }
 
 .testimonial .swiper-slide {
-  height: 450px;
+  height: auto;
 }
 
 @media (min-width:1280px) and (max-width:1440px) {
+  /* .swiper-cards .swiper-slide {
+    width: 645px !important;
+  }
+
+  .swiper-cards .swiper-slide {
+    width: 645px !important;
+    height: 372px !important;
+  } */
+
+  .testimonial .swiper {
+    width: 645px !important;
+    height: 444px;
+  }
+
   .testimonial_arrow_btn {
     bottom: -50%;
   }
@@ -2053,13 +2098,6 @@ input[type="range"]::-moz-range-thumb {
   }
 
   /* admindashboard page */
-
-
-
-
-
-
-
 
   .admin_hero_br {
     display: none;

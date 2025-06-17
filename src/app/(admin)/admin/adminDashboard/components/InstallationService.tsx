@@ -10,11 +10,11 @@ const InstallationService = ({ color, classname }: { color?: string, classname?:
         </span>
         {`We've`} added <span className='text-[#2353F5]'>Pricing</span> new!
       </div>
-      <h3 className="text-2xl md:text-3xl lg:text-[60px] capitalize lg:mb-8 lg:leading-[72px] leading-[30px] font-bold text-center text-[#0B071A]">
+      <h3 className="text-2xl md:text-3xl heading_text lg:text-[60px] capitalize lg:mb-8 lg:leading-[72px] leading-[30px] font-bold text-center text-[#0B071A]">
         Installation Services </h3>
 
       <div className="pt-4 pb-10 lg:py-12 px-4 lg:px-9 md:px-5 bg-white">
-        <div className="lg:grid md:hidden grid max-w-7xl mx-auto  grid-cols-1 md:grid-cols-3 gap-4  lg:gap-[30px]">
+        <div className="lg:grid md:hidden md_hidden grid max-w-7xl mx-auto pricing_grid grid-cols-1 lg:grid-cols-3 gap-4  lg:gap-[30px]">
           {plans.map((plan, index) => (
             <div
               key={index}
@@ -28,12 +28,7 @@ const InstallationService = ({ color, classname }: { color?: string, classname?:
                 <button
                   className={`${classname} mt-6 lg:mt-10 cursor-pointer text-base font-medium w-full lg:h-[60px] h-12 rounded-lg flex justify-center items-center border transition-all duration-300
                     ${index === 1 ? 'bg-[#1351D8] text-white hover:bg-transparent hover:!text-black'
-                      : 'bg-transparent text-black hover:bg-[#1351D8] hover:text-white'}`}
-                  // style={{
-                  //   '--btnColor': color || '#1351D8',
-                  //   borderColor: color || '#1351D8',
-                  // } as React.CSSProperties}
-                  >
+                      : 'bg-transparent text-black hover:bg-[#1351D8] hover:text-white'}`}>
                   Purchase now
                 </button>
                 <ul className="mt-5 lg:mt-7 space-y-3">
@@ -64,7 +59,7 @@ const InstallationService = ({ color, classname }: { color?: string, classname?:
         </div>
 
         {/* md device  */}
-        <div className="lg:hidden md:grid hidden mx-auto  grid-cols-2 gap-[30px]">
+        <div className="lg:hidden md_grid md:grid hidden mx-auto  grid-cols-2 gap-[30px]">
           {plans.slice(0, 2).map((plan, index) => (
             <div
               key={index}
