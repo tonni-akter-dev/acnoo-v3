@@ -12,6 +12,7 @@ type IProps = {
     title?: string;
     answer?: string;
 };
+
 const SidebarItem = ({ title, onClick, isActive }: SidebarItemProps) => {
     return (
         <button
@@ -24,7 +25,6 @@ const SidebarItem = ({ title, onClick, isActive }: SidebarItemProps) => {
         </button>
     );
 };
-
 
 const FaqQuestions = () => {
     const [activeSection, setActiveSection] = useState<string>(faqData[0].title);
@@ -65,8 +65,7 @@ const FaqQuestions = () => {
             <div className="lg:flex hidden lg:px-[230px] px-5 mt-[14px] mb-[160px]">
                 <aside
                     className="w-[464px] h-full sticky top-0 overflow-y-scroll scrollbar-hide bg-white shrink-0"
-                    style={{ boxShadow: '0px 4px 50px 0px rgba(0, 0, 0, 0.09)' }}
-                >
+                    style={{ boxShadow: '0px 4px 50px 0px rgba(0, 0, 0, 0.09)' }}>
                     {faqData.map((item, index) => (
                         <SidebarItem
                             key={index}
@@ -78,7 +77,7 @@ const FaqQuestions = () => {
                 </aside>
 
                 {/* Main Content */}
-                <main className="flex-1 ps-[55px] h-auto space-y-16">
+                <main className="flex-1 ps-[55px] h-auto space-y-16 mb-8">
                     {faqData.map((item, index) => (
                         <div
                             key={index}

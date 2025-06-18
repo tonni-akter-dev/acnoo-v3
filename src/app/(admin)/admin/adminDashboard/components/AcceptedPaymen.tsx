@@ -47,7 +47,7 @@ const AcceptedPayment = () => {
     ];
 
     return (
-        <div className="containers px-5 mb-6 md:mb-8 lg:mb-[161px] mt-6 md:mt-[50px] lg:mt-[124px]">
+        <div className="containers px-5 mb-6 md:mb-8 lg:mb-[161px] mt-6 accepted_payment_wrap md:mt-[50px] lg:mt-[124px]">
             <motion.h2
                 className="text-2xl md:text-[30px] lg:text-[60px] text-[#0B071A] font-bold text-center heading_text"
                 initial={{ opacity: 0, y: 30 }}
@@ -110,6 +110,7 @@ const AcceptedPayment = () => {
                                 className="w-full h-[64px] md:h-[69px] rounded-lg"
                                 src={payImage}
                                 alt={`Payment method ${index + 1}`}
+                                style={{ boxShadow: ' 0px 4px 20px 0px rgba(8, 8, 41, 0.05)' }}
                             />
                         </motion.div>
                     ))}

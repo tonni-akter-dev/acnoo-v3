@@ -10,7 +10,7 @@ const Compatible = () => {
                     <p className='text-red text-sm lg:text-base uppercase font-bold mb-2.5 lg:mb-3.5'>Compatible with</p>
                     <h2 className='text-2xl md:text-[30px] heading_text lg:text-[60px] text-[#0B071A] font-bold leading-8 lg:leading-[56px] mb-3 lg:mb-5'>POSpro compatible with</h2>
                     <p className='text-base lg:text-lg mb-6 text-[#4B5563] font-medium'>The layout is responsive and looks gorgeous and <br className='br_compatible' />
-                        professional on any major devices and this theme <br  className='br_compatible'/>
+                        professional on any major devices and this theme <br className='br_compatible' />
                         comes with custom page templates.</p>
                     <div className='flex gap-4 lg:gap-5 items-center'>
                         <button className="bg-red flex gap-1.5 items-center text-white text-sm lg:text-base font-bold px-5 lg:px-[36px] py-[14px] lg:h-[60px] h-12 whitespace-nowrap rounded-[10px] w-fit border border-red transition-all duration-300 group hover:bg-transparent hover:text-red">
@@ -28,7 +28,7 @@ const Compatible = () => {
                         </button>
                     </div>
                 </div>
-                <Image className='object-contain h-[350px] md:h-[500px] ' src={pos} alt="" />
+                <Image className='object-contain h-[350px] compatible_img md:h-[500px]  mx-auto' src={pos} alt="" />
             </div>
 
         </div>

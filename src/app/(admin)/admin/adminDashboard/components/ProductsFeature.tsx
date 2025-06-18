@@ -109,7 +109,7 @@ const itemVariant = {
 
 const ProductsFeature = () => {
   return (
-    <div className='mt-9 lg:mt-[100px] mb-[83px]'>
+    <div className='mt-9 lg:mt-[100px] mb-8 lg:mb-[83px]'>
       <motion.div
         className='mb-9'
         initial="hidden"

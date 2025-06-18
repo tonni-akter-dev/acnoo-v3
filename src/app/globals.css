@@ -822,13 +822,13 @@ input[type="range"]::-moz-range-thumb {
     display: none;
   }
 
-  .support_bg {
-    background-image: url('/admindashboard/supportbg_mobile.png') !important;
-  }
+
 }
 
 @media (min-width:320px) and (max-width:699px) {
-
+  .support_bg {
+    background-image: url('/admindashboard/support_md_device.png') !important;
+  }
   .aniamted_1 {
     right: -20px;
   }
@@ -1083,6 +1083,13 @@ input[type="range"]::-moz-range-thumb {
 }
 
 @media (min-width:700px) and (max-width:1023px) {
+  .support_bg {
+    background-image: url('/admindashboard/support_md_device.png') !important;
+  }
+  .search_bg {
+    height: 92px;
+  }
+
   .supportticket_bg {
     background-image: url('/ecommerce/mobile-support.png') !important;
     height: 225px !important;
@@ -1406,12 +1413,24 @@ input[type="range"]::-moz-range-thumb {
   }
 
   .responsive_bg {
-    height: 580px !important;
+    height: 550px !important;
+  }
+
+  .accepted_payment_wrap {
+    margin-top: 50px;
   }
 
   .white_bg {
     height: 494px !important;
     border-radius: 14px !important;
+  }
+
+  .compatible_img {
+    height: 500px;
+  }
+
+  .buisness-bg {
+    background-image: url('/admindashboard/buisness-bg1.png') !important;
   }
 
   .supportticket_bg {
@@ -1423,11 +1442,6 @@ input[type="range"]::-moz-range-thumb {
   .responsive .swiper-slide {
     margin-right: 10px !important;
     margin-left: 0 !important;
-  }
-
-  .buisness-bg {
-    background-image: url('/public/ecommerce/operate-tab-bg.png') !important;
-    background-position: bottom;
   }
 
   .join_team {
@@ -1669,7 +1683,7 @@ input[type="range"]::-moz-range-thumb {
   }
 
   .white_bg {
-    margin: 20px;
+    margin: 0 20px;
   }
 
   .testimonial1 {
@@ -1688,6 +1702,14 @@ input[type="range"]::-moz-range-thumb {
 }
 
 @media (min-width:1024px) and (max-width:1279px) {
+  .pricing_grid {
+    gap: 20px;
+  }
+
+  .service_card {
+    padding: 16px;
+  }
+
   .testimonial .swiper {
     width: 645px !important;
     /* height: 444px; */
@@ -1702,8 +1724,14 @@ input[type="range"]::-moz-range-thumb {
     padding-left: 40px;
   }
 
+  .supportticket_bg {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
   .heading_text {
     font-size: 45px;
+    line-height: 50px;
   }
 
   .enterprise_text {

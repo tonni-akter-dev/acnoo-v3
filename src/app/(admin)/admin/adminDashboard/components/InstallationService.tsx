@@ -18,7 +18,7 @@ const InstallationService = ({ color, classname }: { color?: string, classname?:
           {plans.map((plan, index) => (
             <div
               key={index}
-              className={`border  p-4 lg:p-9 shadow-sm relative rounded-[18px] flex flex-col justify-between border-[#D1D5DB]`}>
+              className={`border service_card p-4 lg:p-9 shadow-sm relative rounded-[18px] flex flex-col justify-between border-[#D1D5DB]`}>
               <div>
                 <p className="text-[#1351D8] font-semibold text-base mb-2">{plan.discount} <span className='text-[#150E3D]'>OFF</span></p>
                 <h3 className="text-xl lg:text-2xl text-[#150E3D] font-medium mb-4 lg:mb-8">{plan.title}</h3>

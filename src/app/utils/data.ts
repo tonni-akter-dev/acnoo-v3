@@ -600,27 +600,27 @@ export const faqData: FaqItem[] = [
     answer: `a) Occasionally it may be deemed necessary to make changes to your holiday and the Company reserves the right to do so at any time, and you will be notified of any changes at the earliest possible opportunity.
     If a major change to your tour is necessary, providing it does not arise from circumstances beyond the Company’s control, you may choose (i) to accept the change of arrangements (ii) to purchase another holiday from us or (iii) to cancel your holiday. Compensation may be payable in cases of major change as detailed below.`,
   }, {
-    title: 'How Do I Add A New Language For Localization?',
+    title: '5. How Do I Add A New Language For Localization?',
     answer: 'Add the new locale in your `l10n.yaml` and provide the translation files...',
   },
   {
-    title: 'Why Are My Translations Not Updating?',
+    title: '6. Why Are My Translations Not Updating?',
     answer: 'Make sure to run `flutter pub get` and rebuild the project after adding new translation keys...',
   },
   {
-    title: 'How Do I Replace The Onboarding Screens?',
+    title: '7. How Do I Replace The Onboarding Screens?',
     answer: 'Modify the onboarding screen widget files, typically found in the `screens/onboarding/` directory...',
   },
   {
-    title: 'How Do I Change The App Icon?',
+    title: '8. How Do I Change The App Icon?',
     answer: 'Use the `flutter_launcher_icons` package and run `flutter pub run flutter_launcher_icons:main`...',
   },
   {
-    title: 'What Should I Do If The App Crashes?',
+    title: '9. What Should I Do If The App Crashes?',
     answer: 'Check the error logs in the console. Common issues include null exceptions or missing assets...',
   },
   {
-    title: 'How Do I Build A Release APK?',
+    title: '10. How Do I Build A Release APK?',
     answer: 'Run `flutter build apk --release`. Ensure your keystore is set up in `android/key.properties`...',
   },
 ];

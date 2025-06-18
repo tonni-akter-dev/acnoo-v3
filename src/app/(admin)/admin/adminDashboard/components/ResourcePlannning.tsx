@@ -127,7 +127,7 @@ const ResourcePlannning = () => {
             viewport={{ once: true, amount: 0.3 }}
             custom={1}
           >
-            Enterprise Resource Planning.
+            Enterprise  <br className='md_block' /> Resource  Planning.
           </motion.h2>
 
           <motion.p
@@ -182,7 +182,7 @@ const ResourcePlannning = () => {
             animate="visible"
             custom={1}
           >
-            Simple Tools, Powerful Effects
+            Simple Tools, <br className='md_block' /> Powerful Effects
           </motion.h2>
 
           {faqs.map((faq, index) => (

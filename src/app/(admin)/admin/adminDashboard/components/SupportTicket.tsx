@@ -9,13 +9,12 @@ const SupportTicket = () => {
                 </span>
                 Custom projects we already done
             </div>
-            <h3 className="lg:text-[72px] md:text-3xl text-2xl capitalize mb-4 lg:mb-8 lg:leading-[72px] md:leading-11 leading-8 font-bold text-center text-primary">
+            <h3 className="lg:text-[72px] md:text-3xl heading_text text-2xl capitalize mb-4 lg:mb-8 lg:leading-[72px] md:leading-11 leading-8 font-bold text-center text-primary">
                 Ready to create some <br />
                 custom products?</h3>
             <div className='flex justify-center'>
                 <button className=' text-white  cursor-pointer text-base w-[261px] py-3 lg:py-[21px] rounded-[10px] bg-[#2F1C6A]  font-medium'>Create a support ticket</button>
             </div>
-
         </div>
     )
 }
