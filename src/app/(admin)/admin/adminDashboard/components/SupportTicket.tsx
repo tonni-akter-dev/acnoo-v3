@@ -13,7 +13,7 @@ const SupportTicket = () => {
                 Ready to create some <br />
                 custom products?</h3>
             <div className='flex justify-center'>
-                <button className=' text-white  cursor-pointer text-base w-[261px] py-3 lg:py-[21px] rounded-[10px] bg-[#2F1C6A]  font-medium'>Create a support ticket</button>
+                <button className=' text-white  cursor-pointer text-base w-[261px] py-3 lg:py-[21px] rounded-[10px] bg-[#2F1C6A] hover:bg-transparent hover:text-[#2F1C6A] border border-[#2F1C6A] transition-all ease-in-out duration-300  font-medium'>Create a support ticket</button>
             </div>
         </div>
     )

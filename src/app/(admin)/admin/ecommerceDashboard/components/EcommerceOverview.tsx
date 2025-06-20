@@ -27,7 +27,7 @@ const EcommerceOverview = () => {
       </div>
       <Pricing color="#7500FE" />
       <div className='pt-6 md:pt-[30px] lg:pt-[145px] mb-8 lg:mb-[122px]'>
-        <Faq color="#7500FE" btncolor="#C52127" />
+        <Faq classname="hover:bg-transparent border hover:text-[#7500FE] border-[#7500FE] bg-[#7500FE]"  />
       </div>
       <InstallationService color="#7500FE" />
       <SupportTicket />

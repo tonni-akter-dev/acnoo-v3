@@ -91,12 +91,12 @@ const FaqItem: React.FC<IProps> = ({ question, answer }) => {
   );
 };
 
-const Faq = ({ color, btncolor, classname }: { color?: string, btncolor?: string, classname?: string }) => {
+const Faq = ({  btncolor, classname }: { btncolor?: string, classname?: string }) => {
   const sectionRef = useRef(null);
   const isInView = useInView(sectionRef, { once: true, margin: '-100px' });
 
   return (
-    <div ref={sectionRef} className="z-50 bg-transparent relative flex lg:flex-row flex-col justify-between lg_screen_px lg:px-[120px] lg:mt-[81px] px-4 lg:mb-[160px] mb-6">
+    <div ref={sectionRef} className="z-50 bg-transparent relative flex lg:flex-row flex-col justify-between lg_screen_px lg:px-[120px] px-4 lg:mb-[128px] mb-6">
       <motion.div initial="hidden"
         animate={isInView ? "visible" : "hidden"}
         variants={{}} className="flex lg:flex-col flex-row lg:justify-start question_wrapper md:justify-between lg:items-start items-center">
@@ -109,7 +109,7 @@ const Faq = ({ color, btncolor, classname }: { color?: string, btncolor?: string
             Questions & Answer we give
           </motion.div>
           <motion.h3 custom={1}
-            variants={fadeLeft} className="lg:text-[65px]  text-[24px] lg:leading-[72px] leading-[30px] font-bold text-start  mb-4 lg:mb-8 text-primary">
+            variants={fadeLeft} className="lg:text-[65px] heading_text text-[24px] lg:leading-[72px] leading-[30px] font-bold text-start  mb-4 lg:mb-8 text-primary">
             Questions &
             <br className="lg:block hidden ms-2" />
             Quickly <br className="lg:hidden block" /> Answers
@@ -127,10 +127,9 @@ const Faq = ({ color, btncolor, classname }: { color?: string, btncolor?: string
             transition: { type: "spring", stiffness: 300 },
           }}
           whileTap={{ scale: 0.98 }}
-          className={`lg:flex question_btn md:flex hidden  ${classname}
-    ${btncolor ? "bg-[#C52127]" : color ? "bg-[#7500FE]" : "bg-[#2353F5]"} 
-    hover:bg-transparent hover:text-[${btncolor || color || "#2353F5"}] 
-    border border-[${btncolor || color || "#2353F5"}]
+          className={`lg:flex question_btn md:flex hidden  
+            ${classname ? classname : "bg-[#2353F5]"}
+          
     transition-all duration-300 
     gap-1.5 items-center text-white text-base font-bold md:px-5 lg:px-[36px] md:py-3 lg:py-[21px] 
     rounded-[10px] w-fit group`}

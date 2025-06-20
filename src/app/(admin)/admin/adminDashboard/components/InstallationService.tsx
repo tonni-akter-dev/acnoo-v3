@@ -3,17 +3,17 @@ import React from 'react'
 
 const InstallationService = ({ color, classname }: { color?: string, classname?: string }) => {
   return (
-    <div>
+    <div className='relative z-50'>
       <div className="text-black text-lg font-medium mb-4 text-center">
         <span style={{ backgroundColor: color || '#C52127' }} className="rounded-[14px] text-base font-bold text-center text-white px-3 h-[25px] py-1 w-fit me-[11px]">
           New
         </span>
         {`We've`} added <span className='text-[#2353F5]'>Pricing</span> new!
       </div>
-      <h3 className="text-2xl md:text-3xl heading_text lg:text-[60px] capitalize lg:mb-8 lg:leading-[72px] leading-[30px] font-bold text-center text-[#0B071A]">
+      <h3 className="text-2xl md:text-3xl heading_text lg:text-[60px] capitalize lg:leading-[72px] leading-[30px] font-bold text-center text-[#0B071A]">
         Installation Services </h3>
 
-      <div className="pt-4 pb-10 lg:py-12 px-4 lg:px-9 md:px-5 bg-white">
+      <div className="pt-4 pb-10 lg:pb-[128px] lg:pt-12 px-4 lg:px-9 md:px-5 bg-white">
         <div className="lg:grid md:hidden md_hidden grid max-w-7xl mx-auto pricing_grid grid-cols-1 lg:grid-cols-3 gap-4  lg:gap-[30px]">
           {plans.map((plan, index) => (
             <div

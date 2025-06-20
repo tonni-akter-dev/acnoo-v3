@@ -1,9 +1,8 @@
 'use client'
-
 import React, { useState, useEffect, useRef } from 'react';
-import ninty from '/public/ecommerce/90.png';
-import Image from 'next/image';
 import Automation from './Automation';
+import CountUp from 'react-countup';
+import { useInView } from 'react-intersection-observer';
 
 const UniqueHomePages = () => {
     const [activeTab, setActiveTab] = useState('Automation');
@@ -21,28 +20,28 @@ const UniqueHomePages = () => {
 
     const currentTabContent = tabs?.find(tab => tab?.id === activeTab)?.content;
 
-    // Scroll to the start of the container on mount
     useEffect(() => {
         if (scrollContainerRef.current) {
             scrollContainerRef.current.scrollLeft = 0;
         }
     }, []);
+    const { ref, inView } = useInView({ triggerOnce: true, threshold: 0.3 });
 
     return (
-        <div className='lg:pt-30 md:pt-60 pt-11'>
+        <div className='lg:pt-24 md:pt-3 unique_home_page'>
             <div className='mb-6 lg:mb-10 relative'>
                 <div className='relative'>
-                    <div className='flex z-[-10] justify-center absolute bottom-[-29%] left-[50%] transform -translate-x-1/2'>
-                        <Image className='' src={ninty} alt="" />
-                    </div>
-
-                    <h3 className='text-[28px] md:text-[30px] lg:text-[60px] lg:leading-[72px] leading-[30px] font-bold text-center mb-6 text-black'>
+            
+                    <h1 className=' unique_number tenk_text !mb-[-96px]' ref={ref}>
+                        {inView && <CountUp end={16} duration={2} />}
+                    </h1>
+                    <h3 className='text-[28px] feature_text_1 md:text-[30px] lg:text-[70px] lg:leading-[72px] leading-[30px] font-bold text-center mb-3 lg:mb-6 text-[#1A0B49]'>
                         Stunning <br />
                         Unique Home pages
                     </h3>
                 </div>
-                <p className='text-center text-[#6B7280] text-base lg:text-[20px] font-medium'>
-                    Beautiful, hand-crafted designs to get you started. Install any demo or <br className='lg:hidden md:block hidden' /> template <br className='lg:block hidden' />
+                <p className='text-center text-[#6B7280] text-base lg:text-[20px] font-medium relative z-50 pt-1.5'>
+                    Beautiful, hand-crafted designs to get you started. Install any demo or <br className='lg:hidden md_block md:block hidden' /> template <br className='lg:block hidden' />
                     with a single click. Mix and match anything.
                 </p>
             </div>
@@ -55,7 +54,7 @@ const UniqueHomePages = () => {
                     <button
                         key={tab.id}
                         className={`px-4 py-2  w-fit whitespace-nowrap text-sm lg:text-base font-medium rounded-[6px] mr-2.5 lg:mr-4 ${activeTab === tab.id
-                            ? 'bg-[#2353F5] text-white'
+                            ? 'bg-[#7500FE] text-white hover:bg-transparent hover:text-[#7500FE] border border-[#7500FE] transition-all ease-in-out duration-300'
                             : 'bg-white '
                             }`}
                         onClick={() => setActiveTab(tab.id)}
