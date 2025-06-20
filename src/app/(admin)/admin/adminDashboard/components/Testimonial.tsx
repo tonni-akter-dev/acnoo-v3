@@ -9,7 +9,6 @@ import 'swiper/css';
 import 'swiper/css/effect-cards';
 import 'swiper/css/navigation';
 import Image from 'next/image';
-
 import star from '/public/star.png';
 import right from '/public/arrow-right.png';
 import testimonial1 from '/public/admindashboard/testimonial1.png';

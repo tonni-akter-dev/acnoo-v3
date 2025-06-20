@@ -77,7 +77,7 @@ const Banner = () => {
                         variants={containerVariants}
                     >
                         <motion.button
-                            className='bg-[#2F1C6A] border border-[#2F1C6A] hover:bg-transparent hover:text-[#2F1C6A] flex gap-1.5 items-center text-white text-sm lg:text-base font-bold px-[14px] md:px-6 lg:px-[36px] py-[14px] md:py-4 lg:py-[21px] rounded-[6px] md:rounded-[10px] w-fit transition-all ease-in-out duration-300'
+                            className='bg-[#2F1C6A] border border-[#2F1C6A] hover:bg-transparent hover:text-[#2F1C6A] flex gap-1.5 items-center text-white banner_btn text-sm lg:text-base font-bold px-[14px] md:px-6 lg:px-[36px] py-[14px] md:py-4 lg:py-[21px] rounded-[6px] md:rounded-[10px] w-fit transition-all ease-in-out duration-300'
                         >
                             Browse Frontend
                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="13" viewBox="0 0 16 13" fill="none">
@@ -85,7 +85,7 @@ const Banner = () => {
                             </svg>
                         </motion.button>
                         <motion.button
-                            className='bg-[#2353F5] hover:bg-transparent hover:text-[#2353F5] border border-[#2353F5] transition-all ease-in-out duration-300 flex gap-1.5 items-center text-white text-sm lg:text-base font-bold px-[14px] md:px-6 lg:px-[36px] py-[14px] md:py-4 lg:py-[21px] rounded-[6px] md:rounded-[10px] w-fit'
+                            className='bg-[#2353F5] hover:bg-transparent hover:text-[#2353F5] border border-[#2353F5] transition-all ease-in-out duration-300 flex gap-1.5 items-center text-white banner_btn text-sm lg:text-base font-bold px-[14px] md:px-6 lg:px-[36px] py-[14px] md:py-4 lg:py-[21px] rounded-[6px] md:rounded-[10px] w-fit'
                             style={{ boxShadow: '0px 0px 18px 0px rgba(0, 0, 0, 0.09)' }}
                         >
                             Browse Admin
@@ -192,7 +192,7 @@ const Banner = () => {
 
             {/* Customize Section - Mobile Screen */}
             <div
-                className='lg:hidden md:hidden md_hidden relative !z-[50] mt-[75px]'>
+                className='lg:hidden md:hidden md_hidden relative !z-[50] mt-[160px]'>
                 <Marquee
                     speed={30}
                     loop={0}
