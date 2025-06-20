@@ -52,7 +52,6 @@ const ResponsiveLayout = () => {
                         Layout</span>
                 </div>
             </div>
-
             <UniqueAdminSlider />
         </div>
     )

@@ -30,7 +30,7 @@ const AdminFooter = () => {
   return (
     <div className="lg:pt-[120px] py-8 lg:pb-[75px] admin-footer-bg p-6  text-white">
       <div className='max-w-[1440px] mx-auto'>
-        <div className=" flex flex-col md:flex-row  lg:gap-0 md:gap-[64px] gap-8 lg:justify-around ">
+        <div className=" flex flex-col md:flex-row md_flex_row2 lg:gap-0 md:gap-[64px] gap-8 lg:justify-around ">
           <div className='max-w-[327px] lg:max-w-[343px]'>
             <h3 className='text-2xl mb-3.5 font-bold'>About Us</h3>
             <p className='text-base font-medium mb-9'>Acnoo Software is a leading technology company specializing in software development, mobile app development, and UI/UX design. We deliver innovative, scalable, and user-friendly solutions tailored to meet modern business needs.</p>
@@ -48,7 +48,7 @@ const AdminFooter = () => {
               <Image src={f6} alt="" />
             </div>
           </div>
-          <div className='md:block hidden'>
+          <div className='md:block md_block hidden'>
             <h3 className='text-2xl mb-3.5 font-bold'>Service</h3>
             <ul className='flex flex-col gap-2'>
               {about.map((item, index) => (
@@ -58,7 +58,7 @@ const AdminFooter = () => {
               ))}
             </ul>
           </div>
-          <div className='lg:block hidden'>
+          <div className='lg:block md_hidden hidden'>
             <h3 className='text-2xl mb-3.5 font-bold'>Add-ons</h3>
             <ul className='flex flex-col gap-2'>
               {addons.map((item, index) => (
@@ -69,7 +69,7 @@ const AdminFooter = () => {
             </ul>
           </div>
           {/* sm device */}
-          <div className='md:hidden flex  gap-8 mt-8'>
+          <div className='md:hidden md_hidden flex  gap-8 mt-8'>
             <div>
               <h3 className='text-2xl mb-3.5 font-bold'>Service</h3>
               <ul className='flex flex-col gap-2'>
@@ -92,7 +92,7 @@ const AdminFooter = () => {
             </div>
 
           </div>
-          <div className='lg:block  md:hidden block'>
+          <div className='lg:block md_hidden  md:hidden block'>
             <h3 className='text-2xl mb-3.5 font-bold'>Product</h3>
             <ul className='flex flex-col gap-2'>
               {product.map((item, index) => (
@@ -106,7 +106,7 @@ const AdminFooter = () => {
 
 
         {/* md device */}
-        <div className='lg:hidden md:flex hidden  gap-[64px] mt-8'>
+        <div className='lg:hidden md_flex1 md:flex hidden  gap-[64px] mt-8'>
           <div className='w-[380px]'>
             <h3 className='text-2xl mb-3.5 font-bold'>Add-ons</h3>
             <ul className='flex flex-col gap-2'>

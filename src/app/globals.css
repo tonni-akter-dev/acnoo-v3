@@ -1157,6 +1157,10 @@ input[type="range"]::-moz-range-thumb {
 }
 
 @media (min-width:700px) and (max-width:1023px) {
+  .md_flex1 {
+    display: flex;
+  }
+
   .reslayout_img {
     margin-top: -30px;
   }
@@ -1190,6 +1194,11 @@ input[type="range"]::-moz-range-thumb {
   .md_flex_row {
     flex-direction: row;
     gap: 23px;
+  }
+
+  .md_flex_row2 {
+    flex-direction: row;
+    gap: 64px;
   }
 
   .tracking_header {
