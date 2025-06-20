@@ -54,7 +54,7 @@ const Banner = () => {
                         <span className='relative inline-block'>
                             Acnoo Admin Dashboard
                             <span
-                                className='lg:block hidden border_bottom_img absolute bottom-[-10px] right-[-9%] transform -translate-x-1/2 w-[300px] h-[10px] bg-no-repeat bg-center'
+                                className='lg:block hidden border_bottom_img absolute bottom-[-10px] right-[-23%] transform -translate-x-1/2 w-[380px] h-[10px] bg-no-repeat bg-center'
                                 style={{ backgroundImage: `url(${border.src})`, backgroundSize: 'cover' }}
                             />
                         </span>

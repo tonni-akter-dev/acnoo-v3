@@ -16,12 +16,12 @@ const ResponsiveLayout = () => {
                     <span className='bg-[#F52366] rounded-[14px] text-base font-bold text-center text-white px-3 h-[25px] py-1 w-fit me-[11px]'>New</span>
                     {` We've`} added <span className='text-[#2353F5]'>30+</span>new!
                 </div>
-                <h3 className='text-[28px] heading_text md:text-[30px] lg:text-[60px] lg:leading-[72px] leading-[30px] font-bold text-center md:mb-7 text-primary'>
+                <h3 className='text-[28px] heading_text md:text-[30px] lg:text-[60px] lg:leading-[72px] leading-[30px] font-bold text-center text-primary'>
                     Responsive layout <br />
                     for any device
                 </h3>
                 <div className='flex justify-center '>
-                    <Image className='lg:block hidden' src={reslayout} alt="" />
+                    <Image className='lg:block hidden reslayout_img' src={reslayout} alt="" />
                     <Image className='lg:hidden block reslayout_img' src={tabRes} alt="" />
                 </div>
             </div>

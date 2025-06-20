@@ -91,7 +91,7 @@ const FaqItem: React.FC<IProps> = ({ question, answer }) => {
   );
 };
 
-const Faq = ({  btncolor, classname }: { btncolor?: string, classname?: string }) => {
+const Faq = ({ shadow, btncolor, classname }: { shadow?: string; btncolor?: string, classname?: string }) => {
   const sectionRef = useRef(null);
   const isInView = useInView(sectionRef, { once: true, margin: '-100px' });
 
@@ -187,16 +187,20 @@ const Faq = ({  btncolor, classname }: { btncolor?: string, classname?: string }
         </svg>
       </button>
 
-      <Image
-        className="lg:block hidden absolute left-0 top-[40%] lg:top-0 z-[-10]"
-        src={blur3}
-        alt=""
-      />
-      <Image
-        className="lg:block hidden absolute right-0 top-[-40%] lg:top-0 z-[-10]"
-        src={blur4}
-        alt=""
-      />
+      {shadow ? "" :
+        <>
+          <Image
+            className={`lg:block hidden absolute left-0 top-[40%] lg:top-0 z-[-10]`}
+            src={blur3}
+            alt=""
+          />
+          <Image
+            className={`lg:block hidden absolute right-0 top-[-40%] lg:top-0 z-[-10]`}
+            src={blur4}
+            alt=""
+          />
+        </>
+      }
     </div >
   );
 };

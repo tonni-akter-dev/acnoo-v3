@@ -6,7 +6,7 @@ const BuisnessOperate = () => {
   return (
     <div className='flex flex-col justify-center items-center text-center buisness_bg  pb-6 lg:pt-0 pt-8 lg:mt-[110px] lg:pb-[100px]'>
       <h1 className=' feature_text_1 lg:px-0 md:px-0 px-4 text-primary text-[28px] md:text-[30px] lg:text-[72px] lg:leading-[72px] leading-[30px] font-bold mb-3 lg:mb-7'>
-        Operate your Business with <br className='lg:block md:block hidden md_block' />
+        Operate your Business with <br className='md:block md_block hidden ' />
         acnoo admin panel
       </h1> 
       <p className=' lg:px-0 md:px-0 px-4 text-[#4B5563] text-base lg:text-lg font-medium mb-5 buisness_desc'>Acnoo is a fully featured dashboard and admin template comes with tones of well designed <br className='lg:block hidden' /> Awesome elements, components, widgets and applications and secondary pages.</p>

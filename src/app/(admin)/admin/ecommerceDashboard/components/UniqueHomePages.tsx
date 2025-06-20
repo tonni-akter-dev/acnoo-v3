@@ -32,10 +32,10 @@ const UniqueHomePages = () => {
             <div className='mb-6 lg:mb-10 relative'>
                 <div className='relative'>
             
-                    <h1 className=' unique_number tenk_text !mb-[-96px]' ref={ref}>
+                    <h1 className=' unique_number tenk_text !mb-[-227px]' ref={ref}>
                         {inView && <CountUp end={16} duration={2} />}
                     </h1>
-                    <h3 className='text-[28px] feature_text_1 md:text-[30px] lg:text-[70px] lg:leading-[72px] leading-[30px] font-bold text-center mb-3 lg:mb-6 text-[#1A0B49]'>
+                    <h3 className='text-[28px] feature_text_1 unique_text md:text-[30px] lg:text-[70px] lg:leading-[72px] leading-[30px] font-bold text-center mb-3 lg:mb-6 text-[#1A0B49]'>
                         Stunning <br />
                         Unique Home pages
                     </h3>

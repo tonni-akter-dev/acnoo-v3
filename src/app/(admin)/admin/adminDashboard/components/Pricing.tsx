@@ -5,7 +5,7 @@ import Image from 'next/image'
 
 const Pricing = ({ color }: { color?: string }) => {
     return (
-        <div className='bg-[#1E1F22] py-6 md:py-[30px] lg:py-[120px]'>
+        <div className='bg-[#1E1F22] py-6 md:py-[30px] lg:py-[120px] pricing_py'>
             <div className="text-white text-lg font-medium mb-4 text-center">
                 <span style={{ backgroundColor: color || '#C52127' }} className="rounded-[14px] text-base font-bold text-center text-white px-3 h-[25px] py-1 w-fit me-[11px]">
                     New

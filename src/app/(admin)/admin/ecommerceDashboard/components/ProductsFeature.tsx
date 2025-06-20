@@ -37,7 +37,7 @@ const ProductsFeature = () => {
         <div>
             <div className='mb-10'>
                 <div className='relative feature_mt'>
-                    <h1 className='tenk_text feature_tenk mb-[-150px]' ref={ref}>
+                    <h1 className='tenk_text feature_tenk lg:!mb-[-158px]' ref={ref}>
                         {inView && <CountUp end={90} duration={2} suffix="" />}
                     </h1>
                     <div className="feature_text_heading text-black text-lg font-medium mb-3 capitalize text-center">
