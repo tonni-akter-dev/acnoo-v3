@@ -11,7 +11,7 @@ const BottomBanner = () => {
   const isInView = useInView(ref, { once: true, margin: '-100px' }); // animate when visible, only once
 
   return (
-    <div className={`lg:px-[100px] lg_screen_px bg-transparent bg-blend-color lg:mx-0 md:mx-5 bottom_wrapper`}>
+    <div className={`containers lg_screen_px bg-transparent bg-blend-color lg:mx-0 md:mx-5 bottom_wrapper`}>
       <motion.div
         ref={ref}
         className={`bottom_banner relative z-50 h-[368px] py-[34px] lg:py-[54px] ps-[13px] md:ps-5 lg:ps-[110px] pe-[32px] lg:pe-[90px] lg:rounded-[30px] rounded-0 ${

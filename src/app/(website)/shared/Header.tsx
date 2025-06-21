@@ -49,7 +49,9 @@ const Header = () => {
             <li className="py-6 lg:py-9  ">
               <Link
                 href="/"
-                className="hover:border-b-[2.5px] border-[#673DE6] hover:text-[#673DE6] transition-all duration-75 ease-in-out relative block  text-sm lg:text-lg font-bold"
+                className={`relative block text-sm lg:text-lg font-bold transition-all duration-75 ease-in-out 
+          hover:border-b-[2.5px] hover:border-[#673DE6] hover:text-[#673DE6]
+          ${pathname == '/' ? 'border-b-[2.5px] border-[#673DE6] text-[#673DE6]' : ''}`}
               >
                 Home
               </Link>

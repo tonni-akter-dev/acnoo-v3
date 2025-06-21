@@ -17,15 +17,14 @@ import { FaAnglesUp, FaXTwitter } from "react-icons/fa6";
 import { IoLogoDribbble } from "react-icons/io";
 
 const Footer = () => {
-    const scrollToTop = () => {
-        console.log('skjdfklsd');
-        window.scrollTo({
-          top: 0,
-          behavior: 'smooth'
-        });
-      };
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    });
+  };
   return (
-    <footer className="relative bg-[#F3F0FD]  py-8 px-4 md:px-8 lg:px-[150px] footer_bg">
+    <footer className="relative bg-[#F3F0FD]  py-8 px-4 md:px-8 containers footer_bg">
       <div>
         <div className="lg:pt-[90px] mb-[77px] flex flex-col md:flex-row md_flex">
           {/* Left Section */}
@@ -35,7 +34,6 @@ const Footer = () => {
               A new way to make the payments easy, reliable and 100% secure.
               Claritatem itemconse quat. Exerci tation ullamcorper.
             </p>
-
             <div className="mt-4 mb-8 relative">
               <input
                 type="email"
@@ -399,7 +397,7 @@ const Footer = () => {
           </div>
         </div>
         <div className="flex justify-center hidden_md md:hidden lg:hidden">
-          <button onClick={()=>scrollToTop} className="bg-[#2F1C6A] rounded-lg size-11 text-white flex justify-center items-center mb-6">
+          <button onClick={() => scrollToTop} className="bg-[#2F1C6A] rounded-lg size-11 text-white flex justify-center items-center mb-6">
             <FaAnglesUp />
           </button>
         </div>

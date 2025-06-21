@@ -96,7 +96,7 @@ const Faq = ({ shadow, btncolor, classname }: { shadow?: string; btncolor?: stri
   const isInView = useInView(sectionRef, { once: true, margin: '-100px' });
 
   return (
-    <div ref={sectionRef} className="z-50 bg-transparent relative flex lg:flex-row flex-col justify-between lg_screen_px lg:px-[120px] px-4 lg:mb-[128px] mb-6">
+    <div ref={sectionRef} className="z-50 bg-transparent relative flex lg:flex-row flex-col justify-between lg_screen_px containers px-4 lg:mb-[128px] mb-6">
       <motion.div initial="hidden"
         animate={isInView ? "visible" : "hidden"}
         variants={{}} className="flex lg:flex-col flex-row lg:justify-start question_wrapper md:justify-between lg:items-start items-center">

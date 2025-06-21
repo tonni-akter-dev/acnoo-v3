@@ -322,7 +322,7 @@ const Banner = () => {
           transition={{ duration: 0.8, ease: 'easeOut' }}
           className="banner_text text-[26px] md:text-[40px] lg:text-[72px] text-primary leading-[34px] !md:leading-[50px] lg:leading-[73px] font-bold mb-6"
         >
-          Elevating Brand Strategy  With <br className="md:block hidden" /> Acno
+          Elevating Brand Strategy  <br className="mid_block" /> With <br className="md:block hidden" /> Acno
           <RotateWords
             words={['Products', 'Solutions', 'Services']}
             className="ml-2 text-[26px] md:text-[40px] lg:text-[72px] leading-[34px] md:leading-[50px] lg:leading-[73px] font-bold"
