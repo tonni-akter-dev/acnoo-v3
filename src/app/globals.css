@@ -880,6 +880,13 @@ input[type="range"]::-moz-range-thumb {
 }
 
 @media (min-width:320px) and (max-width:699px) {
+  .app_screen_wraper {
+    height: 875px !important;
+  }
+
+  .apple_screen {
+    top: -5px;
+  }
 
   .border_bottom_img {
     bottom: 84%;

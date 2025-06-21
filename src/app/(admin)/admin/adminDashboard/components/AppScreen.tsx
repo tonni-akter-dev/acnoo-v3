@@ -39,7 +39,19 @@ function AppScreenSlider() {
                 }
             },
             {
+                breakpoint: 425,
+                settings: {
+                    slidesToShow: 1,
+                }
+            },
+            {
                 breakpoint: 375,
+                settings: {
+                    slidesToShow: 1,
+                }
+            },
+            {
+                breakpoint: 320,
                 settings: {
                     slidesToShow: 1,
                 }
@@ -59,7 +71,7 @@ function AppScreenSlider() {
     ];
 
     return (
-        <div className="min-h-screen flex flex-col items-center justify-center overflow-hidden py-10">
+        <div className="min-h-screen app_screen_wraper flex flex-col items-center justify-center overflow-hidden py-10">
             <div className="text-black text-base lg:text-lg font-medium  mb-3 lg:mb-4 text-center">
                 <span className="bg-red rounded-[14px] text-base font-bold text-center text-white px-3 h-[25px] py-1 w-fit me-[11px]">
                     New
@@ -87,7 +99,7 @@ function AppScreenSlider() {
                         ))}
                     </Slider>
                 </div>
-                <div className="absolute inset-0 flex top-[-82px] items-center justify-center z-10 pointer-events-none">
+                <div className="absolute inset-0 flex top-[-82px] items-center justify-center z-10 pointer-events-none apple_screen">
                     <Image
                         src={applePhone}
                         alt="Apple Phone"
