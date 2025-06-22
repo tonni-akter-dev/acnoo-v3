@@ -29,7 +29,7 @@ const BannerDetails = () => {
   return (
     <div>
       <div className="service service-bg pt-3.5 lg:pt-16">
-        <div className="container max-w-screen-xl mx-auto px-5 lg:px-10 text-left">
+        <div className="containers  px-5 text-left">
           {/* Dynamic Heading based on Active Tab */}
           <h1 className="text-base md:text-lg lg:text-6xl font-bold text-primary mb-1 lg:mb-3.5">
             {activeTab}

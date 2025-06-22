@@ -2,10 +2,9 @@
 import Image from 'next/image';
 import React from 'react'
 import { motion } from 'framer-motion';
-// import buisnessneeds from '/public/admindashboard/buisnessneeds.png'
-import buisnessneeds11 from '/public/admindashboard/buisnessneeds11.png'
-// import buisnessneeds1 from '/public/admindashboard/buisnessneeds1.png'
-// import buisnessneeds2 from '/public/admindashboard/buisnessneeds2.png'
+import buisnessneeds from '/public/admindashboard/buisnessneeds.png'
+import buisnessneeds1 from '/public/admindashboard/buisnessneeds1.png'
+import buisnessneeds2 from '/public/admindashboard/buisnessneeds2.png'
 
 const fadeUp = {
     hidden: { opacity: 0, y: 20 },
@@ -69,8 +68,35 @@ const BuisnessNeeds = () => {
                 </motion.h3>
             </div>
             <div>
-                <div>
+                {/* <div>
                     <Image className=' mx-auto' src={buisnessneeds11} alt="" />
+                </div> */}
+                <div className="relative w-full flex justify-center items-center py-16 bg-[#fff6f6]">
+                    {/* Left Animated Image */}
+                    <motion.div
+                        initial={{ x: -100, opacity: 0 }}
+                        whileInView={{ x: 0, opacity: 1 }}
+                        transition={{ duration: 0.8 }}
+                        viewport={{ once: true }}
+                        className="absolute left-[120px] z-50 bottom-0 transform -translate-y-1/2 hidden md:block"
+                    >
+                        <Image src={buisnessneeds1} alt="Left Image" className="w-[300px]" />
+                    </motion.div>
+
+                    {/* Main Image */}
+                    <div className="z-10 max-w-4xl w-full px-4">
+                        <Image src={buisnessneeds} alt="Main Image" className="w-full" />
+                    </div>
+
+                    {/* Right Animated Image */}
+                    <motion.div
+                        initial={{ x: 100, opacity: 0 }}
+                        whileInView={{ x: 0, opacity: 1 }}
+                        transition={{ duration: 0.8 }}
+                        viewport={{ once: true }}
+                        className="absolute right-[100px] bottom-[-315px] z-50 transform -translate-y-1/2 hidden md:block">
+                        <Image src={buisnessneeds2} alt="Right Image" className="w-[300px] h-[536px]" />
+                    </motion.div>
                 </div>
                 <div>
                     <ul className='flex lg:flex-row md:flex-row buisness_wrapper flex-col gap-3 md:gap-6 lg:gap-[70px] items-start md:items-center lg:items-center justify-center'>

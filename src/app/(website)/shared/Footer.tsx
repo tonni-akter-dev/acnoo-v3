@@ -25,8 +25,8 @@ const Footer = () => {
   };
   return (
     <footer className="relative bg-[#F3F0FD]  py-8 px-4 md:px-8 containers footer_bg">
-      <div>
-        <div className="lg:pt-[90px] mb-[77px] flex flex-col md:flex-row md_flex">
+      <div className="footer_pd">
+        <div className="lg:pt-[90px] md:mb-[77px] flex flex-col md:flex-row md_flex">
           {/* Left Section */}
           <div className="mb-7 md:mb-0 company w-full md:me-12 lg:me-[108px] md:w-[328px] lg::w-1/4">
             <Image src={logo} alt="" />
@@ -71,7 +71,7 @@ const Footer = () => {
           <div className="flex justify-between w-full md_w  md:w-1/2">
             {/* Company Section */}
             <div className="company md:me-[50px] lg:me-[107px] w-[138px]">
-              <h3 className="font-bold text-[22px] mb-6 text-[#0D1224]">
+              <h3 className="font-bold text-[22px] mb-4 md:mb-6 text-[#0D1224]">
                 Company
               </h3>
               <ul className=" space-y-3 lg:space-y-6">
@@ -127,7 +127,7 @@ const Footer = () => {
             </div>
             {/* Quick Link Section */}
             <div className="company me-[49px] w-[130px]">
-              <h3 className="font-bold text-[22px] mb-6 text-[#0D1224]  whitespace-nowrap">
+              <h3 className="font-bold text-[22px] mb-4 md:mb-6 text-[#0D1224]  whitespace-nowrap">
                 Quick Link
               </h3>
               <ul className=" space-y-3 lg:space-y-6">
@@ -183,7 +183,7 @@ const Footer = () => {
             </div>
             {/* Add-ons Section */}
             <div className="company lg:block  thousand_screen hidden me-[58px]">
-              <h3 className="font-bold text-[22px] mb-6 text-[#0D1224]">
+              <h3 className="font-bold text-[22px] mb-4 md:mb-6 text-[#0D1224]">
                 Add-ons
               </h3>
               <ul className=" space-y-3 lg:space-y-6">
@@ -200,7 +200,7 @@ const Footer = () => {
             </div>
             {/* Products Section */}
             <div className="company lg:block thousand_screen  hidden">
-              <h3 className="font-bold text-[22px] mb-6 text-[#0D1224]">
+              <h3 className="font-bold text-[22px] mb-4 md:mb-6 text-[#0D1224]">
                 Products
               </h3>
               <ul className=" space-y-3 lg:space-y-6">
@@ -292,7 +292,7 @@ const Footer = () => {
         <div className="lg:hidden md:flex md:flex-row md_flex flex-col-reverse  md:gap-0 gap-[30px] flex mb-[27px] lg:mb-[84px]">
           {/* Add-ons Section */}
           <div className="me-[20px] w-full md:w-[326px] add_ons">
-            <h3 className="font-bold text-[22px] mb-6 text-[#0D1224]">
+            <h3 className="font-bold text-[22px] mb-4 md:mb-6 text-[#0D1224]">
               Add-ons
             </h3>
             <ul className=" space-y-3 lg:space-y-6">
@@ -309,7 +309,7 @@ const Footer = () => {
           </div>
           {/* Products Section */}
           <div className="">
-            <h3 className="font-bold text-[22px] mb-6 text-[#0D1224]">
+            <h3 className="font-bold text-[22px] mb-4 md:mb-6 text-[#0D1224]">
               Products
             </h3>
             <ul className=" space-y-3 lg:space-y-6">

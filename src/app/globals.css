@@ -726,7 +726,9 @@ input[type="range"]::-moz-range-thumb {
 .payment_shadow {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
-
+  .xs_none_br {
+    display: block;
+  }
 /* hireus icon jump */
 @media (min-width:320px) and (max-width:374px) {
   .banner_text_desc {
@@ -735,6 +737,10 @@ input[type="range"]::-moz-range-thumb {
     -webkit-line-clamp: 3;
     -webkit-box-orient: vertical;
     overflow: hidden;
+  }
+
+  .xs_none_br {
+    display: none;
   }
 
   .testimonial .swiper-slide:nth-child(1n) {
@@ -1229,6 +1235,14 @@ input[type="range"]::-moz-range-thumb {
 
   .reslayout_img {
     margin-top: -14px !important;
+  }
+
+  .footer_pd {
+    margin-top: 70px;
+  }
+
+  .company {
+    margin-bottom: 30px;
   }
 }
 
@@ -2000,11 +2014,17 @@ input[type="range"]::-moz-range-thumb {
   .test_arrow_right {
     right: 43%;
   }
+
+  .footer_pd {
+    margin-top: 70px;
+  }
 }
 
-
-
 @media (min-width:1024px) and (max-width:1279px) {
+  .related_wrap {
+    padding-left: 50px;
+  }
+
   .reslayout_img {
     margin-top: -80px;
   }
@@ -2522,8 +2542,16 @@ input[type="range"]::-moz-range-thumb {
 }
 
 @media (min-width:1280px) and (max-width:1440px) {
+  .products_parent {
+    padding-inline: 80px;
+  }
+
   .testimonial_card {
     padding: 30px 48px !important;
+  }
+
+  .related_wrap {
+    padding-left: 150px;
   }
 
   .pricing_py {
@@ -2802,6 +2830,10 @@ input[type="range"]::-moz-range-thumb {
 }
 
 @media (min-width:1441px) and (max-width:1806px) {
+  .products_parent {
+    padding-inline: 80px;
+  }
+
   .fourteen_block {
     display: none;
   }
@@ -2893,6 +2925,11 @@ input[type="range"]::-moz-range-thumb {
 
 
 @media (min-width:1806px) and (max-width:1920px) {
+
+  .products_parent {
+    padding-inline: 215px;
+  }
+
   .fourteen_block {
     display: none;
   }

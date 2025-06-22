@@ -130,14 +130,14 @@ const GloballyGrowth = ({ text, color }: { text?: string; color?: string }) => {
                 className={`md:max-w-[327px] lg:max-w-[521px] globally_items_width w-full flex ${item.margin} ${item.align} mt-4 lg:mt-7 justify-center`}
               >
                 <div
-                  className={`flex items-center py-4 gap-2 px-5 ${item.background} rounded-[100px] lists md:max-w-[306px] lg:max-w-[394px] w-full`}
+                  className={`group flex items-center py-4 gap-2 px-5 ${item.background} rounded-[100px] lists md:max-w-[306px] lg:max-w-[394px] w-full`}
                   style={{ boxShadow: item.shadow }}
                 >
-                  <div className="flex items-center justify-center">
+                  <div className="flex items-center justify-center transform transition-transform duration-300 group-hover:-translate-y-1 group-hover:scale-105">
                     <Image
                       src={globe}
                       alt="Globe"
-                      className="md:w-[64px]  lg:w-[96px] h-12"
+                      className="md:w-[64px] lg:w-[96px] h-12 object-contain"
                     />
                   </div>
                   <div>
@@ -152,6 +152,7 @@ const GloballyGrowth = ({ text, color }: { text?: string; color?: string }) => {
                   </div>
                 </div>
               </motion.div>
+
             ))}
           </motion.div>
         </div>

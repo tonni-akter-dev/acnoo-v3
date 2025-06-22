@@ -30,7 +30,7 @@ const WhatPeopleThink = () => {
             transition: { duration: 0.6, ease: "easeOut" },
         },
     };
-    
+
     return (
         <div className="lg:py-16 md:py-8 py-6 whatpeoplethink_wrapper relative  z-50">
             <Image className='absolute top-[-30%] md:top-[-87%] lg:top-[-48%]  z-[-10]' src={blur1} alt="" />
@@ -64,6 +64,7 @@ const WhatPeopleThink = () => {
                 <Swiper
                     spaceBetween={50}
                     slidesPerView={3}
+                    loop={true}
                     pagination={{ clickable: true }}
                     modules={[Pagination]}
                     className="mySwiper"
@@ -81,7 +82,7 @@ const WhatPeopleThink = () => {
                             <div className="bg-white border lg:mx-0 md:mx-0 mx-4 border-[#838BB424]  md:max-w-[616px] lg:max-w-[888px]  flex md:flex-row lg:flex-row flex-col-reverse  md:justify-between  gap-2.5 md:gap-[31px] lg:gap-[38px] rounded-[12px] lg:rounded-[30px] shadow-md items-stretch md:items-center lg:items-center md:px-6 md:py-[17px] lg:p-7 p-2 what_people_tab ">
                                 <div className='ps-0 md:ps-2 lg:ps-[23px]'>
                                     <blockquote className="text-primary text-base lg:text-[26px] font-medium">
-                                        <span className='#2353F5'> {`"`}</span> Software hires great people from  <br /> of backgrounds, which simply makes <br />  stronger, and we {`couldn't`} be proud <br />  elevating your optimizing Business
+                                        <span className='#2353F5'> {`"`}</span> Software hires great people from  <br className='xs_none_br' /> of backgrounds, which simply makes <br className='xs_none_br' />  stronger, and we {`couldn't`} be proud <br className='xs_none_br' />  elevating your optimizing Business
                                     </blockquote>
                                     <div className='h-[1px] w-full bg-[#F3F3F3] mt-[30px]'></div>
                                     <div className="text-center  items-center flex justify-between mt-6 lg:mt-4">

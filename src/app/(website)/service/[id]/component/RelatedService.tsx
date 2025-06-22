@@ -15,9 +15,9 @@ const fadeUpVariant = {
 
 const RelatedService = () => {
   return (
-    <div className='lg:ps-[150px] ps-5'>
+    <div className='lg:ps-[250px] related_wrap px-5'>
       <div className="relatedService my-10 lg:my-[100px] pe-3 md:p-0">
-        <div className="md:px-5 lg:px-0 mx-auto">
+        <div className="mx-auto">
           <motion.div
             className='flex items-center gap-2.5 mb-3.5'
             variants={fadeUpVariant}
@@ -44,7 +44,7 @@ const RelatedService = () => {
           </motion.h1>
         </div>
 
-        <div className='mt-3.5 lg:mx-0 md:mx-5'>
+        <div className='mt-3.5'>
           <Swiper
             modules={[Navigation]}
             spaceBetween={24}
