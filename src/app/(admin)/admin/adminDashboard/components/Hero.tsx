@@ -36,7 +36,7 @@ const Hero = () => {
             className='lg:pt-0 md:pt-8 pt-6 overflow-x-hidden flex lg:flex-row flex-col justify-between gap-[34px] md:gap-4 lg:gap-[66px] items-center lg:ps-[150px] ps-5 hero_bg'
         >
             {/* Text Section */}
-            <motion.div variants={itemVariants}>
+            <motion.div variants={itemVariants} className='md:px-0 px-4'>
                 <motion.h1
                     variants={itemVariants}
                     className='text-[26px] md:text-[40px] lg:text-[72px] font-bold md:leading-[50px] lg:leading-[72px] leading-[34px] whitespace-nowrap mb-3 md:mb-4 lg:mb-5 admin_heading'

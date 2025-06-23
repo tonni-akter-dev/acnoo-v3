@@ -726,11 +726,78 @@ input[type="range"]::-moz-range-thumb {
 .payment_shadow {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
-  .xs_none_br {
-    display: block;
-  }
+
+.xs_none_br {
+  display: block;
+}
+
 /* hireus icon jump */
 @media (min-width:320px) and (max-width:374px) {
+
+  /* pospro */
+  .laravel {
+    top: 2% !important;
+  }
+
+  .android {
+    left: 29% !important;
+    bottom: 7% !important;
+  }
+
+  .mysql {
+    right: 24% !important;
+    bottom: 7% !important;
+  }
+
+  .ios {
+    top: 32% !important;
+    left: 14% !important;
+  }
+
+  .flutter {
+    top: 32% !important;
+    right: 14% !important;
+  }
+
+  .pos_pro_img {
+    width: 90px;
+    height: 90px;
+  }
+
+  .pos_pro_roundimg {
+    width: 80px;
+  }
+
+  .compatible_border1 {
+    width: 150px;
+    height: 150px;
+  }
+.com_wrap_parent{
+  width: 300px;
+}
+  .compatible_border2 {
+    width: 200px;
+    height: 200px;
+  }
+
+  .compatible_wrapppers {
+    gap: 30px !important;
+  }
+
+  .com_btn {
+    flex-wrap: wrap;
+  }
+
+  /* pospro */
+
+
+
+
+
+
+
+
+
   .banner_text_desc {
     padding-inline: 16px;
     display: -webkit-box;
@@ -885,7 +952,32 @@ input[type="range"]::-moz-range-thumb {
   display: none;
 }
 
+.sm_buisness2_img {
+  display: none;
+}
+
 @media (min-width:320px) and (max-width:699px) {
+  .buisness_left_img {
+    left: 2%;
+    bottom: 14%;
+  }
+
+  .buisness_1 {
+    width: 68px;
+    height: 55px;
+  }
+
+  .sm_buisness2_img {
+    display: block;
+    height: 141px;
+    width: 61px;
+  }
+
+  .buisness_right_img {
+    bottom: -49px;
+    right: 32px;
+  }
+
   .app_screen_wraper {
     height: 875px !important;
   }
@@ -1244,9 +1336,160 @@ input[type="range"]::-moz-range-thumb {
   .company {
     margin-bottom: 30px;
   }
+
+  /* pospro */
+  .laravel {
+    top: 2% !important;
+  }
+
+  .android {
+    left: 29% !important;
+    bottom: 7% !important;
+  }
+
+  .mysql {
+    right: 24% !important;
+    bottom: 7% !important;
+  }
+
+  .ios {
+    top: 32% !important;
+    left: 14% !important;
+  }
+
+  .flutter {
+    top: 32% !important;
+    right: 14% !important;
+  }
+
+  .pos_pro_img {
+    width: 121px;
+    height: 121px;
+  }
+
+  .compatible_border1 {
+    width: 200px;
+    height: 200px;
+  }
+
+  .compatible_border2 {
+    width: 246px;
+    height: 246px;
+  }
+
+  .compatible_wrapppers {
+    gap: 30px !important;
+  }
+
+  /* pospro */
+
+
+}
+
+@media (min-width:700px) and (max-width:744px) {
+
+  .compatible_wrapppers {
+    gap: 110px !important;
+  }
+
+  .laravel {
+    top: -18% !important;
+  }
+
+  .android {
+    left: 24% !important;
+    bottom: -8% !important;
+  }
+
+  .mysql {
+    right: 26% !important;
+    bottom: -11% !important;
+  }
+
+  .ios {
+    top: 23% !important;
+    left: 8% !important;
+  }
+
+  .flutter {
+    top: 22% !important;
+    right: 7% !important;
+  }
+
+  .pos_pro_img {
+    width: 155px;
+    height: 155px;
+  }
+
+  .compatible_border2 {
+    width: 315px;
+    height: 315px;
+  }
+
 }
 
 @media (min-width:700px) and (max-width:1023px) {
+  .compatible_border1 {
+    width: 257px;
+    height: 257px;
+  }
+
+  .compatible_wrapppers {
+    gap: 80px;
+  }
+
+  .laravel {
+    top: 0;
+  }
+
+  .android {
+    left: 30%;
+    bottom: 9%;
+  }
+
+  .mysql {
+    right: 30%;
+    bottom: 9%;
+  }
+
+  .ios {
+    top: 33%;
+    left: 21%;
+  }
+
+  .flutter {
+    top: 33%;
+    right: 21%;
+  }
+
+  .pos_pro_img {
+    width: 155px;
+    height: 155px;
+  }
+
+  .compatible_border2 {
+    width: 315px;
+    height: 315px;
+  }
+
+  .buisness_pb {
+    padding-bottom: 80px;
+  }
+
+  .buisness_right_img {
+    bottom: -21%;
+    right: 17%;
+  }
+
+  .compatible_wrap p {
+    margin-top: 110px;
+  }
+
+  .buisness_left_img {
+    left: 13%;
+    bottom: 17%;
+  }
+
   .mid_block {
     display: block !important;
   }
@@ -1460,7 +1703,7 @@ input[type="range"]::-moz-range-thumb {
   }
 
   .md_block {
-    display: block;
+    display: block !important;
   }
 
   .time_limit {
@@ -1712,6 +1955,12 @@ input[type="range"]::-moz-range-thumb {
 
   .compatible_img {
     height: 500px;
+  }
+
+  .buisness_text_wrap {
+    margin-bottom: -40px;
+    z-index: 9999;
+    position: relative;
   }
 
   .buisness-bg {
@@ -2021,6 +2270,18 @@ input[type="range"]::-moz-range-thumb {
 }
 
 @media (min-width:1024px) and (max-width:1279px) {
+  .buisness_main_img {
+    width: 800px;
+  }
+
+  .buisness_right_img {
+    right: 0;
+  }
+
+  .buisness_left_img {
+    left: 0;
+  }
+
   .related_wrap {
     padding-left: 50px;
   }
