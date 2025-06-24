@@ -4,13 +4,13 @@ import handshakesagainst from '/public/handshakesagainst.png';
 const Form = () => {
     return (
         <div className='bg-clr py-6  md:py-8 lg:py-[120px]' style={{fill:"linear-gradient(0deg, #F3F0FD 0%, #F9F8FE 78.46%, #FFF 100%)"}}>
-            <div className='container mx-auto'>
-                <div className='flex lg:flex-row flex-col-reverse gap-20'>
-                    <Image className='lg:h-[890px] md:h-[524px] h-[408px] w-full' src={handshakesagainst} alt='handshakesagainst' />
-                    <div className='lg:px-0 px-5 w-full max-w-[680px]'>
-                        <h2 className='text-2xl md:text-[40px] lg:text-[60px] text-[#010101] font-bold mb-5 md:mb-6 lg:mb-10'>Reseller Partnership <br />Requirements</h2>
+            <div className='containers mx-auto'>
+                <div className='flex lg:flex-row flex-col-reverse gap-10 become_form_wrappers lg:gap-20'>
+                    <Image className='lg:h-[890px] md:h-[524px] h-[408px] w-full object-cover' src={handshakesagainst} alt='handshakesagainst' />
+                    <div className='lg:px-0 px-5 w-full lg:max-w-[680px]'>
+                        <h2 className='text-2xl md:text-[40px] lg:text-[60px] text-[#010101] font-bold mb-5 md:mb-6 lg:mb-10 reseller_text'>Reseller Partnership <br />Requirements</h2>
                         <form className='space-y-6'>
-                            <div className='grid grid-cols-1 md:grid-cols-2 gap-6'>
+                            <div className='grid grid-cols-1 md:grid-cols-2 become_form_grid gap-6'>
                                 <div>
                                     <label className='block text-[#010101] font-bold text-lg mb-3'>First name</label>
                                     <input 
@@ -29,7 +29,7 @@ const Form = () => {
                                 </div>
                             </div>
 
-                            <div className='grid grid-cols-1 md:grid-cols-2 gap-6'>
+                            <div className='grid grid-cols-1 md:grid-cols-2 become_form_grid gap-6'>
                                 <div>
                                     <label className='block text-[#010101] font-bold text-lg mb-3'>Business Name*</label>
                                     <input 
@@ -48,7 +48,7 @@ const Form = () => {
                                 </div>
                             </div>
 
-                            <div className='grid grid-cols-1 md:grid-cols-2 gap-6'>
+                            <div className='grid grid-cols-1 md:grid-cols-2 become_form_grid gap-6'>
                                 <div>
                                     <label className='block text-[#010101] font-bold text-lg mb-3'>Country</label>
                                     <select className='w-full px-4 py-3 outline-none bg-white border border-gray-300 rounded-lg focus:outline-none'>

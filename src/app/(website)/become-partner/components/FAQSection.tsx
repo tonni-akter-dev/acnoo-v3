@@ -30,7 +30,7 @@ type IProps = {
 const FaqItem: React.FC<IProps> = ({ question, answer }) => {
     const [isOpen, setIsOpen] = useState(false);
     return (
-        <div className="border-b border-[#E2E6ED] py-3 md:py-4 lg:py-[30px]">
+        <div className="border-b border-[#E2E6ED] py-3 md:py-4 faq_item_wrap lg:py-[30px]">
             <div
                 className="flex justify-between items-center cursor-pointer"
                 onClick={() => setIsOpen(!isOpen)}>
@@ -82,7 +82,7 @@ const FaqItem: React.FC<IProps> = ({ question, answer }) => {
 
 const FAQSection = () => {
     return (
-        <div className="z-50 bg-transparent relative flex lg:flex-row flex-col justify-between lg:px-[120px] mt-[31px] md:mt-10 lg:mt-[111px] px-4 lg:mb-[160px] mb-6">
+        <div className="z-50 bg-transparent relative flex lg:flex-row flex-col justify-between lg:px-[120px] become_faq_wrap mt-[31px] md:mt-10 lg:mt-[111px] px-4 lg:mb-[160px] mb-6">
             <div className="flex lg:flex-col flex-row lg:justify-start md:justify-between lg:items-start items-center">
                 <div>
                     <div className="text-primary text-lg font-medium mb-2 lg:mb-4 text-start">
@@ -91,7 +91,7 @@ const FAQSection = () => {
                         </span>
                         Questions & Answer we give
                     </div>
-                    <h3 className="lg:text-[65px]  text-[24px] lg:leading-[72px] leading-[30px] font-bold text-start  mb-4 lg:mb-8 text-primary">
+                    <h3 className="lg:text-[65px] heading_text text-[24px] lg:leading-[72px] leading-[30px] font-bold text-start  mb-4 lg:mb-8 text-primary reseller_text">
                         Reseller
                         <br className="lg:block hidden ms-2" />
                         Partnerships <br className="lg:hidden block" /> FAQ’s
@@ -101,7 +101,7 @@ const FAQSection = () => {
                     </p>
                 </div>
                 <button
-                    className={`lg:flex md:flex hidden  bg-[#2353F5]  gap-1.5 items-center text-white text-base font-bold md:px-5 lg:px-[36px] md:py-3 lg:py-[21px] rounded-[10px] w-fit`}
+                    className={`lg:flex md_hidden hidden  bg-[#2353F5]  gap-1.5 items-center text-white text-base font-bold md:px-5 lg:px-[36px] md:py-3 lg:py-[21px] rounded-[10px] w-fit`}
                 >
                     Browse All Questions
                     <svg
@@ -119,13 +119,13 @@ const FAQSection = () => {
                 </button>
             </div>
             {/* faq */}
-            <div className="max-w-[730px] w-full border-[#E2E6ED] border-t">
+            <div className="max-w-[730px] faq_width w-full border-[#E2E6ED] border-t">
                 {faqData.map((item, index) => (
                     <FaqItem key={index} question={item.question} answer={item.answer} />
                 ))}
             </div>
             <button
-                className={`lg:hidden md:hidden block mt-9 mx-auto  bg-[#2353F5]
+                className={`lg:hidden become_faq_btn mt-9   bg-[#2353F5]
                    flex gap-1.5 items-center text-white text-base font-bold px-5 py-3 rounded-[10px] w-fit`}
             >
                 Browse All Questions
