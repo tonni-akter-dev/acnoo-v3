@@ -12,7 +12,7 @@
 //         <section className=" testimonial-bg  my-6 lg:mt-[117px] lg:mb-[237px] lg:px-0 px-5">
 //             <div className="max-w-[1290px] testimonial mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 flex-col gap-[30px]">
 //                 <div className="flex flex-col gap-6">
-//                     <div className="bg-white shadow-md rounded-xl py-9 xs_padding px-10 md:w-[343px] lg:w-[410px] h-fit">
+//                     <div className="bg-white shadow-md rounded-xl py-9 xs_padding px-10 testimonial_card_cls md:w-[343px] lg:w-[410px] h-fit">
 //                         <p className="text-gray-700 text-xl mb-4 border-b border-[#EEEFF1] pb-6">We get absolutely raving reviews
 //                             from our sales and customer support
 //                             teams using close. Even our co- sales
@@ -33,7 +33,7 @@
 //                             </div>
 //                         </div>
 //                     </div>
-//                     <div className="bg-white shadow-md rounded-xl py-9 xs_padding px-10 md:w-[343px] lg:w-[410px] h-fit">
+//                     <div className="bg-white shadow-md rounded-xl py-9 xs_padding px-10 testimonial_card_cls md:w-[343px] lg:w-[410px] h-fit">
 //                         <Image src={t3} alt="company logo" className="mb-[30px]" />
 //                         <p className="text-gray-700 text-xl mb-4 border-b border-[#EEEFF1] pb-6">We get absolutely raving reviews
 //                             from our sales and customer support
@@ -53,7 +53,7 @@
 //                 </div>
 //                 {/* second */}
 //                 <div className="flex flex-col gap-6">
-//                     <div className="bg-white shadow-md rounded-xl py-9 px-10 md:w-[343px] lg:w-[410px] h-fit">
+//                     <div className="bg-white shadow-md rounded-xl py-9 px-10 testimonial_card_cls md:w-[343px] lg:w-[410px] h-fit">
 //                         <Image src={t1} alt="company logo" className="mb-[30px]" />
 //                         <p className="text-gray-700 text-xl mb-4 border-b border-[#EEEFF1] pb-6">We get absolutely raving reviews
 //                             from our sales and customer support
@@ -73,7 +73,7 @@
 //                         </div>
 //                     </div>
 
-//                     <div className="bg-white shadow-md rounded-xl py-9 px-10 md:w-[343px] lg:w-[410px] h-fit">
+//                     <div className="bg-white shadow-md rounded-xl py-9 px-10 testimonial_card_cls md:w-[343px] lg:w-[410px] h-fit">
 //                         <Image src={t4} alt="company logo" className="mb-[30px]" />
 //                         <p className="text-gray-700 text-xl mb-4 border-b border-[#EEEFF1] pb-6">We get absolutely raving reviews
 //                             from our sales and customer support
@@ -96,7 +96,7 @@
 
 //                 </div>
 //                 <div className="lg:flex hidden flex-col gap-6">
-//                     <div className="bg-white shadow-md rounded-xl py-9 px-10 md:w-[343px] lg:w-[410px] h-fit">
+//                     <div className="bg-white shadow-md rounded-xl py-9 px-10 testimonial_card_cls md:w-[343px] lg:w-[410px] h-fit">
 //                         <Image src={t2} alt="company logo" className="mb-[30px]" />
 //                         <p className="text-gray-700 text-xl mb-4 border-b border-[#EEEFF1] pb-6">We get absolutely raving reviews
 //                             from our sales and customer support
@@ -119,7 +119,7 @@
 //                         </div>
 //                     </div>
 
-//                     <div className="bg-white shadow-md rounded-xl py-9 px-10 md:w-[343px] lg:w-[410px] h-fit">
+//                     <div className="bg-white shadow-md rounded-xl py-9 px-10 testimonial_card_cls md:w-[343px] lg:w-[410px] h-fit">
 //                         <Image src={t5} alt="company logo" className="mb-[30px]" />
 //                         <p className="text-gray-700 text-xl mb-4 border-b border-[#EEEFF1] pb-6">We get absolutely raving reviews
 //                             from our sales and customer support
@@ -197,15 +197,13 @@ const Testimonials = () => {
                 {/* First Column */}
                 <div className="flex flex-col gap-6 first_two_row">
                     <motion.div
-                        className="bg-white shadow-md hover:shadow-2xl rounded-xl py-9 xs_padding px-10 md:w-[343px] lg:w-[410px] h-fit transition-all duration-300 ease-in-out"
+                        className="bg-white shadow-md hover:shadow-2xl rounded-xl py-9 xs_padding px-10 testimonial_card_cls md:w-[343px] lg:w-[410px] h-fit transition-all duration-300 ease-in-out"
                         variants={cardVariants}
                         custom={0}
                         initial="hidden"
                         whileInView="visible"
                         viewport={{ once: true, amount: 0.2 }}
-                        style={{ border: "1px solid transparent" }}
-
-                    >
+                        style={{ border: "1px solid transparent" }}>
                         <p className="text-gray-700 text-xl mb-4 border-b border-[#EEEFF1] pb-6">
                             {testimonials[5].text}
                         </p>
@@ -241,8 +239,8 @@ const Testimonials = () => {
                     </motion.div>
 
                     <motion.div
-                        // className="bg-white shadow-md rounded-xl py-9 xs_padding px-10 md:w-[343px] lg:w-[410px] h-fit"
-                        className="bg-white shadow-md hover:shadow-2xl rounded-xl py-9 xs_padding px-10 md:w-[343px] lg:w-[410px] h-fit transition-all duration-300 ease-in-out"
+        
+                        className="bg-white shadow-md hover:shadow-2xl rounded-xl py-9 xs_padding px-10 testimonial_card_cls md:w-[343px] lg:w-[410px] h-fit transition-all duration-300 ease-in-out"
                         variants={cardVariants}
                         custom={1}
                         initial="hidden"
@@ -290,8 +288,8 @@ const Testimonials = () => {
                 {/* Second Column */}
                 <div className="flex flex-col gap-6">
                     <motion.div
-                        // className="bg-white shadow-md rounded-xl py-9 px-10 md:w-[343px] lg:w-[410px] h-fit"
-                        className="bg-white shadow-md hover:shadow-2xl rounded-xl py-9 xs_padding px-10 md:w-[343px] lg:w-[410px] h-fit transition-all duration-300 ease-in-out"
+                        // className="bg-white shadow-md rounded-xl py-9 px-10 testimonial_card_cls md:w-[343px] lg:w-[410px] h-fit"
+                        className="bg-white shadow-md hover:shadow-2xl rounded-xl py-9 xs_padding px-10 testimonial_card_cls md:w-[343px] lg:w-[410px] h-fit transition-all duration-300 ease-in-out"
                         variants={cardVariants}
                         custom={2}
                         initial="hidden"
@@ -336,8 +334,8 @@ const Testimonials = () => {
                     </motion.div>
 
                     <motion.div
-                        // className="bg-white shadow-md rounded-xl py-9 px-10 md:w-[343px] lg:w-[410px] h-fit"
-                        className="bg-white shadow-md hover:shadow-2xl rounded-xl py-9 xs_padding px-10 md:w-[343px] lg:w-[410px] h-fit transition-all duration-300 ease-in-out"
+                        // className="bg-white shadow-md rounded-xl py-9 px-10 testimonial_card_cls md:w-[343px] lg:w-[410px] h-fit"
+                        className="bg-white shadow-md hover:shadow-2xl rounded-xl py-9 xs_padding px-10 testimonial_card_cls md:w-[343px] lg:w-[410px] h-fit transition-all duration-300 ease-in-out"
                         variants={cardVariants}
                         custom={3}
                         initial="hidden"
@@ -385,7 +383,7 @@ const Testimonials = () => {
                 {/* Third Column (now same as first two columns) */}
                 <div className="lg:flex hidden flex-col testimonial_3rd_row gap-6">
                     <motion.div
-                        className="bg-white shadow-md hover:shadow-2xl rounded-xl py-9 xs_padding px-10 md:w-[343px] lg:w-[410px] h-fit transition-all duration-300 ease-in-out" variants={cardVariants}
+                        className="bg-white shadow-md hover:shadow-2xl rounded-xl py-9 xs_padding px-10 testimonial_card_cls md:w-[343px] lg:w-[410px] h-fit transition-all duration-300 ease-in-out" variants={cardVariants}
                         custom={4}
                         initial="hidden"
                         whileInView="visible"
@@ -429,7 +427,7 @@ const Testimonials = () => {
                     </motion.div>
 
                     <motion.div
-                        className="bg-white shadow-md hover:shadow-2xl rounded-xl py-9 xs_padding px-10 md:w-[343px] lg:w-[410px] h-fit transition-all duration-300 ease-in-out" variants={cardVariants}
+                        className="bg-white shadow-md hover:shadow-2xl rounded-xl py-9 xs_padding px-10 testimonial_card_cls md:w-[343px] lg:w-[410px] h-fit transition-all duration-300 ease-in-out" variants={cardVariants}
                         custom={5}
                         initial="hidden"
                         whileInView="visible"
@@ -510,7 +508,7 @@ export default Testimonials;
 //                 {/* First Column */}
 //                 <div className="flex flex-col gap-6">
 //                     <motion.div
-//                         className="bg-white shadow-md hover:shadow-2xl rounded-xl py-9 xs_padding px-10 md:w-[343px] lg:w-[410px] h-fit transition-all duration-300 ease-in-out"
+//                         className="bg-white shadow-md hover:shadow-2xl rounded-xl py-9 xs_padding px-10 testimonial_card_cls md:w-[343px] lg:w-[410px] h-fit transition-all duration-300 ease-in-out"
 //                         variants={cardVariants}
 //                         initial="hidden"
 //                         animate="visible"
@@ -540,7 +538,7 @@ export default Testimonials;
 //                     </motion.div>
 
 //                     <motion.div
-//                         className="bg-white shadow-md hover:shadow-2xl rounded-xl py-9 xs_padding px-10 md:w-[343px] lg:w-[410px] h-fit transition-all duration-300 ease-in-out"
+//                         className="bg-white shadow-md hover:shadow-2xl rounded-xl py-9 xs_padding px-10 testimonial_card_cls md:w-[343px] lg:w-[410px] h-fit transition-all duration-300 ease-in-out"
 //                         variants={cardVariants}
 //                         initial="hidden"
 //                         animate="visible"
@@ -575,7 +573,7 @@ export default Testimonials;
 //                 {/* Second Column */}
 //                 <div className="flex flex-col gap-6">
 //                     <motion.div
-//                         className="bg-white shadow-md hover:shadow-2xl rounded-xl py-9 px-10 md:w-[343px] lg:w-[410px] h-fit transition-all duration-300 ease-in-out"
+//                         className="bg-white shadow-md hover:shadow-2xl rounded-xl py-9 px-10 testimonial_card_cls md:w-[343px] lg:w-[410px] h-fit transition-all duration-300 ease-in-out"
 //                         variants={cardVariants}
 //                         initial="hidden"
 //                         animate="visible"
@@ -606,7 +604,7 @@ export default Testimonials;
 //                     </motion.div>
 
 //                     <motion.div
-//                         className="bg-white shadow-md hover:shadow-2xl rounded-xl py-9 px-10 md:w-[343px] lg:w-[410px] h-fit transition-all duration-300 ease-in-out"
+//                         className="bg-white shadow-md hover:shadow-2xl rounded-xl py-9 px-10 testimonial_card_cls md:w-[343px] lg:w-[410px] h-fit transition-all duration-300 ease-in-out"
 //                         variants={cardVariants}
 //                         initial="hidden"
 //                         animate="visible"
@@ -641,7 +639,7 @@ export default Testimonials;
 //                 {/* Third Column */}
 //                 <div className="lg:flex hidden flex-col gap-6">
 //                     <motion.div
-//                         className="bg-white shadow-md hover:shadow-2xl rounded-xl py-9 px-10 md:w-[343px] lg:w-[410px] h-fit transition-all duration-300 ease-in-out"
+//                         className="bg-white shadow-md hover:shadow-2xl rounded-xl py-9 px-10 testimonial_card_cls md:w-[343px] lg:w-[410px] h-fit transition-all duration-300 ease-in-out"
 //                         variants={cardVariants}
 //                         initial="hidden"
 //                         animate="visible"
@@ -669,7 +667,7 @@ export default Testimonials;
 //                     </motion.div>
 
 //                     <motion.div
-//                         className="bg-white shadow-md hover:shadow-2xl rounded-xl py-9 px-10 md:w-[343px] lg:w-[410px] h-fit transition-all duration-300 ease-in-out"
+//                         className="bg-white shadow-md hover:shadow-2xl rounded-xl py-9 px-10 testimonial_card_cls md:w-[343px] lg:w-[410px] h-fit transition-all duration-300 ease-in-out"
 //                         variants={cardVariants}
 //                         initial="hidden"
 //                         animate="visible"

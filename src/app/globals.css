@@ -1516,6 +1516,10 @@ input[type="range"]::-moz-range-thumb {
 }
 
 @media (min-width:700px) and (max-width:1023px) {
+  .testimonial_card_cls{
+    padding: 16px 14px 32px;
+  }
+  
   .become_faq_btn {
     display: flex;
   }
@@ -3042,6 +3046,9 @@ input[type="range"]::-moz-range-thumb {
 
 @media (min-width:1280px) and (max-width:1440px) {
 
+  /* .testimonial {
+    margin: 0 50px;
+  } */
 
   .become_partner_wrap {
     padding-inline: 80px !important;
@@ -3091,7 +3098,7 @@ input[type="range"]::-moz-range-thumb {
   }
 
   .testimonial {
-    padding-inline: 100px !important;
+    /* padding-inline: 100px !important; */
   }
 
   .testimonial_card p:first-child {
@@ -3364,11 +3371,6 @@ input[type="range"]::-moz-range-thumb {
     display: block;
   }
 
-  .testimonial {
-    padding-left: 80px !important;
-    padding-right: 80px !important;
-  }
-
   .service_image {
     height: 273px;
   }
@@ -3449,6 +3451,10 @@ input[type="range"]::-moz-range-thumb {
 @media (min-width:1806px) and (max-width:1920px) {
   .company_img1 {
     right: 17%;
+  }
+
+  .testimonial {
+    max-width: 1290px;
   }
 
   .company_img2 {
