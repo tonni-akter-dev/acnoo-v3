@@ -988,9 +988,31 @@ input[type="range"]::-moz-range-thumb {
 }
 
 @media (min-width:320px) and (max-width:699px) {
+
+  /* about */
+  .company_img1 {
+    width: 97px;
+    height: 100px;
+    top: 22%;
+    right: 4%;
+  }
+
+  .company_img2 {
+    width: 97px;
+    height: 100px;
+    top: 22%;
+    left: 4%;
+  }
+
+  /* about */
+
   .buisness_left_img {
     left: 2%;
     bottom: 14%;
+  }
+
+  .case_portfolio_wrap {
+    margin-inline: 16px;
   }
 
   .buisness_1 {
@@ -1417,7 +1439,38 @@ input[type="range"]::-moz-range-thumb {
 
 }
 
+@keyframes floatUpDown {
+
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+.float-animation {
+  animation: floatUpDown 3s ease-in-out infinite;
+}
+
+.float-reverse {
+  animation: floatUpDown 3s ease-in-out infinite;
+  animation-direction: alternate;
+}
+
+
 @media (min-width:700px) and (max-width:744px) {
+
+  /* about */
+  .social_md_icons {
+    column-gap: 9px;
+  }
+
+  /* about */
+
+
 
   .compatible_wrapppers {
     gap: 110px !important;
@@ -1463,6 +1516,29 @@ input[type="range"]::-moz-range-thumb {
 }
 
 @media (min-width:700px) and (max-width:1023px) {
+  .member_grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+
+  }
+
+  .company_img1 {
+    top: 22% !important;
+    right: 5% !important;
+  }
+
+  .heading_company {
+    font-size: 55px;
+    padding-top: 44px;
+  }
+
+  .heading_company span {
+    font-size: 40px;
+  }
+
+  .company_img2 {
+    top: 22% !important;
+    left: 5% !important;
+  }
 
   /* case study */
   .bannerText_m {
@@ -2354,6 +2430,15 @@ input[type="range"]::-moz-range-thumb {
 }
 
 @media (min-width:1024px) and (max-width:1279px) {
+
+  .company_img1 {
+    right: 5%;
+  }
+
+  .company_img2 {
+    left: 5%;
+  }
+
   .buisness_main_img {
     width: 800px;
   }
@@ -2887,6 +2972,15 @@ input[type="range"]::-moz-range-thumb {
 }
 
 @media (min-width:1280px) and (max-width:1440px) {
+
+  .company_img1 {
+    right: 21%;
+  }
+
+  .company_img2 {
+    left: 21%;
+  }
+
   .products_parent {
     padding-inline: 80px;
   }
@@ -3270,6 +3364,13 @@ input[type="range"]::-moz-range-thumb {
 
 
 @media (min-width:1806px) and (max-width:1920px) {
+  .company_img1 {
+    right: 17%;
+  }
+
+  .company_img2 {
+    left: 17%;
+  }
 
   .products_parent {
     padding-inline: 215px;

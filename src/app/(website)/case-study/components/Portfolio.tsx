@@ -11,7 +11,7 @@ const Portfolio = () => {
   const imageRefs = useRef<(HTMLDivElement | null)[]>([]);
 
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
-  const [isHovered, setIsHovered] = useState<number | null>(null); // Track which image is hovered
+  const [isHovered, setIsHovered] = useState<number | null>(null);
   const handleMouseMove = (e: React.MouseEvent, index: number) => {
     const imageDiv = imageRefs.current[index];
     if (imageDiv) {
@@ -41,7 +41,7 @@ const Portfolio = () => {
         { src: work3, alt: "PosPro SaaS Project", title: "PosPro SaaS Project" },
         { src: work4, alt: "Business card design", title: "Business card design" },
       ].map((project, index) => (
-        <motion.div key={index} className={`${index % 2 === 1 ? "lg:mt-[100px] " : ""}`}>
+        <motion.div key={index} className={`mt-5 lg:mt-0 ${index % 2 === 1 ? "lg:mt-[100px] " : ""}`}>
           <div
             className="relative"
             ref={(el: HTMLDivElement | null) => {

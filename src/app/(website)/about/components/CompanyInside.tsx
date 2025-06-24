@@ -3,6 +3,9 @@ import React from "react";
 import CountUp from "react-countup";
 import { useInView } from "react-intersection-observer";
 import { motion } from "framer-motion";
+import company1 from '/public/about/companyimg_1.png';
+import company2 from '/public/about/companyimg_2.png';
+import Image from "next/image";
 
 const CompanyInside = () => {
   const { ref, inView } = useInView({ triggerOnce: true, threshold: 0.3 });
@@ -26,23 +29,33 @@ const CompanyInside = () => {
         whileInView="animate"
         transition={{ duration: 0.7 }}
         viewport={{ once: true, amount: 0.4 }}
-        className="lg:pt-0 md:pt-11 pt-6 text-[40px] md:text-[55px] lg:text-[90px] font-bold text-primary text-center uppercase leading-10 lg:leading-[99px] lg:mb-[181px]"
-      >
+        className="lg:pt- 0 md:pt-11 pt-6 text-[40px] md:text-[55px] lg:text-[90px] font-bold text-primary text-center uppercase leading-10 lg:leading-[99px] lg:mb-[181px] heading_company">
         company <br />
         <span className="text-[30px] md:text-[40px] lg:text-[80px] font-medium">
           inside..
         </span>
       </motion.h1>
+      <Image
+        className="absolute 
+        top-[36%] right-[21%] float-animation company_img1"
+        src={company1}
+        alt=""
+      />
+
+      <Image
+        className="absolute top-[36%] left-[21%] float-reverse company_img2"
+        src={company2}
+        alt=""
+      />
 
       {/* Mobile Section */}
       <div className="lg:hidden md:hidden company_mobile flex px-8 mt-[58px] justify-between">
         {data.map(({ label, end, suffix }, i) => (
           <div
             key={label}
-            
-            className={`text-center ${
-              i === 1 ? "absolute top-[160px] left-[133px] comapny_first_count" : "mt-[60px]"
-            }`}
+
+            className={`text-center ${i === 1 ? "absolute top-[160px] left-[133px] comapny_first_count" : "mt-[60px]"
+              }`}
           >
             <motion.p
               variants={fadeUp}
@@ -64,7 +77,7 @@ const CompanyInside = () => {
       </div>
 
       {/* Large screen */}
-      <div className="lg:px-[277px] lg_screen_px px-8 lg:flex md:flex company_inside hidden lg:mt-0 mt-[190px] justify-between">
+      <div className="lg:px-[277px] lg_screen_px px-8 lg:flex md:flex company_inside hidden lg:mt-0 mt-[190px] justify-between relative">
         {data.map(({ label, end, suffix }, i) => (
           <motion.div
             key={label}

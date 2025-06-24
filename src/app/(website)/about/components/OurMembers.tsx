@@ -121,7 +121,7 @@ const OurMembers = () => {
         viewport={{ once: true, amount: 0.3 }}
         className="text-white text-start mb-8"
       >
-        <div className="flex justify-between our_member_wrapper items-end  mb-10 ">
+        <div className="flex justify-between our_member_wrapper items-end mb-4 lg:mb-10 ">
           <div>
             <p className="text-[#F52366] text-base font-bold mb-1 flex gap-1 items-center">
               <svg
@@ -142,7 +142,7 @@ const OurMembers = () => {
               OUR MEMBERS
             </h2>
           </div>
-          <div className="hidden md:flex our_member_btn1 lg:mt-[60px] mt-6 justify-center">
+          <div className="hidden md_flex md:flex our_member_btn1 lg:mt-[60px] mt-6 justify-center">
             <button className="   hover:bg-transparent border border-[#2353F5] bg-[#2353F5] flex gap-2 items-center justify-center  text-white text-base font-bold lg:py-[21px] px-6 py-[13px] lg:px-[36px] rounded-[10px] transition">
               Join Our Team Today
               <svg
@@ -163,7 +163,7 @@ const OurMembers = () => {
       </motion.div>
 
       {/* Member cards */}
-      <div className="grid lg:grid-cols-3 sm:grid-cols-1 md:grid-cols-2 gap-4 md:gap-[18px] lg:gap-6 max-w-6xl mx-auto">
+      <div className="grid lg:grid-cols-3 sm:grid-cols-1 md:grid-cols-2 gap-4 md:gap-[18px] lg:gap-6 max-w-6xl mx-auto  member_grid">
         {teamMembers.map((member, idx) => (
           <motion.div
             key={member.id}
@@ -201,7 +201,7 @@ const OurMembers = () => {
         whileInView="whileInView"
         transition={{ duration: 0.7, delay: teamMembers.length * 0.1 }}
         viewport={{ once: true }}
-        className="lg:mt-[60px] mt-6 lg:hidden flex justify-center"
+        className="lg:mt-[60px] mt-6 lg:hidden md_hidden flex justify-center"
       >
         <button className="flex gap-2 items-center justify-center 
         hover:bg-transparent border border-[#2353F5] bg-[#2353F5]  text-white text-base font-bold capitalize lg:py-[21px] px-6 py-[13px] lg:px-[36px] rounded-[10px] transition-all ease-in-out duration-500">

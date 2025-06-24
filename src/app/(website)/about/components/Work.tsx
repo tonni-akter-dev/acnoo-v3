@@ -35,7 +35,7 @@ const Work = () => {
   const handleMouseLeave = () => setIsHovered(null);
 
   return (
-    <div className="lg:mb-[250px]">
+    <div className="mb-10 lg:mb-[250px]">
       <div className="containers lg_screen_px px-5 mt-6 lg:mt-[100px]">
         <motion.div
           initial={{ opacity: 0, x: -40 }}

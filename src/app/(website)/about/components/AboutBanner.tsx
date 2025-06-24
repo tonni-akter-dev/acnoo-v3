@@ -124,6 +124,7 @@ import { IoLogoDribbble } from "react-icons/io";
 import arrow from "/public/about/arrow.png";
 import Image from "next/image";
 import { motion } from "framer-motion";
+import Link from "next/link";
 
 const fadeIn = (delay = 0) => ({
   hidden: { opacity: 0, y: 40 },
@@ -170,7 +171,7 @@ const AboutBanner = () => {
               Dhaka, Bangladesh
             </p>
           </div>
-          <a href="#" className="text-blue-600 hover:underline">
+          <Link href="#" className="text-blue-600 hover:underline">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="18"
@@ -186,7 +187,7 @@ const AboutBanner = () => {
                 strokeLinejoin="round"
               />
             </svg>
-          </a>
+          </Link>
         </motion.div>
 
         {/* Main Title */}
@@ -223,7 +224,7 @@ const AboutBanner = () => {
       {/* Social Icons */}
       <motion.div
         variants={staggerContainer}
-        className="absolute right-10 lg:right-[50px] social_md_icons md:top-1/2 lg:top-1/2 transform -translate-y-1/2 flex flex-row md:flex-col lg:flex-col space-y-4 space-x-4"
+        className="absolute right-10 lg:right-[50px] social_md_icons md:top-1/2 lg:top-1/2 transform -translate-y-1/2 flex flex-row md:flex-col lg:flex-col space-y-2.5 lg:space-y-4 space-x-4"
       >
         {socialIcons.map((Icon, index) => (
           <motion.div

@@ -37,7 +37,7 @@ const fadeUp = {
 
 const Roadmap = () => {
   return (
-    <div className="lg:py-[120px] lg_screen_px md:py-[30px] py-6 lg:px-[150px] md:px-5 px-0">
+    <div className="lg:py-[120px] lg_screen_px md:py-[30px] py-6 lg:px-[150px] px-5 ">
       <div className="grid grid-cols-12 justify-center">
         <motion.div
           className="col-span-12 lg:col-span-4"
@@ -48,7 +48,7 @@ const Roadmap = () => {
           viewport={{ once: true, amount: 0.3 }}
         >
           <div className="flex lg:flex-col flex-row justify-between items-center lg:mb-0 md:mb-5 mb-6">
-            <div className="lg:px-0 md:px-0 px-5">
+            <div className="">
               <p className="text-[#F52366] text-base font-bold flex gap-2 items-center">
                 {/* SVG omitted for brevity */}
                 Roadmap about company
@@ -82,7 +82,7 @@ const Roadmap = () => {
                   </span>
                 </div>
                 <div>
-                  <h3 className="w-[172px] text-xl lg:text-[28px] font-bold leading-[32px]">
+                  <h3 className="w-[172px] text-lg md:text-xl lg:text-[28px] font-bold leading-[32px]">
                     {item.title}
                   </h3>
                 </div>
