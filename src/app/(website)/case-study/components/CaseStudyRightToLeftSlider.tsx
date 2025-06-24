@@ -49,13 +49,12 @@ const CaseStudyRightToLeftSlider = () => {
         {images.map((img, index) => (
           <SwiperSlide
             key={index}
-            className='h-[119px] md:h-[241px] lg:h-[567px]'
+            className='overflow-hidden'
           >
             <Image
               src={img}
               alt={`Slide ${index + 1}`}
-              className='w-full h-full object-cover'
-              style={{ height: '100%' }}
+              className='h-[119px]  md:h-[167px] lg:h-[567px] object-cover'
             />
           </SwiperSlide>
         ))}

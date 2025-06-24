@@ -25,7 +25,7 @@ const AdminSlider = () => {
   }, [activeIndex]);
 
   return (
-    <div className="relative w-full mt-4 md:mt-8 lg:mt-30 overflow-visible">
+    <div className="relative w-full case_banner_wraper mt-4 md:mt-8 lg:mt-30 overflow-visible">
       <div className=" max-w-6xl mx-auto flex items-center justify-start relative">
         <Swiper
           modules={[Pagination]}
@@ -73,14 +73,14 @@ const AdminSlider = () => {
       </div>
      <div className="max-w-6xl mx-auto mt-[30px]">
       <motion.h2
-        className="text-base md:text-xl md:ms-22 lg:ms-[87px] ms-5 lg:text-[28px] font-bold text-black border-l-4 border-l-[#2353F5] pl-3.5 lg:ml-[52px]"
-        initial={{ opacity: 0, x: -50 }} // Start invisible and shifted left
-        whileInView={{ opacity: 1, x: 0 }} // Fade in and slide to original position
-        transition={{ duration: 0.6, ease: "easeOut" }} // Smooth transition
-        whileHover={{ scale: 1.02 }} // Slight scale-up on hover
-        viewport={{ once: true, amount: 0.2 }} // Trigger once when 20% in view
-      >
-        Acnoo Admin - Flutter Admin Panel & Dashboard <br className="hidden md:block lg:block" />{' '}
+        className="text-base md:text-xl acnoo_admin_text md:ms-22 lg:ms-[87px] ms-5 lg:text-[28px] font-bold text-black border-l-4 border-l-[#2353F5] pl-3.5 lg:ml-[52px]"
+        initial={{ opacity: 0, x: -50 }} 
+        whileInView={{ opacity: 1, x: 0 }} 
+        transition={{ duration: 0.6, ease: "easeOut" }} 
+        whileHover={{ scale: 1.02 }} 
+        viewport={{ once: true, amount: 0.2 }} >
+        Acnoo Admin - Flutter Admin Panel & Dashboard 
+        <br className="hidden md:block md_block lg:block" />
         Template | PWA Ready
       </motion.h2>
     </div>

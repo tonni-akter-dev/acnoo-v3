@@ -99,28 +99,29 @@ const Compatible = () => {
                         </div>
                     </div>
 
+  <div className="orbit-container">
                     {/* Icons Positioned Around the Circle */}
-                    <div className="absolute z-50 top-[-14%] left-1/2 transform -translate-x-1/2 laravel size-[110px] md:size-[150px] lg:size-[200px]">
+                    <div className=" orbit-icon absolute z-50 top-[-14%] left-1/2 transform -translate-x-1/2 laravel size-[110px] md:size-[150px] lg:size-[200px]">
                         <Image className="pos_pro_roundimg" src={laravel} alt="Laravel" />
                     </div>
 
-                    <div className="absolute z-50 top-[23%] left-[5%] transform -translate-x-1/2 ios size-[110px] md:size-[150px] lg:size-[200px]">
+                    <div className=" orbit-icon absolute z-50 top-[23%] left-[5%] transform -translate-x-1/2 ios size-[110px] md:size-[150px] lg:size-[200px]">
                         <Image className="pos_pro_roundimg" src={ios} alt="iOS" />
                     </div>
 
-                    <div className="absolute z-50 bottom-[-9%] left-[23%] transform -translate-x-1/2 android size-[110px] md:size-[150px] lg:size-[200px]">
+                    <div className=" orbit-icon absolute z-50 bottom-[-9%] left-[23%] transform -translate-x-1/2 android size-[110px] md:size-[150px] lg:size-[200px]">
                         <Image className="pos_pro_roundimg" src={android} alt="Android" />
                     </div>
 
-                    <div className="absolute z-50 bottom-[-9%] right-[24%] transform translate-x-1/2 mysql size-[110px] md:size-[150px] lg:size-[200px]">
+                    <div className=" orbit-icon absolute z-50 bottom-[-9%] right-[24%] transform translate-x-1/2 mysql size-[110px] md:size-[150px] lg:size-[200px]">
                         <Image className="pos_pro_roundimg" src={mysql} alt="MySQL" />
                     </div>
 
-                    <div className="absolute z-50 top-[23%] right-[5%] transform translate-x-1/2 flutter size-[110px] md:size-[150px] lg:size-[200px]">
+                    <div className=" orbit-icon absolute z-50 top-[23%] right-[5%] transform translate-x-1/2 flutter size-[110px] md:size-[150px] lg:size-[200px]">
                         <Image className="pos_pro_roundimg" src={flutter} alt="Flutter" />
                     </div>
                 </div>
-
+</div>
             </div>
         </div>
     );

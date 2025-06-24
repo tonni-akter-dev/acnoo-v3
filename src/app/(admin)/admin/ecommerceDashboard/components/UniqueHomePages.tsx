@@ -48,14 +48,14 @@ const UniqueHomePages = () => {
 
             <div
                 ref={scrollContainerRef}
-                className="flex items-center justify-start lg:justify-center mb-4 lg:mb-12 overflow-x-scroll w-full px-4 snap-x snap-mandatory scrollbar-hide" style={{ scrollBehavior: 'smooth' }}
+                className="flex items-center justify-start lg:justify-center mb-4 lg:mb-12 lg:overflow-hidden overflow-x-scroll w-full px-4 snap-x snap-mandatory scrollbar-hide" style={{ scrollBehavior: 'smooth' }}
             >
                 {tabs.map((tab) => (
                     <button
                         key={tab.id}
                         className={`px-4 py-2  w-fit whitespace-nowrap text-sm lg:text-base font-medium rounded-[6px] mr-2.5 lg:mr-4 ${activeTab === tab.id
                             ? 'bg-[#7500FE] text-white hover:bg-transparent hover:text-[#7500FE] border border-[#7500FE] transition-all ease-in-out duration-300'
-                            : 'bg-white '
+                            : 'bg-white hover:bg-[#7500FE26] '
                             }`}
                         onClick={() => setActiveTab(tab.id)}
                         style={{ boxShadow: '0px 4px 12px 0px rgba(0, 0, 0, 0.06)' }}

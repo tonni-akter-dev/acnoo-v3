@@ -8,7 +8,7 @@ const menuItems = [
   { label: 'Bookings & Prices', href: '#' },
   { label: 'Payments, Refunds & Credits', href: '#' },
   { label: 'Refund', href: '#' },
-  { label: 'Cancellations', href: '/cancellation' },
+  { label: 'Cancellations', href: '#' },
   { label: 'Included Services', href: '#' },
   { label: 'Trip Operation', href: '#' },
   { label: 'Participation', href: '#' },
@@ -30,7 +30,7 @@ export default function Sidebar() {
 
   return (
     <div className="w-full lg:max-w-[464px] max-h-[840px] h-full">
-      <aside className="px-8 py-2.5 bg-white privacy shadow-xl lg_screen_px lg:px-[60px] lg:py-14">
+      <aside className="ps-8 pe-6 py-2.5 bg-white privacy shadow-xl lg:w-[463px] lg:py-14">
         <ul>
           {menuItems.map((item, index) => (
             <li key={index} onClick={openModal}>

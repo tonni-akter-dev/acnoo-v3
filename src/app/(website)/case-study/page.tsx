@@ -7,6 +7,7 @@ import CaseStudylefttToRightSlider from './components/CaseStudylefttToRightSlide
 import CaseStudyRightToLeftSlider from './components/CaseStudyRightToLeftSlider'
 import Portfolio from './components/Portfolio'
 import CaseStudyBottomSlider from './components/CaseStudyBottomSlider'
+import MobileApps from './components/MobileApps'
 
 
 const CaseStudy = () => {
@@ -18,6 +19,7 @@ const CaseStudy = () => {
       <CaseStudyRightToLeftSlider />
       <Portfolio />
       <CaseStudyBottomSlider />
+      <MobileApps/>
       <BottomBanner />
     </div>
   )

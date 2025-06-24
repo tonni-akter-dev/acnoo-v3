@@ -21,9 +21,9 @@ const caseStudyImages = [img1, img2, img3, img4, img5, img6, img7, img8];
 const CaseStudylefttToRightSlider = () => {
   return (
     <div className="case-slider__wrapper pt-[13px] md:pt-[33px] lg:pt-[110px]">
-      <Swiper
+      <Swiper                 
         modules={[Autoplay]}
-        slidesPerView={1.5} 
+        slidesPerView={1.5}
         spaceBetween={10}
         loop={true}
         speed={3000}
@@ -42,15 +42,14 @@ const CaseStudylefttToRightSlider = () => {
             spaceBetween: 4,
           },
         }}
-        className="case-slider__container"
-      >
+        className="case-slider__container">
         {caseStudyImages.map((img, index) => (
           <SwiperSlide key={`case-slide-${index}`}>
             <div className="case-slider__card overflow-hidden">
               <Image
                 src={img}
                 alt={`Case Study ${index + 1}`}
-                className="w-full h-[172px] md:h-[241px] lg:h-[567px] object-cover"
+                className="w-full h-[172px] case_slider_img md:h-[241px] lg:h-[567px] object-cover"
               />
             </div>
           </SwiperSlide>

@@ -8,7 +8,7 @@ import { motion, useInView } from 'framer-motion';
 const BottomBanner = () => {
   const pathname = usePathname();
   const ref = useRef(null);
-  const isInView = useInView(ref, { once: true, margin: '-100px' }); // animate when visible, only once
+  const isInView = useInView(ref, { once: true, margin: '-100px' }); 
 
   return (
     <div className={`containers lg_screen_px bg-transparent bg-blend-color lg:mx-0 md:mx-5 bottom_wrapper`}>
@@ -32,7 +32,7 @@ const BottomBanner = () => {
             </span>
             Custom projects we already done
           </div>
-          <h3 className='lg:text-[65px] text-[24px] lg:leading-[72px] leading-[30px] font-bold text-start text-primary'>
+          <h3 className='lg:text-[65px] heading_text text-[24px] lg:leading-[72px] leading-[30px] font-bold text-start text-primary'>
             Ready to create some <br />
             custom products?
           </h3>

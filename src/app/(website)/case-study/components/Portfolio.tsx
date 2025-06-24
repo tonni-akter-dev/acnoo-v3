@@ -34,14 +34,14 @@ const Portfolio = () => {
   const handleMouseLeave = () => setIsHovered(null);
 
   return (
-    <div className="containers grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2  lg:gap-x-[108px] md:gap-x-[18px]">
+    <div className="lg:mt-[128px] containers grid grid-cols-1 case_portfolio_wrap md:grid-cols-2 lg:grid-cols-2  lg:gap-x-[108px] md:gap-x-[18px]">
       {[
         { src: work1, alt: "Acnoo Admin", title: "Acnoo Admin – Flutter Admin Panel & Dashboard Template | PWA Ready" },
         { src: work2, alt: "Business card design", title: "Business card design" },
         { src: work3, alt: "PosPro SaaS Project", title: "PosPro SaaS Project" },
         { src: work4, alt: "Business card design", title: "Business card design" },
       ].map((project, index) => (
-        <motion.div key={index} className={`mt-5 ${index % 2 === 1 ? "md:mt-10 lg:mt-[100px]" : ""}`}>
+        <motion.div key={index} className={`${index % 2 === 1 ? "lg:mt-[100px] " : ""}`}>
           <div
             className="relative"
             ref={(el: HTMLDivElement | null) => {
